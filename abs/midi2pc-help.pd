@@ -1,0 +1,12 @@
+#N canvas 1 114 329 242 10;
+#X text 14 179 https://github.com/angelfaraldo/pd-symbolic;
+#X text 14 194 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X obj 20 111 midi2pc;
+#X floatatom 30 88 5 0 0 0 - - -;
+#X obj 20 137 print;
+#X msg 20 63 60 64 67;
+#X text 12 6 converts lists with midi-note-numbers into their corresponding
+pitch class.;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 5 0 2 0;

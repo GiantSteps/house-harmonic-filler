@@ -1,0 +1,15 @@
+#N canvas 187 543 376 235 10;
+#X text 6 189 https://github.com/angelfaraldo/pd-symbolic;
+#X text 6 204 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X obj 21 137 intervalic_structure;
+#X obj 21 159 print;
+#X obj 21 92 midi2pc;
+#X msg 21 67 62 66 69;
+#X text 10 6 returns the intervals between different elements of a
+chord. It assumes an ordered chord in pitch class numbers transposed
+to zero.;
+#X obj 21 116 normal_form;
+#X connect 2 0 3 0;
+#X connect 4 0 7 0;
+#X connect 5 0 4 0;
+#X connect 7 0 2 0;

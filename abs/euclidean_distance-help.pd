@@ -1,0 +1,31 @@
+#N canvas 605 218 369 366 10;
+#X floatatom 9 287 5 0 0 0 - - -;
+#X text 4 2 [euclidist] calculates the euclidean distance between two
+lists of equal lenght (otherwise throws an error to the console). This
+object can be useful to give an idea of the similarity between lists
+of parameters \, such as mfcc's. <http://en.wikipedia.org/wiki/Euclidean_distance>
+;
+#X obj 35 199 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 114 237 1 2 3 12 6;
+#X floatatom 9 88 5 0 0 0 - - -;
+#X msg 15 132 1 2 3 123 5 4;
+#X text 94 153 zero distance;
+#X msg 9 110 1 2 3 12 \$1;
+#X text 57 198 bang outputs the last result;
+#X text 50 286 eucludean distance;
+#X text 105 132 error (different size);
+#X text 114 217 cold inlet;
+#X msg 23 153 1 2 3 12 6;
+#X msg 29 175 6 54 2 76 4;
+#X text 6 319 https://github.com/angelfaraldo/pd-symbolic;
+#X text 6 334 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X obj 9 264 euclidean_distance;
+#X connect 2 0 16 0;
+#X connect 3 0 16 1;
+#X connect 4 0 7 0;
+#X connect 5 0 16 0;
+#X connect 7 0 16 0;
+#X connect 12 0 16 0;
+#X connect 13 0 16 0;
+#X connect 16 0 0 0;

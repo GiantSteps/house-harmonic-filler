@@ -1,0 +1,21 @@
+#N canvas 1 114 429 300 10;
+#X text 6 259 https://github.com/angelfaraldo/pd-symbolic;
+#X text 6 274 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X obj 368 266 once;
+#X text 305 265 see also:;
+#X obj 28 184 uanz;
+#X floatatom 28 79 5 0 0 0 - - -;
+#X obj 72 163 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X symbolatom 45 125 10 0 0 0 - - -;
+#X obj 28 207 print;
+#X obj 37 101 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 93 161 reset/init;
+#X text 9 8 [uanz] passes the first message only of a data stream.
+The object can be reset with a bang on its right inlet.;
+#X connect 4 0 8 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 1;
+#X connect 7 0 4 0;
+#X connect 9 0 4 0;

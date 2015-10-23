@@ -1,0 +1,19 @@
+#N canvas 563 434 394 271 10;
+#X text -7 217 https://github.com/angelfaraldo/pd-symbolic;
+#X text -7 232 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X obj -4 189 print;
+#X text 192 106 see also:;
+#X obj 193 130 change;
+#X obj -4 162 change_pack;
+#X msg 6 92 10 11;
+#X msg 16 112 10 11;
+#X msg 26 132 10 12;
+#X text -7 8 [change_pack] works like pd's native object [change] on
+packages of two floats. It will output the duplet only if one of the
+elements is different from the previous incoming package.;
+#X msg -4 72 9 11;
+#X connect 5 0 2 0;
+#X connect 6 0 5 0;
+#X connect 7 0 5 0;
+#X connect 8 0 5 0;
+#X connect 10 0 5 0;

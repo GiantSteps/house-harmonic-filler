@@ -1,0 +1,57 @@
+#N canvas 793 174 384 631 10;
+#X obj -188 -220 noteout;
+#X obj -187 -698 notein;
+#X obj -187 -670 pack 0 0 0;
+#X msg -139 -446 quantize \$1;
+#X msg -119 -515 4;
+#X msg -110 -494 8;
+#X msg -102 -472 16;
+#X text -74 -473 semiquaver;
+#X text -91 -517 crotchet;
+#X text -111 -558 semibreve;
+#X text -103 -537 minim;
+#X msg -139 -556 1;
+#X msg -130 -535 2;
+#X msg -167 -613 tempo \$1;
+#X floatatom -167 -634 5 0 0 0 - - -;
+#X obj -119 -353 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text -198 -767 [midi_quantizer] receives midi note data and quantizes
+it to a given tempo and subdivision. This object is not so much intended
+for playing as it is for analysis \, especially for detecting MIDI
+chords.;
+#X text -98 -355 reset counter and phase;
+#X floatatom -148 -272 5 0 0 1 - - -;
+#X floatatom -107 -299 5 0 0 1 - - -;
+#X text -67 -300 ms. Refresh period;
+#X text -110 -272 Counter. Useful for aligning data.;
+#X obj -178 -245 print CHORDS;
+#X text -186 -193 https://github.com/angelfaraldo/pd-symbolic;
+#X text -186 -178 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X obj -188 -320 midi_quantizer;
+#X msg -119 -390 metro \$1;
+#X text -84 -495 quaver (default);
+#X obj -119 -412 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X text -58 -390 metronome on?;
+#X msg -160 -591 tempo 120;
+#X connect 1 0 2 0;
+#X connect 1 1 2 1;
+#X connect 1 2 2 2;
+#X connect 2 0 25 0;
+#X connect 3 0 25 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
+#X connect 11 0 3 0;
+#X connect 12 0 3 0;
+#X connect 13 0 25 0;
+#X connect 14 0 13 0;
+#X connect 15 0 25 0;
+#X connect 25 0 0 0;
+#X connect 25 0 22 0;
+#X connect 25 1 18 0;
+#X connect 25 2 19 0;
+#X connect 26 0 25 0;
+#X connect 28 0 26 0;
+#X connect 30 0 25 0;

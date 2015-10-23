@@ -1,0 +1,15 @@
+#N canvas 120 645 373 217 10;
+#X text -109 167 https://github.com/angelfaraldo/pd-symbolic;
+#X text -109 182 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X obj -107 132 print;
+#X msg -107 54 1 2 3 4 5 5 5 5 5 5 5 3 2 1;
+#X obj -93 81 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj -50 130 print done!;
+#X obj -107 107 pop_first;
+#X text -108 10 Pop (return and delete) the first element of a list.
+It sends a bang on the right outlet when list is empty.;
+#X connect 3 0 6 0;
+#X connect 4 0 6 0;
+#X connect 6 0 2 0;
+#X connect 6 1 5 0;

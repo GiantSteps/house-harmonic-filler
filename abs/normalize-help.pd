@@ -1,0 +1,29 @@
+#N canvas 391 222 416 550 10;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array histogram 12 float 1;
+#A 0 47.8578 5.00108 72.1433 78.5718 87.1432 87.8574 86.4289 73.5719
+53.572 35.0008 31.4294 41.4293;
+#X coords 0 100 11 0 200 140 1 0 0;
+#X restore 127 114 graph;
+#X obj 158 282 tabdump histogram;
+#X msg 158 263 bang;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array normalized 12 float 1;
+#A 0 0.0683676 0.00714433 0.103061 0.112244 0.124489 0.125509 0.123469
+0.105102 0.0765307 0.0500007 0.0448987 0.0591841;
+#X coords 0 1 11 0 200 140 1 0 0;
+#X restore 127 400 graph;
+#X obj 158 345 tabset normalized;
+#X obj 115 332 sum;
+#X floatatom 115 349 5 0 0 0 - - -;
+#X obj 125 9 cnv 15 150 20 empty empty normalize 20 10 1 20 -233017
+-66577 0;
+#X text 38 32 This object takes a list and normalizes its values so
+that the sum of its elements is always 1 This object is useful when
+normalizing a table of probabilities.;
+#X obj 158 315 normalize;
+#X connect 1 0 9 0;
+#X connect 2 0 1 0;
+#X connect 5 0 6 0;
+#X connect 9 0 4 0;
+#X connect 9 0 5 0;

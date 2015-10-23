@@ -1,0 +1,81 @@
+#N canvas 471 150 529 649 10;
+#X obj -265 -656 openpanel;
+#X obj -265 -678 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg -265 -633 read \$1;
+#X obj -265 -221 noteout;
+#X msg -125 -633 loop \$1;
+#X obj -125 -654 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj -185 -654 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X msg -185 -633 play \$1;
+#X msg -113 -592 flush;
+#X msg -113 -562 panic;
+#X floatatom -178 -422 5 0 0 0 - - -;
+#X floatatom -201 -398 5 0 0 0 - - -;
+#X text -73 -562 all notes off;
+#X floatatom -224 -374 5 0 0 0 - - -;
+#X msg -66 -634 quantize \$1;
+#X obj -66 -652 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X text 15 -634 default = 1;
+#X floatatom -131 -470 5 0 0 0 - - -;
+#X text -95 -471 tempo (bpm);
+#X text -139 -423 real duration (in ticks);
+#X text -164 -397 tentative length (to match complete beats!);
+#X obj -245 -341 print flush_midi_notes;
+#X text -187 -373 estimated beats (in quarter notes \, after rounding
+up length);
+#X text -71 -591 flushes all midi-notes at once (via 2nd outlet);
+#X obj -205 -515 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text -185 -516 FOURTH outlet sends a bang when the file ends;
+#X obj -256 -309 unpack 0 0 0;
+#X floatatom -187 -286 5 0 0 0 - - -;
+#X floatatom -222 -266 5 0 0 0 - - -;
+#X floatatom -256 -246 5 0 0 0 - - -;
+#X text -149 -287 channel;
+#X text -186 -267 velocity;
+#X text -219 -246 note number;
+#X text -208 -222 FIRST outlet outputs midi notes in pd style;
+#X text -266 -798 [midiplayer] is a midi file player and analyzer based
+on [mrpeach/midifile]. It will force the content to adjust to full
+beats (quarter notes) and it will quantize the content to semiquavers
+per default. At the moment \, it filters out all non-note informations
+and only outputs note information in pd midi style (triplets with note
+number \, velocity and channel). The object automatically converts
+all note-off messages to note-on messages with zero velocity!;
+#X text -262 -193 https://github.com/angelfaraldo/pd-symbolic;
+#X text -262 -178 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X obj -266 -537 midi_player;
+#X obj -224 -494 unpack 0 0 0 0 0;
+#X text -119 -494 THIRD outlet outputs temporal info:;
+#X text -102 -346 SECOND outlet flushes all midi-note information as
+quadruplets containing: tick \, note \, vel \, channel;
+#X floatatom -155 -446 5 0 0 0 - - -;
+#X text -116 -447 real duration (in ticks);
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 37 0;
+#X connect 4 0 37 0;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X connect 7 0 37 0;
+#X connect 8 0 37 0;
+#X connect 9 0 37 0;
+#X connect 14 0 37 0;
+#X connect 15 0 14 0;
+#X connect 26 0 29 0;
+#X connect 26 1 28 0;
+#X connect 26 2 27 0;
+#X connect 37 0 26 0;
+#X connect 37 0 3 0;
+#X connect 37 1 21 0;
+#X connect 37 2 38 0;
+#X connect 37 3 24 0;
+#X connect 38 0 13 0;
+#X connect 38 1 11 0;
+#X connect 38 2 10 0;
+#X connect 38 3 41 0;
+#X connect 38 4 17 0;

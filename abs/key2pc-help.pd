@@ -1,0 +1,18 @@
+#N canvas 635 114 314 256 10;
+#X floatatom 49 138 5 0 0 0 - - -;
+#X floatatom 17 165 5 0 0 0 - - -;
+#X msg 27 41 C#;
+#X obj 17 94 tosymbol;
+#X text 56 165 pitch class (0-1);
+#X text 85 137 modality (0 = major \, 1 = minor);
+#X msg 37 61 Bbm;
+#X msg 17 21 Gbm;
+#X obj 17 117 key2pc;
+#X text 16 199 https://github.com/angelfaraldo/pd-symbolic;
+#X text 16 214 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X connect 2 0 3 0;
+#X connect 3 0 8 0;
+#X connect 6 0 3 0;
+#X connect 7 0 3 0;
+#X connect 8 0 1 0;
+#X connect 8 1 0 0;

@@ -1,0 +1,15 @@
+#N canvas 760 148 370 255 10;
+#X obj 28 182 print;
+#X msg 38 131 62 67 64;
+#X obj 28 158 note_unique;
+#X msg 13 87 48 64 67 72 48;
+#X msg 28 111 21 61 73;
+#X text 6 6 [note_unique] removes duplicate notes in an incoming list
+(i.e. notes with the same pitch-class) \, and returns an ordered list.
+[note_unique] preserves the lowest note of each pitch class.;
+#X text 13 214 https://github.com/angelfaraldo/pd-symbolic;
+#X text 13 229 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;

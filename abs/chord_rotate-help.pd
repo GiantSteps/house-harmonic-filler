@@ -1,0 +1,12 @@
+#N canvas 451 599 383 213 10;
+#X text 6 156 https://github.com/angelfaraldo/pd-symbolic;
+#X text 6 171 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X obj 8 128 print;
+#X msg 8 79 40 41 42;
+#X obj 8 105 chord_rotate;
+#X text 5 12 rotates the elements of a list \, assuming this contains
+numbers representing notes of a chord (in pitch class or midi note
+numbers). Lower notes are transposed one octave higher when shifted
+to the end of the list.;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
