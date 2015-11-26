@@ -1,9 +1,10 @@
 # house-harmonic-filler
 
 #### Installation
-The current prototype is implemented in the Pd-Extended/Gem environment, and is delivered with a collection of original MIDI loops. It depends on the "pd-symbolic" set of abstractions, which you can download from http://github.com/angelfaraldo/pd-symbolic.
+The current prototype is implemented in the Pd-Extended/Gem environment, and is delivered with a collection of original MIDI loops. 
+**It depends on the "pd-symbolic" set of abstractions, which you can download from http://github.com/angelfaraldo/pd-symbolic.**
 
-!["The graphic interface"](/vis/hhf.png?raw=true "The graphic interface")
+!["The graphic interface"](/vis/hhf.png?raw=true)
 
 ##### Blah blah
 The house-harmonic-filler is a temptative model for chord variation that could be used in contexts of live electronic music performance. Despite harmony not being a prominent aspect of many electronic popular music genres, it is still prevalent in those evolving directly from the song tradition, such as electro-pop and disco variants. Furthermore, certain sub-styles of house, especially so-called deep house, make use of chord loops borrowed from what we could call a black-american tradition, such as soul, rhythm-and-blues or even jazz, using extended chords other than simple triads (especially major and minor 7ths and 9ths, but also 13ths, suspensions and alterations). Deep house tracks often favour instrumental timbres (as opposed to synthesized ones), such as pianos, vibraphones as well as an extensive use of vocals.
