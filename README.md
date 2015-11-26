@@ -1,13 +1,7 @@
 # house-harmonic-filler
 
-#### In Short
+##### Dependencies.
 The current prototype is implemented in the Pd-Extended/Gem environment, and is delivered with a collection of original MIDI loops. **It depends on the "pd-symbolic" set of abstractions, which you can download from http://github.com/angelfaraldo/pd-symbolic.**
-
-The House Harmonic Filler is presented as a two-window GUI. The real-time interaction is limited to a very simple interface with a series of sliders controlling the parameters just described (Figure 22). I comes with MIDI-learn functionality and master/slave synchronization with external MIDI clocks, so it could be integrated with any regular DAW. 
-
-A second window provides visualization information about the live transformations on the MIDI Loop. This window presents a two-bar length grid quantized at 16th notes, with a three-layer box system on top. The layer at the background represents a metronome progressing along the sequence beats in sync with the tempo set by the user. The middle-ground layer represents the original pattern: each box represents a chord event, labelled with its chord name, where start- and end-points, as well as duration are represented by the rectangles position and horizontal length. Similarly, the forefront layer displays the modifications on real-time requested by the user.
-
-!["The graphic interface"](/vis/hhf.png?raw=true)
 
 ##### Blah blah
 The house-harmonic-filler is a temptative model for chord variation that could be used in contexts of live electronic music performance. Despite harmony not being a prominent aspect of many electronic popular music genres, it is still prevalent in those evolving directly from the song tradition, such as electro-pop and disco variants. Furthermore, certain sub-styles of house, especially so-called deep house, make use of chord loops borrowed from what we could call a black-american tradition, such as soul, rhythm-and-blues or even jazz, using extended chords other than simple triads (especially major and minor 7ths and 9ths, but also 13ths, suspensions and alterations). Deep house tracks often favour instrumental timbres (as opposed to synthesized ones), such as pianos, vibraphones as well as an extensive use of vocals.
@@ -31,6 +25,12 @@ The Density Agnostic Transformer only takes information (and possibility of vari
 
 ###### Register Expansion
 A register expansion control allows variations in the vertical layout of the chord, from closed position (all notes of the chord contained within the same octave) to higher and lower expansion to up to 4 octaves.
+
+###### Visualization and Synchronization
+The real-time interaction is limited to a very simple interface with a series of sliders controlling the parameters just described. A second window provides visualization information about the live transformations on the MIDI Loop. This window presents a two-bar length grid quantized at 16th notes, with a three-layer box system on top. The layer at the background represents a metronome progressing along the sequence beats in sync with the tempo set by the user. The middle-ground layer represents the original pattern: each box represents a chord event, labelled with its chord name, where start- and end-points, as well as duration are represented by the rectangles position and horizontal length. Similarly, the forefront layer displays the modifications on real-time requested by the user.
+The House Harmonic Filler offers MIDI-learn functionality and master/slave synchronization, so it could be integrated with any regular DAW for testing.
+!["The graphic interface"](/vis/hhf.png?raw=true)
+
 
 # TO-BE-DONE-VERY-SOON!
 
