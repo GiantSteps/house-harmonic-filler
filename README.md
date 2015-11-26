@@ -1,9 +1,7 @@
 # house-harmonic-filler
 
 #### In Short
-The current prototype is implemented in the Pd-Extended/Gem environment, and is delivered with a collection of original MIDI loops.
-
-**It depends on the "pd-symbolic" set of abstractions, which you can download from http://github.com/angelfaraldo/pd-symbolic.**
+The current prototype is implemented in the Pd-Extended/Gem environment, and is delivered with a collection of original MIDI loops. **It depends on the "pd-symbolic" set of abstractions, which you can download from http://github.com/angelfaraldo/pd-symbolic.**
 
 The House Harmonic Filler is presented as a two-window GUI. The real-time interaction is limited to a very simple interface with a series of sliders controlling the parameters just described (Figure 22). I comes with MIDI-learn functionality and master/slave synchronization with external MIDI clocks, so it could be integrated with any regular DAW. 
 
