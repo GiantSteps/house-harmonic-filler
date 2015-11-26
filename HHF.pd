@@ -1,6 +1,6 @@
-#N canvas 574 148 799 367 10;
-#X declare -stdlib zexy -stdpath cyclone -stdpath mrpeach -stdpath
-unauthorized -stdpath jasch_lib -path abs;
+#N canvas 571 161 799 367 10;
+#X declare -lib zexy -stdpath cyclone -stdpath mrpeach -stdpath unauthorized
+-stdpath jasch_lib -path abs;
 #X obj 534 212 cnv 15 250 139 empty empty TRANSPORT 5 12 0 20 -232576
 -159808 0;
 #X obj 718 240 tgl 20 0 play set-play empty 17 7 0 10 -262144 -1 -1
@@ -19,7 +19,7 @@ unauthorized -stdpath jasch_lib -path abs;
 -1 -1 1 1;
 #X obj 626 240 cnv 15 80 20 empty gui-clock INTERNAL 9 10 0 14 -159808
 -262144 0;
-#N canvas 0 110 598 478 patch 0;
+#N canvas 0 123 598 478 patch 0;
 #N canvas 633 101 595 685 adt 0;
 #X obj 73 29 r density;
 #X obj 73 207 populate_rhythm;
@@ -224,7 +224,6 @@ unauthorized -stdpath jasch_lib -path abs;
 #X connect 40 2 23 0;
 #X connect 40 3 28 0;
 #X connect 44 0 12 0;
-#X connect 44 2 55 0;
 #X connect 45 0 49 0;
 #X connect 45 0 51 0;
 #X connect 46 0 47 0;
@@ -251,10 +250,10 @@ unauthorized -stdpath jasch_lib -path abs;
 #X obj 111 137 list prepend;
 #X obj 144 92 == 0;
 #X text 243 155 we need to make sure that al chords are ordered from
-low to high..., f 48;
+low to high...;
 #X text 239 48 we can use the argumentation by Tagg to take the first
 chord of the shuttle as "tonic." According to this... it should be
-quite easy to obtain the tonic of the shuttle., f 49;
+quite easy to obtain the tonic of the shuttle.;
 #X obj 129 161 r reset-analysis;
 #X obj 173 194 r chord-variations;
 #X text 222 112 receives onset position from route 1;
@@ -313,11 +312,10 @@ on the same index!;
 #X obj 210 220 r current_step;
 #X obj 267 488 sort;
 #X obj 267 512 list split 1;
-#X floatatom 267 537 5 0 0 0 - - -, f 5;
+#X floatatom 267 537 5 0 0 0 - - -;
 #X obj 267 558 s bass;
 #X obj 111 387 t l l;
-#X text 7 311 This is where all the pitch variations happen! ->, f
-14;
+#X text 7 311 This is where all the pitch variations happen! ->;
 #X obj 90 523 pack 0 0 4;
 #X obj 90 544 noteout 4;
 #X obj 281 415 midi_panic 4;
@@ -703,7 +701,7 @@ on the same index!;
 #X connect 109 0 86 0;
 #X restore 227 52 pd control from pd-gui;
 #N canvas 3 140 870 584 clock 0;
-#X floatatom 502 460 5 0 0 0 - - -, f 5;
+#X floatatom 502 460 5 0 0 0 - - -;
 #X obj 337 288 /;
 #X obj 219 440 + 1;
 #X obj 189 440 f 0;
@@ -715,7 +713,7 @@ on the same index!;
 #X obj 337 242 r tempo;
 #X obj 124 44 unpackOSC;
 #X obj 189 411 t b;
-#X floatatom 200 93 5 0 0 0 - - -, f 5;
+#X floatatom 200 93 5 0 0 0 - - -;
 #X obj 124 376 sel 0;
 #X msg 134 401 0;
 #X obj 199 537 s current_step;
@@ -779,7 +777,7 @@ on the same index!;
 #X obj 393 342 spigot 0;
 #X msg 393 369 /setTransport \$1;
 #X obj 214 297 spigot 1;
-#X floatatom 148 92 5 0 0 0 - - -, f 5;
+#X floatatom 148 92 5 0 0 0 - - -;
 #X obj 675 67 loadbang;
 #X msg 611 403 disconnect \, connect localhost 8002;
 #X obj 124 291 spigot 0;
@@ -934,7 +932,7 @@ on the same index!;
 #X obj 230 112 *;
 #X obj 230 85 t b f;
 #X obj 230 155 int;
-#X floatatom 260 176 5 0 0 0 - - -, f 5;
+#X floatatom 260 176 5 0 0 0 - - -;
 #X obj 772 328 coll one;
 #C restore;
 #X obj 751 372 t b l;
@@ -975,9 +973,9 @@ on the same index!;
 #X obj 751 351 list;
 #X obj 751 305 t b f;
 #X obj 692 444 chord_rotate_manual;
-#X floatatom 268 85 5 0 0 0 - - -, f 5;
+#X floatatom 268 85 5 0 0 0 - - -;
 #X text 272 134 number of chords;
-#X floatatom 339 87 5 0 0 0 - - -, f 5;
+#X floatatom 339 87 5 0 0 0 - - -;
 #X obj 230 198 change;
 #X obj 814 175 list-compare;
 #X obj 781 148 t l l l;
@@ -1010,7 +1008,7 @@ on the same index!;
 #X obj 477 674 tabread r-voicing;
 #X obj 230 220 + 1;
 #X obj 604 210 print onset-positions;
-#X floatatom 277 233 5 0 0 0 - - -, f 5;
+#X floatatom 277 233 5 0 0 0 - - -;
 #X obj 432 103 t f f;
 #X obj 412 129 + 16;
 #X obj 230 134 * 0.4;
@@ -1218,7 +1216,7 @@ on the same index!;
 #X restore 46 198 graph;
 #X restore 14 262 pd tables needed;
 #X text 127 261 <- dont erase this. there are some tables needed for
-this thing to work, f 39;
+this thing to work;
 #N canvas 106 88 1038 652 onset2note 0;
 #X obj 53 39 inlet;
 #X obj 136 77 table riddm;
@@ -1454,11 +1452,11 @@ on the pattern.;
 #X obj 615 91 t f f f;
 #X obj 495 366 * 12;
 #X obj 479 401 + 0;
-#X floatatom 163 429 5 0 0 0 - - -, f 5;
+#X floatatom 163 429 5 0 0 0 - - -;
 #X obj 457 321 + 24;
 #X obj 207 182 r bass-velocity;
-#X floatatom 240 207 5 0 0 0 - - -, f 5;
-#X floatatom 232 257 5 0 0 0 - - -, f 5;
+#X floatatom 240 207 5 0 0 0 - - -;
+#X floatatom 232 257 5 0 0 0 - - -;
 #X connect 0 0 3 0;
 #X connect 0 0 2 0;
 #X connect 3 1 4 0;
@@ -1530,11 +1528,9 @@ on the pattern.;
 #X connect 10 0 11 0;
 #X connect 12 0 4 0;
 #X restore 229 264 pd BASS;
-#X obj 227 9 declare -stdlib zexy -stdpath cyclone -stdpath mrpeach
--stdpath unauthorized -stdpath jasch_lib -path abs;
 #N canvas 77 357 811 700 master-visualization 0;
 #X msg 364 80 0 \, destroy;
-#X floatatom 402 152 5 0 0 0 - - -, f 5;
+#X floatatom 402 152 5 0 0 0 - - -;
 #N canvas 863 113 481 734 grid 0;
 #X obj 14 79 vis/grid-beat-strong;
 #X obj 14 143 vis/grid-beat-soft;
@@ -1961,6 +1957,8 @@ slave-chord-pos-2 100 \; slave-chord-pos-3 100 \; slave-chord-pos-4
 #X connect 42 0 27 0;
 #X restore 228 93 pd event-visualization;
 #X text 8 452 bass duration;
+#X obj 227 9 declare -lib zexy -stdpath cyclone -stdpath mrpeach -stdpath
+unauthorized -stdpath jasch_lib -path abs;
 #X connect 1 0 2 0;
 #X connect 1 1 2 1;
 #X connect 3 0 1 0;
@@ -2033,7 +2031,7 @@ empty -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 750 161 bng 8 250 50 0 learn-density --- empty 17 7 0 10 -262144
 -1 -1;
 #X obj 707 171 hradio 17 1 0 3 bass-octave set-bass-octave empty 0
--8 0 10 -262144 -1 -1 1;
+-8 0 10 -262144 -1 -1 0;
 #X obj 456 171 hsl 39 17 0 3.9 0 0 raw-range set-range empty -2 -8
 0 10 -262144 -1 -1 0 1;
 #X obj 557 281 hsl 200 17 40 239 0 0 tempo set-tempo empty 0 0 0 10
