@@ -1,6 +1,0 @@
-#N canvas 1 97 400 182 10;
-#X text 9 99 https://github.com/angelfaraldo/pd-symbolic;
-#X text 8 112 angel.faraldo@upf.edu ----- Barcelona \, 2015;
-#X obj 9 67 chordify;
-#X text 5 13 [chordify] receives incoming midi data and outputs lists
-with all the notes that sound simultaneously;
