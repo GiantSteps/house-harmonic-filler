@@ -1,15 +1,14 @@
 # house-harmonic-filler
 
-### Installation
-The current prototype is implemented in the Pd-Extended/Gem environment, and is delivered with a collection of original MIDI loops.
-
-It depends on the "pd-symbolic" set of abstractions, which you can download from http://github.com/angelfaraldo/pd-symbolic.
+#### Installation
+The current prototype is implemented in the Pd-Extended/Gem environment, and is delivered with a collection of original MIDI loops. It depends on the "pd-symbolic" set of abstractions, which you can download from http://github.com/angelfaraldo/pd-symbolic.
 
 
 
+##### Blah blah
 The house-harmonic-filler is a temptative model for chord variation that could be used in contexts of live electronic music performance. Despite harmony not being a prominent aspect of many electronic popular music genres, it is still prevalent in those evolving directly from the song tradition, such as electro-pop and disco variants. Furthermore, certain sub-styles of house, especially so-called deep house, make use of chord loops borrowed from what we could call a black-american tradition, such as soul, rhythm-and-blues or even jazz, using extended chords other than simple triads (especially major and minor 7ths and 9ths, but also 13ths, suspensions and alterations). Deep house tracks often favour instrumental timbres (as opposed to synthesized ones), such as pianos, vibraphones as well as an extensive use of vocals.
 We refer to the prototype we are describing as the House Harmonic Filler inspired by the nomenclature by Moore (2012, pp. 20 ff.). According to Moore, popular music styles can be differentiated and characterized by observing four basic textural functional layers, namely the explicit beat layer, the functional bass layer, the melodic layer and the harmonic filler layer. Other theoretical concerns aside, this differentiation seems appropriate to the GiantSteps project, since it sets (or reflects) a division (but also a means of integration) of the specialized tools that we are currently researching and developing.
-#### Chord Shuttles
+##### Chord Shuttles
 House harmonic loops normally consist of sequences of 2 or 4 bars, with a tendency to have a single chord per bar. 8-bar loops are less frequent, and in most cases, they result from a repetition of a 4-bar pattern with some small variation toward the end of the second half.
 Currently, the House Harmonic Filler is limited to operating with 2-bar loops or shuttles. According to Tagg (2014), a chord shuttle consists in an ongoing oscillation between two chords, normally of equal duration and importance. This particular behaviour is present in many of the chord loops we have analysed, each one lasting for a bar, and normally avoiding quintal jumps between their roots. Intervals of second, fourth and third (from most to less frequent) seem to be the most common jumps, favouring subdominant relations between the chords. These tonal relations tend to be ambivalent, and most of the times it is not possible to determine which chord has a tonic feel, effect which is potentiated by the endless looping mechanism. This is the reason why we have tried to avoid the tonal-functional connotations implied by classic tonal harmony (cfr. Piston, 1941), and where possible, we have interpreted the sequences as ambiguously as possible, considering both chords of the shuttle as potential tonics (I).
 We will reserve the term chord loop for cyclical sequences of more than two chords, normally four (Tagg, 2014), which are excluded from this study, and will be considered in due time. These simple sequences, normally consisting of an alternation of just two chords, have a strong presence in other popular music styles (especially blues and its derivatives) and offer a restricted scenario in which is feasible to create music-theoretical hypotheses.
