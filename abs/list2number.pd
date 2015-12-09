@@ -1,0 +1,14 @@
+#N canvas 814 126 306 180 10;
+#X obj -25 60 list2symbol;
+#X msg 38 39 symbol;
+#X obj -25 83 fromsymbol;
+#X obj 38 18 loadbang;
+#X obj -25 16 inlet;
+#X obj -25 105 outlet;
+#X text -23 126 https://github.com/angelfaraldo/pd-symbolic;
+#X text -23 141 angel.faraldo@upf.edu ----- Barcelona \, 2015;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 2 0 5 0;
+#X connect 3 0 1 0;
+#X connect 4 0 0 0;
