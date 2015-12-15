@@ -1,2 +1,2 @@
-!["The graphic interface"](/gui.png?raw=true)
+!["The graphic interface"](/vis/hhf.png?raw=true)
 
