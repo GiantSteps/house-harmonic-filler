@@ -5,5 +5,6 @@ Dependencies:
 - zexy
 - cyclone
 - GEM
+- unauthorized
 
 !["The graphic interface"](/gui.png?raw=true)
