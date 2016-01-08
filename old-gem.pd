@@ -1,6 +1,6 @@
-#N canvas 0 22 843 684 10;
-#X msg 364 80 0 \, destroy;
-#X floatatom 402 152 5 0 0 0 - - -, f 5;
+#N canvas 432 23 843 684 10;
+#X msg 174 80 0 \, destroy;
+#X floatatom 212 152 5 0 0 0 - - -, f 5;
 #N canvas 570 23 481 734 grid 0;
 #X obj 14 79 abs/grid-beat-strong;
 #X obj 14 143 abs/grid-beat-soft;
@@ -137,9 +137,9 @@
 #X connect 65 0 22 0;
 #X connect 66 0 46 0;
 #X connect 67 0 24 0;
-#X restore 359 194 pd grid;
-#X obj 357 14 loadbang;
-#X obj 357 35 delay 500;
+#X restore 169 194 pd grid;
+#X obj 167 14 loadbang;
+#X obj 167 35 delay 500;
 #N canvas 507 329 286 456 current-step 0;
 #X obj 61 281 * 0.5;
 #X obj 36 328 translateXYZ 0.75 0 0;
@@ -176,87 +176,56 @@
 #X connect 14 0 5 0;
 #X connect 15 0 6 0;
 #X connect 16 0 15 0;
-#X restore 359 216 pd current-step;
-#X obj 15 13 r reset-analysis;
-#X obj 649 15 r reset-slaves;
-#X msg 15 38 \; master-chord-fill-0 C 100 1 \; master-chord-fill-1
-C 100 1 \; master-chord-fill-2 C 100 1 \; master-chord-fill-3 C 100
-1 \; master-chord-fill-4 C 100 1 \; master-chord-fill-5 C 100 1 \;
-master-chord-fill-6 C 100 1 \; master-chord-fill-7 C 100 1 \; slave-chord-pos-0
-100 \; slave-chord-pos-1 100 \; slave-chord-pos-2 100 \; slave-chord-pos-3
-100 \; slave-chord-pos-4 100 \; slave-chord-pos-5 100 \; slave-chord-pos-6
-100 \; slave-chord-pos-7 100 \; slave-chord-pos-8 100 \; slave-chord-pos-9
-100 \; slave-chord-pos-10 100 \; slave-chord-pos-11 100 \; slave-chord-pos-12
-100 \; slave-chord-pos-13 100 \; slave-chord-pos-14 100 \; slave-chord-pos-15
-100 \; slave-chord-pos-16 100 \; slave-chord-pos-17 100 \; slave-chord-pos-18
-100 \; slave-chord-pos-19 100 \; slave-chord-pos-20 100 \; slave-chord-pos-21
-100 \; slave-chord-pos-22 100 \; slave-chord-pos-23 100 \; slave-chord-pos-24
-100 \; slave-chord-pos-25 100 \; slave-chord-pos-26 100 \; slave-chord-pos-27
-100 \; slave-chord-pos-28 100 \; slave-chord-pos-29 100 \; slave-chord-pos-30
-100 \; slave-chord-pos-31 100 \;;
-#X msg 649 40 \; slave-chord-pos-0 100 \; slave-chord-pos-1 100 \;
-slave-chord-pos-2 100 \; slave-chord-pos-3 100 \; slave-chord-pos-4
-100 \; slave-chord-pos-5 100 \; slave-chord-pos-6 100 \; slave-chord-pos-7
-100 \; slave-chord-pos-8 100 \; slave-chord-pos-9 100 \; slave-chord-pos-10
-100 \; slave-chord-pos-11 100 \; slave-chord-pos-12 100 \; slave-chord-pos-13
-100 \; slave-chord-pos-14 100 \; slave-chord-pos-15 100 \; slave-chord-pos-16
-100 \; slave-chord-pos-17 100 \; slave-chord-pos-18 100 \; slave-chord-pos-19
-100 \; slave-chord-pos-20 100 \; slave-chord-pos-21 100 \; slave-chord-pos-22
-100 \; slave-chord-pos-23 100 \; slave-chord-pos-24 100 \; slave-chord-pos-25
-100 \; slave-chord-pos-26 100 \; slave-chord-pos-27 100 \; slave-chord-pos-28
-100 \; slave-chord-pos-29 100 \; slave-chord-pos-30 100 \; slave-chord-pos-31
-100 \;;
-#X obj 201 14 abs/slave-chord-event 0;
-#X msg 357 58 reset \, dimen 800 150 \, title Shuttle \, create \,
+#X restore 169 216 pd current-step;
+#X obj 11 14 abs/slave-chord-event 0;
+#X msg 167 58 reset \, dimen 800 150 \, title Shuttle \, create \,
 1;
-#X obj 358 238 abs/master-chord-event 0;
-#X obj 357 103 gemwin 20;
-#X obj 359 172 translateXYZ -19.5 0 0;
-#X obj 359 130 gemhead 50;
-#X obj 358 378 abs/master-chord-event 7;
-#X obj 358 258 abs/master-chord-event 1;
-#X obj 358 278 abs/master-chord-event 2;
-#X obj 358 298 abs/master-chord-event 3;
-#X obj 358 318 abs/master-chord-event 4;
-#X obj 358 338 abs/master-chord-event 5;
-#X obj 358 358 abs/master-chord-event 6;
-#X obj 201 374 abs/slave-chord-event 18;
-#X obj 201 414 abs/slave-chord-event 20;
-#X obj 201 634 abs/slave-chord-event 31;
-#X obj 201 254 abs/slave-chord-event 12;
-#X obj 201 34 abs/slave-chord-event 1;
-#X obj 201 434 abs/slave-chord-event 21;
-#X obj 201 454 abs/slave-chord-event 22;
-#X obj 201 394 abs/slave-chord-event 19;
-#X obj 201 194 abs/slave-chord-event 9;
-#X obj 201 214 abs/slave-chord-event 10;
-#X obj 201 234 abs/slave-chord-event 11;
-#X obj 201 274 abs/slave-chord-event 13;
-#X obj 201 294 abs/slave-chord-event 14;
-#X obj 201 314 abs/slave-chord-event 15;
-#X obj 201 334 abs/slave-chord-event 16;
-#X obj 201 354 abs/slave-chord-event 17;
-#X obj 201 114 abs/slave-chord-event 5;
-#X obj 201 94 abs/slave-chord-event 4;
-#X obj 201 134 abs/slave-chord-event 6;
-#X obj 201 154 abs/slave-chord-event 7;
-#X obj 201 54 abs/slave-chord-event 2;
-#X obj 201 74 abs/slave-chord-event 3;
-#X obj 201 174 abs/slave-chord-event 8;
-#X obj 201 474 abs/slave-chord-event 23;
-#X obj 201 494 abs/slave-chord-event 24;
-#X obj 201 514 abs/slave-chord-event 25;
-#X obj 201 534 abs/slave-chord-event 26;
-#X obj 201 554 abs/slave-chord-event 27;
-#X obj 201 574 abs/slave-chord-event 28;
-#X obj 201 594 abs/slave-chord-event 29;
-#X obj 201 614 abs/slave-chord-event 30;
-#X connect 0 0 13 0;
-#X connect 1 0 14 1;
+#X obj 168 238 abs/master-chord-event 0;
+#X obj 167 103 gemwin 20;
+#X obj 169 172 translateXYZ -19.5 0 0;
+#X obj 169 130 gemhead 50;
+#X obj 168 378 abs/master-chord-event 7;
+#X obj 168 258 abs/master-chord-event 1;
+#X obj 168 278 abs/master-chord-event 2;
+#X obj 168 298 abs/master-chord-event 3;
+#X obj 168 318 abs/master-chord-event 4;
+#X obj 168 338 abs/master-chord-event 5;
+#X obj 168 358 abs/master-chord-event 6;
+#X obj 11 374 abs/slave-chord-event 18;
+#X obj 11 414 abs/slave-chord-event 20;
+#X obj 11 634 abs/slave-chord-event 31;
+#X obj 11 254 abs/slave-chord-event 12;
+#X obj 11 34 abs/slave-chord-event 1;
+#X obj 11 434 abs/slave-chord-event 21;
+#X obj 11 454 abs/slave-chord-event 22;
+#X obj 11 394 abs/slave-chord-event 19;
+#X obj 11 194 abs/slave-chord-event 9;
+#X obj 11 214 abs/slave-chord-event 10;
+#X obj 11 234 abs/slave-chord-event 11;
+#X obj 11 274 abs/slave-chord-event 13;
+#X obj 11 294 abs/slave-chord-event 14;
+#X obj 11 314 abs/slave-chord-event 15;
+#X obj 11 334 abs/slave-chord-event 16;
+#X obj 11 354 abs/slave-chord-event 17;
+#X obj 11 114 abs/slave-chord-event 5;
+#X obj 11 94 abs/slave-chord-event 4;
+#X obj 11 134 abs/slave-chord-event 6;
+#X obj 11 154 abs/slave-chord-event 7;
+#X obj 11 54 abs/slave-chord-event 2;
+#X obj 11 74 abs/slave-chord-event 3;
+#X obj 11 174 abs/slave-chord-event 8;
+#X obj 11 474 abs/slave-chord-event 23;
+#X obj 11 494 abs/slave-chord-event 24;
+#X obj 11 514 abs/slave-chord-event 25;
+#X obj 11 534 abs/slave-chord-event 26;
+#X obj 11 554 abs/slave-chord-event 27;
+#X obj 11 574 abs/slave-chord-event 28;
+#X obj 11 594 abs/slave-chord-event 29;
+#X obj 11 614 abs/slave-chord-event 30;
+#X connect 0 0 9 0;
+#X connect 1 0 10 1;
 #X connect 3 0 4 0;
-#X connect 4 0 11 0;
-#X connect 6 0 8 0;
+#X connect 4 0 7 0;
 #X connect 7 0 9 0;
-#X connect 11 0 13 0;
-#X connect 14 0 2 0;
-#X connect 15 0 14 0;
+#X connect 10 0 2 0;
+#X connect 11 0 10 0;

@@ -1,7 +1,7 @@
 #N struct master-chord float x float dur symbol chordname;
 #N struct beat float x;
 #N struct line float pos float color;
-#N canvas 432 23 812 440 10;
+#N canvas 356 23 812 440 10;
 #X declare -stdpath unauthorized -path abs -stdpath pd-symbolic;
 #N canvas 0 23 654 491 patch 1;
 #N canvas 100 23 595 685 adt 0;
@@ -1530,7 +1530,7 @@ on the pattern.;
 #X text 99 181 <- look inside to adjust the note sequence;
 #X obj 13 206 noteout 2;
 #X text 84 205 bass is on midi channel 2;
-#X msg 22 130 1 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0
+#X msg 22 130 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0;
 #X obj 112 35 r onsets-bass;
 #X obj 24 33 r set-density;
@@ -1714,7 +1714,7 @@ on the pattern.;
 #X obj 420 202 t b a;
 #X msg 420 161 House Harmonic Filler;
 #X obj 420 183 zexy/list2symbol;
-#N canvas 14 46 705 558 data-visualisation 1;
+#N canvas 14 46 634 545 data-visualisation 0;
 #N canvas 789 423 334 157 line 0;
 #X obj 32 11 struct line float pos float color;
 #X obj 35 43 drawpolygon color 1 pos 20 pos 100;
@@ -1911,7 +1911,7 @@ color 11 13;
 #X obj 207 32 cnv 15 250 5 empty empty HARMONY 5 12 0 20 -128992 -228856
 0;
 #X obj 215 89 vsl 24 180 1 32 0 1 raw-density set-density density -8
--12 1 12 -66577 -258113 -228856 1732 1;
+-12 1 12 -66577 -258113 -228856 577 1;
 #X obj 241 264 bng 8 250 50 0 learn-density --- empty 17 7 0 10 -262144
 -1 -1;
 #X obj 258 89 vsl 24 180 1 34 0 1 raw-legato set-legato legato -6 -12
@@ -1962,7 +1962,7 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 -228856 0;
 #N canvas 0 22 959 334 data 0;
 #X scalar master-chord 25 0 symbol \;;
-#X scalar beat 425 \;;
+#X scalar beat 25 \;;
 #X scalar line 25 900 \;;
 #X scalar line 50 333 \;;
 #X scalar line 75 333 \;;
@@ -1998,7 +1998,3 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X scalar line 825 900 \;;
 #X coords 0 0 850 120 800 120 2 0 0;
 #X restore -4 304 pd data;
-#X obj -1 51 playlist mid 140 240 {Helvetica 12 normal} #999999 grey
-black red;
-#X connect 2 0 39 0;
-#X connect 39 0 3 0;
