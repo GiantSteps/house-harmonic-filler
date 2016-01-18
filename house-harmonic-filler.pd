@@ -40,7 +40,7 @@
 #N struct mchord7 float x float dur symbol chordname;
 #N struct beat float x;
 #N struct line float pos float color;
-#N canvas 1283 4 812 440 10;
+#N canvas 1678 171 812 440 10;
 #X declare -stdpath unauthorized -path abs -stdpath pd-symbolic;
 #N canvas 169 241 605 433 patch 0;
 #N canvas 100 23 595 685 adt 0;
@@ -2056,11 +2056,11 @@ color 11 13 \; set-tempo 125 \; set-bass-duration 1 \; set-bass-octave
 #X obj 462 89 vsl 24 180 0 32 0 0 bass-density set-bass-density density
 -8 -12 1 12 -66577 -258113 -228856 1119 1;
 #X obj 505 89 vsl 24 180 0.2 16 0 0 bass-duration set-bass-duration
-length -5 -12 1 12 -66577 -258113 -228856 0 1;
+length -5 -12 1 12 -66577 -258113 -228856 906 1;
 #X obj 548 89 vsl 24 180 1 0.125 0 0 bass-velocity set-bass-velocity
 accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 591 200 vradio 24 1 0 3 bass-octave set-bass-octave octave -6
--12 1 12 -66577 -258113 -228856 2;
+-12 1 12 -66577 -258113 -228856 1;
 #X obj 488 264 bng 8 250 50 0 learn-bass-density --- empty 17 7 0 10
 -262144 -1 -1;
 #X obj 531 264 bng 8 250 50 0 learn-bass-duration --- empty 17 7 0
@@ -2082,12 +2082,12 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 648 32 cnv 15 100 20 empty empty TRANSPORT 5 12 0 20 -128992
 -228856 0;
 #N canvas 0 22 959 334 data 0;
-#X scalar schord0 2525 400  \;;
-#X scalar schord1 2525 400  \;;
-#X scalar schord2 2525 25  \;;
-#X scalar schord3 2525 50  \;;
-#X scalar schord4 2525 225  \;;
-#X scalar schord5 2525 400  \;;
+#X scalar schord0 25 400  \;;
+#X scalar schord1 425 400  \;;
+#X scalar schord2 2525 0  \;;
+#X scalar schord3 2525 0  \;;
+#X scalar schord4 2525 0  \;;
+#X scalar schord5 2525 0  \;;
 #X scalar schord6 2525 0  \;;
 #X scalar schord7 2525 0  \;;
 #X scalar schord8 2525 0  \;;
@@ -2114,9 +2114,9 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X scalar schord29 2525 0  \;;
 #X scalar schord30 2525 0  \;;
 #X scalar schord31 2525 0  \;;
-#X scalar mchord0 2525 25 C \;;
-#X scalar mchord1 25 400 Amin/E \;;
-#X scalar mchord2 425 400 Emin \;;
+#X scalar mchord0 25 400 Amin/E \;;
+#X scalar mchord1 425 400 Emin \;;
+#X scalar mchord2 2525 25 C \;;
 #X scalar mchord3 2525 25 C \;;
 #X scalar mchord4 2525 25 C \;;
 #X scalar mchord5 2525 25 C \;;
