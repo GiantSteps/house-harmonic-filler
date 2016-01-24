@@ -1786,7 +1786,7 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 467 264 bng 8 250 50 0 learn-bass-octave --- empty 17 7 0 10
 -262144 -1 -1;
 #X obj 733 65 tgl 48 0 play set-play play 0 -10 1 12 -66577 -258699
--233017 1 1;
+-233017 0 1;
 #X obj 611 88 tgl 24 0 clock-mode set-clock-mode ext-sync 0 -9 1 12
 -66577 -258113 -228856 0 1;
 #X obj 783 105 bng 8 250 50 0 learn-play --- empty 17 7 0 10 -262144
@@ -1794,15 +1794,15 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 508 42 cnv 15 100 20 empty empty TRANSPORT 5 12 0 20 -128992
 -228856 0;
 #N canvas 0 50 959 334 data 0;
-#X scalar mchord0 750 75  \;;
-#X scalar mchord1 825 400 Imaj7 \;;
-#X scalar mchord2 1225 175 IImin7 \;;
-#X scalar mchord3 1425 25  \;;
-#X scalar mchord4 1475 25  \;;
-#X scalar mchord5 1550 75  \;;
-#X scalar mchord6 625 25  \;;
-#X scalar mchord7 675 25  \;;
-#X scalar beat 1025 \;;
+#X scalar mchord0 625 25  \;;
+#X scalar mchord1 675 25  \;;
+#X scalar mchord2 750 75  \;;
+#X scalar mchord3 825 400 Imin \;;
+#X scalar mchord4 1225 175 IVmin7 \;;
+#X scalar mchord5 1425 25  \;;
+#X scalar mchord6 1475 25  \;;
+#X scalar mchord7 1550 75  \;;
+#X scalar beat 325 \;;
 #X scalar line 25 900 \;;
 #X scalar line 50 333 \;;
 #X scalar line 75 333 \;;
