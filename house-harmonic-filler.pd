@@ -8,9 +8,9 @@
 #N struct mchord7 float x float dur symbol chordname;
 #N struct beat float x;
 #N struct line float pos float color;
-#N canvas 7 23 968 433 10;
+#N canvas 7 23 1159 508 10;
 #X declare -stdpath unauthorized -path abs;
-#N canvas 777 23 475 472 patch 0;
+#N canvas 306 277 475 472 patch 1;
 #N canvas 100 50 595 685 adt 0;
 #X obj 62 26 r density;
 #X obj 33 273 until;
@@ -99,7 +99,7 @@
 #X connect 37 0 19 1;
 #X connect 38 0 5 0;
 #X restore 216 167 pd adt;
-#N canvas 0 23 595 716 load-midi-loop 0;
+#N canvas 0 23 595 716 load-midi-loop 1;
 #X msg 65 191 flush;
 #X obj 39 666 / 4;
 #X obj 25 617 unpack 0 0 0 0 0;
@@ -1723,6 +1723,9 @@ on the pattern.;
 #X connect 51 0 46 1;
 #X connect 52 0 28 0;
 #X restore 215 254 pd bass;
+#N canvas 0 22 450 300 get-folder 1;
+#X obj 161 162 flatgui/popup 124 25 #ffffff popup option;
+#X restore 339 280 pd get-folder;
 #X connect 1 0 19 0;
 #X connect 19 0 20 0;
 #X connect 19 1 20 1;
@@ -1748,7 +1751,7 @@ on the pattern.;
 #X obj 7 42 cnv 15 250 5 empty empty CHORDS 5 12 0 20 -128992 -228856
 0;
 #X obj 15 89 vsl 24 180 1 32 0 1 raw-density set-density density -8
--12 1 12 -66577 -258113 -228856 5197 1;
+-12 1 12 -66577 -258113 -228856 1732 1;
 #X obj 41 264 bng 8 250 50 0 learn-density --- empty 17 7 0 10 -262144
 -1 -1;
 #X obj 58 89 vsl 24 180 1 34 0 1 raw-legato set-legato legato -6 -12
@@ -1770,7 +1773,7 @@ on the pattern.;
 #X obj 298 42 cnv 15 100 20 empty empty BASS 5 12 0 20 -128992 -228856
 0;
 #X obj 312 89 vsl 24 180 0 32 0 0 bass-density set-bass-density density
--8 -12 1 12 -66577 -258113 -228856 5594 1;
+-8 -12 1 12 -66577 -258113 -228856 2237 1;
 #X obj 355 89 vsl 24 180 0.2 16 0 0 bass-duration set-bass-duration
 length -5 -12 1 12 -66577 -258113 -228856 906 1;
 #X obj 398 89 vsl 24 180 1 0.125 0 0 bass-velocity set-bass-velocity
@@ -1794,15 +1797,15 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 508 42 cnv 15 100 20 empty empty TRANSPORT 5 12 0 20 -128992
 -228856 0;
 #N canvas 0 50 959 334 data 0;
-#X scalar mchord0 625 25  \;;
-#X scalar mchord1 675 25  \;;
-#X scalar mchord2 750 75  \;;
-#X scalar mchord3 825 400 Imin \;;
-#X scalar mchord4 1225 175 IVmin7 \;;
-#X scalar mchord5 1425 25  \;;
-#X scalar mchord6 1475 25  \;;
-#X scalar mchord7 1550 75  \;;
-#X scalar beat 325 \;;
+#X scalar mchord0 2525 25 C \;;
+#X scalar mchord1 2525 25 C \;;
+#X scalar mchord2 25 400 Imaj \;;
+#X scalar mchord3 425 400 Imin7 \;;
+#X scalar mchord4 825 400 Imaj \;;
+#X scalar mchord5 1225 400 Imin7 \;;
+#X scalar mchord6 2525 25 C \;;
+#X scalar mchord7 2525 25 C \;;
+#X scalar beat 25 \;;
 #X scalar line 25 900 \;;
 #X scalar line 50 333 \;;
 #X scalar line 75 333 \;;
