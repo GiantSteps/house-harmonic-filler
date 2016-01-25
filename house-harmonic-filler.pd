@@ -64,9 +64,9 @@
 #N struct mchord63 float x float dur symbol chordname;
 #N struct beat float x;
 #N struct line float pos float color;
-#N canvas 3 23 812 438 10;
+#N canvas 137 63 812 438 10;
 #X declare -path abs -stdpath unauthorized;
-#N canvas 9 23 475 472 patch 1;
+#N canvas 9 23 475 472 patch 0;
 #N canvas 100 50 1044 676 adt 0;
 #X obj 32 14 r density;
 #X obj 32 296 until;
@@ -166,8 +166,8 @@
 #X obj 371 483 s end-analysis;
 #X obj 371 451 t b b;
 #X obj 12 359 s bars;
-#X obj 371 430 pdmus/uanz;
-#X obj 12 295 pdmus/uanz;
+#X obj 371 430 pdmus/oncev;
+#X obj 12 295 pdmus/oncev;
 #X obj 142 518 outlet;
 #X msg 293 178 \; master-pattern const -1 \; slave-pattern const -1
 ;
@@ -205,7 +205,7 @@
 #X msg 205 564 options;
 #X obj 23 287 t s b, f 24;
 #X obj 23 642 zexy/list2symbol /;
-#X obj 23 619 pdmus/uanz, f 29;
+#X obj 23 619 pdmus/oncev, f 29;
 #X obj 51 593 s list-of-files;
 #X obj 23 663 makefilename /%s;
 #X obj 23 11 loadbang;
@@ -1037,7 +1037,7 @@ chord-seq \; set-chords-octave 3 \; set-register set 0 \; set-tempo
 ;
 #X obj 77 283 list prepend, f 13;
 #X obj 364 323 list2symbol, f 15;
-#X obj 179 175 pdmus/uanz;
+#X obj 179 175 pdmus/oncev;
 #X obj 152 154 t f f;
 #X obj 152 218 -, f 5;
 #X obj 152 239 mod 12;
@@ -1097,7 +1097,7 @@ chord-seq \; set-chords-octave 3 \; set-register set 0 \; set-tempo
 #X obj 251 372 loadbang;
 #X obj 134 416 pdmus/list-dripv;
 #X obj 134 459 route float;
-#X obj 134 373 pdmus/uanz;
+#X obj 134 373 pdmus/oncev;
 #X obj 11 352 t l l, f 21;
 #X obj 457 134 r reset-analysis;
 #X obj 134 480 * -12;
@@ -1505,30 +1505,12 @@ easy to obtain the tonic of the shuttle., f 30;
 #X connect 107 0 38 0;
 #X restore 216 80 pd sequence-visualisation;
 #X text 7 411 save patch on midi learn!;
-#N canvas 0 23 763 705 bass 0;
-#X obj 112 6 r onsets-bass;
-#X obj 13 7 r bass-density;
-#X obj 13 28 int;
-#X obj 135 651 poly 1 1, f 24;
-#X obj 31 70 pdmus/prnt;
-#N canvas 0 50 450 300 (subpatch) 0;
-#X array nonext 16 float 3;
-#A 0 4 2 5 3 6 5 1 8 3 7 6 3 7 8 6 6;
-#X coords 0 3 15 -3 200 50 1 0 0;
-#X restore 528 98 graph;
-#N canvas 0 50 450 300 (subpatch) 0;
-#X array next 16 float 3;
-#A 0 4 2 5 3 4 5 1 2 3 5 4 3 5 2 4 4;
-#X coords 0 3 15 -3 200 50 1 0 0;
-#X restore 528 188 graph;
-#N canvas 0 50 450 300 (subpatch) 0;
-#X array id2d 32 float 3;
-#A 0 0 1 1 1 1 2 2 2 2 2 2 3 3 3 3 4 0 1 1 1 1 2 2 2 2 2 2 3 3 3 3
-4;
-#X coords 0 4 31 0 200 140 1 0 0;
-#X restore 318 98 graph;
-#X obj 205 673 noteout 1, f 24;
-#X obj 132 93 table riddm;
+#N canvas 0 23 424 716 bass 0;
+#X obj 112 8 r onsets-bass;
+#X obj 13 9 r bass-density;
+#X obj 135 611 poly 1 1, f 24;
+#X obj 205 633 noteout 1, f 24;
+#X obj 132 53 table riddm;
 #N canvas 0 23 691 699 salience 0;
 #X obj 24 17 inlet;
 #X obj 41 132 list split 1;
@@ -1639,7 +1621,7 @@ easy to obtain the tonic of the shuttle., f 30;
 #X connect 47 0 11 0;
 #X connect 47 1 40 0;
 #X connect 48 0 41 0;
-#X restore 13 115 pd salience;
+#X restore 13 75 pd salience;
 #N canvas 264 140 857 503 calculate 0;
 #X obj 334 173 list split 1;
 #X obj 334 194 t b a;
@@ -1717,101 +1699,100 @@ on the pattern.;
 #X connect 29 0 16 0;
 #X connect 29 1 20 1;
 #X connect 32 0 12 0;
-#X restore 44 195 pd calculate velocity;
-#X obj 184 195 table velocity 16;
-#X obj 167 172 r bass-velocity;
-#X obj 22 93 zexy/tabset riddm;
-#X text 85 113 calculate the salience of a sequence. Outputs are (allnotes
+#X restore 44 155 pd calculate velocity;
+#X obj 184 155 table velocity 16;
+#X obj 167 132 r bass-velocity;
+#X obj 22 53 zexy/tabset riddm;
+#X text 85 73 calculate the salience of a sequence. Outputs are (allnotes
 \, only syncopations \, only reinforcements), f 36;
-#X obj 16 467 tabread riddm;
-#X obj 16 488 sel 1;
-#X obj 103 467 tabread velocity;
-#X obj 16 444 t f f, f 15;
-#X obj 16 514 f;
-#X obj 176 339 f;
-#X obj 225 295 r fundamentals;
-#X obj 225 317 unpack;
-#X obj 207 340 f, f 9;
-#X obj 176 295 sel 0 1;
-#X obj 16 603 f, f 30;
-#X obj 16 557 t b f, f 32;
-#X obj 276 476 r tempo;
-#X obj 276 498 * 4;
-#X msg 276 519 60000 \$1;
-#X obj 276 540 /;
-#X obj 283 562 r bass-duration;
-#X obj 283 586 t b f;
-#X obj 276 608 * 1, f 6;
-#X obj 16 230 r current_step;
-#X obj 16 421 mod 16;
-#X obj 228 361 r bass-octave;
-#X obj 228 423 * 12;
-#X obj 228 446 + 36;
-#X obj 135 629 makenote 127 300, f 24;
-#X obj 103 488 * 127;
-#X obj 176 273 >= 16;
-#X obj 337 296 mod 2;
-#X obj 16 252 t f f f, f 54;
-#X obj 193 582 + 0, f 4;
-#X obj 207 466 + 24;
-#X obj 228 381 - 2;
-#X obj 228 401 abs;
-#X text 20 581 RECONNECT BASS!;
-#X obj 337 317 * 12;
-#X obj 16 535 int;
-#X obj 13 48 populate-rhythm64;
-#X connect 0 0 52 1;
-#X connect 1 0 2 0;
-#X connect 2 0 52 0;
-#X connect 3 1 8 0;
-#X connect 3 2 8 1;
-#X connect 10 1 11 0;
-#X connect 13 0 11 1;
-#X connect 16 0 17 0;
-#X connect 17 0 20 0;
-#X connect 18 0 41 0;
-#X connect 19 0 16 0;
-#X connect 19 1 18 0;
-#X connect 20 0 51 0;
-#X connect 21 0 46 0;
-#X connect 22 0 23 0;
-#X connect 23 0 21 1;
-#X connect 23 1 24 1;
-#X connect 24 0 46 0;
-#X connect 25 0 21 0;
-#X connect 25 1 24 0;
-#X connect 26 0 40 0;
-#X connect 27 1 40 1;
+#X obj 16 427 tabread riddm;
+#X obj 16 448 sel 1;
+#X obj 103 427 tabread velocity;
+#X obj 16 404 t f f, f 15;
+#X obj 16 474 f;
+#X obj 176 299 f;
+#X obj 225 255 r fundamentals;
+#X obj 225 277 unpack;
+#X obj 207 300 f, f 9;
+#X obj 176 255 sel 0 1;
+#X obj 16 563 f, f 30;
+#X obj 16 517 t b f, f 32;
+#X obj 276 436 r tempo;
+#X obj 276 458 * 4;
+#X msg 276 479 60000 \$1;
+#X obj 276 500 /;
+#X obj 283 522 r bass-duration;
+#X obj 283 546 t b f;
+#X obj 276 568 * 1, f 6;
+#X obj 16 190 r current_step;
+#X obj 16 381 mod 16;
+#X obj 228 321 r bass-octave;
+#X obj 228 383 * 12;
+#X obj 228 406 + 36;
+#X obj 135 589 makenote 127 300, f 24;
+#X obj 103 448 * 127;
+#X obj 176 233 >= 16;
+#X obj 337 256 mod 2;
+#X obj 16 212 t f f f, f 54;
+#X obj 193 542 + 0, f 4;
+#X obj 207 426 + 24;
+#X obj 228 341 - 2;
+#X obj 228 361 abs;
+#X text 20 541 RECONNECT BASS!;
+#X obj 337 277 * 12;
+#X obj 16 495 int;
+#X obj 13 30 populate-rhythm64;
+#X connect 0 0 47 1;
+#X connect 1 0 47 0;
+#X connect 2 1 3 0;
+#X connect 2 2 3 1;
+#X connect 5 1 6 0;
+#X connect 8 0 6 1;
+#X connect 11 0 12 0;
+#X connect 12 0 15 0;
+#X connect 13 0 36 0;
+#X connect 14 0 11 0;
+#X connect 14 1 13 0;
+#X connect 15 0 46 0;
+#X connect 16 0 41 0;
+#X connect 17 0 18 0;
+#X connect 18 0 16 1;
+#X connect 18 1 19 1;
+#X connect 19 0 41 0;
+#X connect 20 0 16 0;
+#X connect 20 1 19 0;
+#X connect 21 0 35 0;
+#X connect 22 0 21 0;
+#X connect 22 1 35 1;
+#X connect 23 0 24 0;
+#X connect 24 0 25 0;
+#X connect 25 0 26 0;
+#X connect 26 0 29 0;
+#X connect 27 0 28 0;
 #X connect 28 0 29 0;
-#X connect 29 0 30 0;
-#X connect 30 0 31 0;
-#X connect 31 0 34 0;
-#X connect 32 0 33 0;
+#X connect 28 1 29 1;
+#X connect 29 0 35 2;
+#X connect 30 0 39 0;
+#X connect 31 0 14 0;
+#X connect 32 0 42 0;
 #X connect 33 0 34 0;
-#X connect 33 1 34 1;
-#X connect 34 0 40 2;
-#X connect 35 0 44 0;
-#X connect 36 0 19 0;
-#X connect 37 0 47 0;
-#X connect 38 0 39 0;
-#X connect 39 0 46 1;
-#X connect 40 0 3 0;
-#X connect 40 1 3 1;
-#X connect 41 0 20 1;
-#X connect 42 0 25 0;
-#X connect 43 0 50 0;
-#X connect 44 0 36 0;
-#X connect 44 1 42 0;
-#X connect 44 2 43 0;
-#X connect 45 0 26 1;
-#X connect 46 0 45 0;
-#X connect 47 0 48 0;
-#X connect 48 0 38 0;
-#X connect 50 0 45 1;
-#X connect 51 0 27 0;
-#X connect 52 0 4 0;
-#X connect 52 0 14 0;
-#X connect 52 0 10 0;
+#X connect 34 0 41 1;
+#X connect 35 0 2 0;
+#X connect 35 1 2 1;
+#X connect 36 0 15 1;
+#X connect 37 0 20 0;
+#X connect 38 0 45 0;
+#X connect 39 0 31 0;
+#X connect 39 1 37 0;
+#X connect 39 2 38 0;
+#X connect 40 0 21 1;
+#X connect 41 0 40 0;
+#X connect 42 0 43 0;
+#X connect 43 0 33 0;
+#X connect 45 0 40 1;
+#X connect 46 0 22 0;
+#X connect 47 0 9 0;
+#X connect 47 0 5 0;
 #X restore 215 254 pd bass;
 #X obj 216 20 declare -path abs -stdpath unauthorized;
 #X connect 1 0 19 0;
@@ -1831,7 +1812,7 @@ on the pattern.;
 #X obj 287 30 cnv 15 250 5 empty empty CHORDS 5 12 0 20 -128992 -228856
 0;
 #X obj 305 87 vsl 24 180 1 64 0 1 raw-density set-density density -8
--12 1 12 -66577 -258113 -228856 1421 1;
+-12 1 12 -66577 -258113 -228856 3125 1;
 #X obj 331 262 bng 8 250 50 0 learn-density --- empty 17 7 0 10 -258113
 -1 -1;
 #X obj 348 87 vsl 24 180 1 66 0 1 raw-legato set-legato legato -6 -12
@@ -1853,7 +1834,7 @@ on the pattern.;
 #X obj 588 30 cnv 15 100 20 empty empty BASS 5 12 0 20 -128992 -228856
 0;
 #X obj 612 87 vsl 24 180 0 32 0 0 bass-density set-bass-density density
--8 -12 1 12 -66577 -258113 -228856 3356 1;
+-8 -12 1 12 -66577 -258113 -228856 6712 1;
 #X obj 655 87 vsl 24 180 0.2 16 0 0 bass-duration set-bass-duration
 length -5 -12 1 12 -66577 -258113 -228856 906 1;
 #X obj 698 87 vsl 24 180 1 0.125 0 0 bass-velocity set-bass-velocity
@@ -1869,26 +1850,26 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 767 262 bng 8 250 50 0 learn-bass-octave --- empty 17 7 0 10
 -258113 -1 -1;
 #X obj 71 85 tgl 24 0 clock-mode set-clock-mode ext-sync -7 -8 1 12
--66577 -258113 -228856 1 1;
+-66577 -258113 -228856 0 1;
 #X obj 8 30 cnv 15 100 20 empty empty GENERAL 5 12 0 20 -128992 -228856
 0;
 #N canvas 0 50 959 334 data 0;
-#X scalar mchord0 25 400 I7 \;;
-#X scalar mchord1 425 300 IIImin7 \;;
-#X scalar mchord2 750 50  \;;
-#X scalar mchord3 825 400 I7 \;;
-#X scalar mchord4 1225 300 IIImin7 \;;
-#X scalar mchord5 1550 50  \;;
-#X scalar mchord6 1675 25 C \;;
-#X scalar mchord7 1675 25 C \;;
-#X scalar mchord8 1675 25 C \;;
-#X scalar mchord9 1675 25 C \;;
-#X scalar mchord10 1675 25 C \;;
-#X scalar mchord11 1675 25 C \;;
-#X scalar mchord12 1675 25 C \;;
-#X scalar mchord13 1675 25 C \;;
-#X scalar mchord14 1675 25 C \;;
-#X scalar mchord15 1675 25 C \;;
+#X scalar mchord0 1675 25 C \;;
+#X scalar mchord1 1675 25 C \;;
+#X scalar mchord2 1675 25 C \;;
+#X scalar mchord3 1675 25 C \;;
+#X scalar mchord4 50 50 Imaj7 \;;
+#X scalar mchord5 125 50  \;;
+#X scalar mchord6 275 50  \;;
+#X scalar mchord7 450 50 IIImin7 \;;
+#X scalar mchord8 525 50  \;;
+#X scalar mchord9 675 50  \;;
+#X scalar mchord10 850 50 IIImaj7 \;;
+#X scalar mchord11 950 50  \;;
+#X scalar mchord12 1100 50  \;;
+#X scalar mchord13 1250 50 Imaj7 \;;
+#X scalar mchord14 1325 25  \;;
+#X scalar mchord15 1450 175  \;;
 #X scalar mchord16 1675 25 C \;;
 #X scalar mchord17 1675 25 C \;;
 #X scalar mchord18 1675 25 C \;;
@@ -1937,7 +1918,7 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X scalar mchord61 1675 25 C \;;
 #X scalar mchord62 1675 25 C \;;
 #X scalar mchord63 1675 25 C \;;
-#X scalar beat 25 \;;
+#X scalar beat 525 \;;
 #X scalar line 25 900 \;;
 #X scalar line 50 333 \;;
 #X scalar line 75 333 \;;
@@ -2005,19 +1986,19 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X scalar line 1625 900 \;;
 #X coords 0 0 1650 120 800 120 2 0 0;
 #X restore -4 302 pd data;
-#X obj 137 84 nbx 3 24 40 239 0 0 tempo set-tempo bpm 0 -8 1 12 -128992
--258699 -166441 125 256;
+#X obj 137 84 nbx 3 24 40 239 0 0 tempo set-tempo bpm 0 -8 1 12 -66577
+-258699 -233017 125 256;
 #X obj 182 100 bng 8 250 50 0 learn-tempo --- empty 17 7 0 10 -258113
 -1 -1;
 #X obj 97 101 bng 8 250 50 0 learn-sync --- empty 17 7 0 10 -258113
 -1 -1;
 #X obj 434 86 vradio 23 1 0 8 chords-octave set-chords-octave octave
--6 -10 1 12 -66577 -258113 -228856 3;
+-6 -10 1 12 -66577 -258113 -228856 4;
 #X obj 459 262 bng 8 250 50 0 learn-chords-octave --- empty 17 7 0
 10 -258113 -1 -1;
 #N canvas 423 94 275 305 fifths 0;
 #X obj 33 29 flatgui/knob 65 65 0.5 12.5 0 0 key-fifths set-keyfifths
-key -20 -5 1 12 -258113 -258113 -228856 3200 1;
+key -20 -5 1 12 -258113 -258113 -228856 5333 1;
 #X text 58 14 C;
 #X text 77 18 G;
 #X text 92 31 D;
@@ -2142,7 +2123,7 @@ key -20 -5 1 12 -258113 -258113 -228856 3200 1;
 #X restore 15 165 pd fifths;
 #N canvas 79 87 330 327 seconds 0;
 #X obj 30 29 flatgui/knob 65 65 0.5 12.5 0 0 key-seconds set-keyseconds
-key -18 -5 1 12 -258113 -258113 -228856 3200 1;
+key -18 -5 1 12 -258113 -258113 -228856 5100 1;
 #X text 57 13 C;
 #X text 92 33 D;
 #X text 21 30 Bb;
@@ -2269,11 +2250,29 @@ key -18 -5 1 12 -258113 -258113 -228856 3200 1;
 -1 -1;
 #X obj 244 262 bng 8 250 50 0 learn-key2 --- empty 17 7 0 10 -258113
 -1 -1;
-#X obj 119 133 flatgui/popup 124 25 #808080 chord-seq I-VIIm7 I5-IV
-I5-VI5 I7-IIIm7 I7-bVIImaj7 I7sus4-VIsus4 Iadd11-IV Im-#IVmaj7 Im-IVm7
-Im-Vm Im-bIImaj Im-bVII Im-bVIIadd11 Im11-Vm11 Im11-Vm9 Im6-Vm9 Im7-II5
-Im7-Vm6 Im7-Vm9 Im7-bVI6 Im9-Vm7 Im9-Vm9 Imaj7-IIm7 Imaj7-VIImaj7 Imaj7-VIm7
-;
+#X obj 119 133 flatgui/popup 124 25 #808080 chord-seq Am7-Am-Em7-Cm
+Am7-E11-Fmaj9-Bb6 Am7-Gm-Am7-F7 Am7-Gm7-Esus4-Gm7 Asus4-Am-Em7-Fmaj7
+Bbm11-Bmaj7-Gm-Bbm11 Bbm7-Ab9(no terts)-Gm7 Bmaj7-Cm7-Gm-G7 Bsus4-Em-Fmaj7-Fmaj7
+C#maj7-Hmaj7-Bbmaj7 C9sus4-Fmaj9(a)-C9sus4-Cm9 Cm-Bb-Eb-Bb Cm9-Bb13-C#maj9-D#maj7
+Cm9-Bbm9-C#m9-D#m9 Cmaj7-Dm7-Fmaj7-Fmaj7 Cmaj7-Em7-Bmaj7-Cmaj7 Cmaj9(g)-Ebmaj-Dm7
+D#m9-C#11-Cm9 D(bassA)-cmaj9-dm9-em9 D5-Dm7-Dmadd9-Fmaj7 DeepHouseChords_01_Em
+DeepHouseChords_02_F DeepHouseChords_03_Dbm DeepHouseChords_04_Em DeepHouseChords_05_G
+DeepHouseChords_06_Dbm DeepHouseChords_07_Ebm DeepHouseChords_08_Em
+DeepHouseChords_09_Ebm DeepHouseChords_10_B DeepHouseChords_11_C DeepHouseChords_12_Gbm
+DeepHouseChords_13_Fm DeepHouseChords_14_Abm DeepHouseChords_16_G DeepHouseChords_18_Ebm
+DeepHouseChords_19_Eaeolian DeepHouseChords_20_E DeepHouseChords_21_A
+DeepHouseChords_22_E DeepHouseChords_23_G DeepHouseChords_24_G# DeepHouseChords_25_F#
+DeepHouseChords_26_A# DeepHouseChords_27_B DeepHouseChords_28_B DeepHouseChords_29_F#
+DeepHouseChords_30_A# DeepHouseChords_31_A# DeepHouseChords_32_C# DeepHouseChords_33_E
+DeepHouseChords_34_F DeepHouseChords_35_C# DeepHouseChords_36_F# DeepHouseChords_37_G
+DeepHouseChords_38_E DeepHouseChords_39_C# DeepHouseChords_40_G# Dm-Dm-Fmaj7-Fmaj7
+Dm-G-Gm7-Dm Dm9-Cm9-Bbmaj7 Dm9-EbMaj9-Fm9-A#13-Ebm9 Dm9-Fmaj9-Em9-Eb9
+Dmaj9-Db11-E11-Cm9-D#m9 Dmaj9-Db11-E11 Dmaj9-Hm7-Cmaj9-Cm9-D#m9 Em-B7sus4-Amadd9-Fmaj7
+Em7-Gm7-Gm-Gm7 Em7add11-D9sus4-Hm7 Em9-A13-Cm-F9 Em9-A13-Cm7-Hm7 Em9-Gm7(d)-Aadd9(C#)-Hm7
+Ema9j-C#m9-Em9-Hm11 F#m7-C#m7-Em7-Hm7 F9-Ebmaj9-Fm9-Abm9 Fm-Em7-Dm7-Cmaj7
+Fm-Gm7-Gm-Fm Fmaj7-Em7-Dm7-Cmaj7 Gadd9-Em7-C6-Gadd9 Gm7-Em7-C-Fsus4
+Gmaj7-Gbmaj7-Dmaj7-Cmaj7 Hm9-Am9-Cm9 am7(f)-Am11(c)-Bbmaj9 sverige-groovy-Am9-Am9-Fm9(g#)-Abm9
+theWibeAm9-Gm9(Bb)-Bbm9-Cmaj(a);
 #X obj 119 140 r list-of-files;
 #X obj 119 140 s sequence-file;
 #X obj 71 132 bng 24 250 50 0 load-folder set-load-folder folder -3
@@ -2281,8 +2280,8 @@ Im7-Vm6 Im7-Vm9 Im7-bVI6 Im9-Vm7 Im9-Vm9 Imaj7-IIm7 Imaj7-VIImaj7 Imaj7-VIm7
 #X obj 120 136 s index;
 #X obj 111 110 cnv 15 150 50 empty empty sequence 5 12 1 12 -128992
 -228856 0;
-#X obj 200 84 tgl 42 0 play set-play play 0 -10 1 12 -128992 -128992
--166441 0 1;
+#X obj 200 84 tgl 42 0 play set-play play 0 -10 1 12 -66577 -258699
+-233017 0 1;
 #X obj 244 118 bng 8 250 50 0 learn-play --- empty 17 7 0 10 -258113
 -1 -1;
 #X text 480 195 ___;
