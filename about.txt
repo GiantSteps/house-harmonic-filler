@@ -6,9 +6,9 @@
 
 Dependencies
 ============
-- Pd-Extended 0.43.4 on Windows, Linux or OSX
+- Pd-Vanilla >= 0.46 on Windows, Linux or OSX
 - A MIDI synthesiser that receives midi from Pd.
-- Likely, a MIDI inter application driver that allows the previous.
+- Likely, a MIDI inter-application driver that allows the previous.
 
 Description
 ===========
