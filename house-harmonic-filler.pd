@@ -1,9 +1,6 @@
-#N struct 1194-ledger float y;
-#N struct 1194-whole float y;
-#N struct 1194-whole-sharp float y;
-#N struct 1194-barline float x;
-#N struct 1194-rightline float x float y;
-#N struct 1194-staffline float x float y;
+#N struct 1173-barline float x;
+#N struct 1173-rightline float x float y;
+#N struct 1173-staffline float x float y;
 #N struct mchord0 float x float dur symbol chordname;
 #N struct mchord1 float x float dur symbol chordname;
 #N struct mchord2 float x float dur symbol chordname;
@@ -70,9 +67,9 @@
 #N struct mchord63 float x float dur symbol chordname;
 #N struct beat float x;
 #N struct line float pos float color;
-#N canvas 10 27 813 441 10;
+#N canvas 5 23 813 441 10;
 #X declare -path abs;
-#N canvas 9 23 491 476 patch 1;
+#N canvas 9 23 491 476 patch 0;
 #N canvas 100 50 885 687 adt 0;
 #X obj 32 14 r density;
 #X obj 32 296 until;
@@ -1879,7 +1876,7 @@ on the pattern.;
 #X obj 307 30 cnv 15 250 5 empty empty CHORDS 5 12 0 20 -128992 -228856
 0;
 #X obj 325 87 vsl 24 180 1 64 0 1 raw-density set-density density -8
--12 1 12 -66577 -258113 -228856 568 1;
+-12 1 12 -66577 -258113 -228856 1421 1;
 #X obj 351 262 bng 8 250 50 0 learn-density --- empty 17 7 0 10 -258113
 -1 -1;
 #X obj 368 87 vsl 24 180 1 66 0 1 raw-legato set-legato legato -6 -12
@@ -1897,13 +1894,13 @@ on the pattern.;
 #X obj 578 30 cnv 15 100 20 empty empty BASS 5 12 0 20 -128992 -228856
 0;
 #X obj 592 87 vsl 24 180 0 64 0 0 bass-density set-bass-density density
--8 -12 1 12 -66577 -258113 -228856 17900 1;
+-8 -12 1 12 -66577 -258113 -228856 1678 1;
 #X obj 635 87 vsl 24 180 0.2 16 0 0 bass-duration set-bass-duration
-length -5 -12 1 12 -66577 -258113 -228856 0 1;
+length -5 -12 1 12 -66577 -258113 -228856 906 1;
 #X obj 678 87 vsl 24 180 0.125 1 0 0 bass-velocity set-bass-velocity
 accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 721 174 vradio 24 1 0 4 bass-octave set-bass-octave octave -6
--12 1 12 -66577 -258113 -228856 3;
+-12 1 12 -66577 -258113 -228856 1;
 #X obj 618 262 bng 8 250 50 0 learn-bass-density --- empty 17 7 0 10
 -258113 -1 -1;
 #X obj 661 262 bng 8 250 50 0 learn-bass-duration --- empty 17 7 0
@@ -1917,12 +1914,12 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 18 30 cnv 15 100 20 empty empty GENERAL 5 12 0 20 -128992 -228856
 0;
 #N canvas 0 50 959 334 data 0;
-#X scalar mchord0 1675 25 C \;;
-#X scalar mchord1 1675 25 C \;;
-#X scalar mchord2 1675 25 C \;;
-#X scalar mchord3 1675 25 C \;;
-#X scalar mchord4 1675 25 C \;;
-#X scalar mchord5 1675 25 C \;;
+#X scalar mchord0 25 400 I7 \;;
+#X scalar mchord1 425 300 IIImin7 \;;
+#X scalar mchord2 750 50  \;;
+#X scalar mchord3 825 400 I7 \;;
+#X scalar mchord4 1225 300 IIImin7 \;;
+#X scalar mchord5 1550 50  \;;
 #X scalar mchord6 1675 25 C \;;
 #X scalar mchord7 1675 25 C \;;
 #X scalar mchord8 1675 25 C \;;
@@ -1937,9 +1934,9 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X scalar mchord17 1675 25 C \;;
 #X scalar mchord18 1675 25 C \;;
 #X scalar mchord19 1675 25 C \;;
-#X scalar mchord20 25 375 Imaj7 \;;
-#X scalar mchord21 425 375 bVIImaj7 \;;
-#X scalar mchord22 825 775 VImaj7 \;;
+#X scalar mchord20 1675 25 C \;;
+#X scalar mchord21 1675 25 C \;;
+#X scalar mchord22 1675 25 C \;;
 #X scalar mchord23 1675 25 C \;;
 #X scalar mchord24 1675 25 C \;;
 #X scalar mchord25 1675 25 C \;;
@@ -1981,7 +1978,7 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X scalar mchord61 1675 25 C \;;
 #X scalar mchord62 1675 25 C \;;
 #X scalar mchord63 1675 25 C \;;
-#X scalar beat 1525 \;;
+#X scalar beat 25 \;;
 #X scalar line 25 900 \;;
 #X scalar line 50 333 \;;
 #X scalar line 75 333 \;;
@@ -2050,7 +2047,7 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X coords 0 0 1650 120 800 120 2 0 0;
 #X restore -4 302 pd data;
 #X obj 147 84 nbx 3 24 40 239 0 0 tempo set-tempo bpm 0 -8 1 12 -128992
--258699 -166441 120 256;
+-258699 -166441 125 256;
 #X obj 192 100 bng 8 250 50 0 learn-tempo --- empty 17 7 0 10 -258113
 -1 -1;
 #X obj 107 101 bng 8 250 50 0 learn-sync --- empty 17 7 0 10 -258113
@@ -2061,7 +2058,7 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 10 -258113 -1 -1;
 #N canvas 423 94 275 305 fifths 0;
 #X obj 33 29 flatgui/knob 65 65 0.5 12.5 0 0 key-fifths set-keyfifths
-key -20 -5 1 12 -258113 -258113 -228856 4267 1;
+key -20 -5 1 12 -258113 -258113 -228856 3200 1;
 #X text 58 14 C;
 #X text 77 18 G;
 #X text 92 31 D;
@@ -2186,7 +2183,7 @@ key -20 -5 1 12 -258113 -258113 -228856 4267 1;
 #X restore 25 165 pd fifths;
 #N canvas 79 87 330 327 seconds 0;
 #X obj 30 29 flatgui/knob 65 65 0.5 12.5 0 0 key-seconds set-keyseconds
-key -18 -5 1 12 -258113 -258113 -228856 4200 1;
+key -18 -5 1 12 -258113 -258113 -228856 3200 1;
 #X text 57 13 C;
 #X text 92 33 D;
 #X text 21 30 Bb;
@@ -2313,15 +2310,11 @@ key -18 -5 1 12 -258113 -258113 -228856 4200 1;
 -1 -1;
 #X obj 254 262 bng 8 250 50 0 learn-key2 --- empty 17 7 0 10 -258113
 -1 -1;
-#X obj 129 133 flatgui/popup 124 25 #808080 chord-seq I-bVIImaj7-Im9-IIm9
-I9-bVIImaj9-Vm11-bIIIm9 Iadd9-VIm7-IV6-Iadd9 Im-Im-bIIImaj7-bIIImaj7
-Im-VIIm7-VIm7-Vmaj7 Im-bVII-bIII-bVII Im7-VIm7-IV-bVIIsus4 Im7-Vm11-VImaj9
-Im7-Vm7-bVIIm7-IVm7 Im7-bVIIm7-Vsus4-bVIIm7 Im9-IV13-bVIm7-Vm7 Im9-IV13-bVIm9-bII9
-Im9-bIIIm7-IVadd9-Bm7 Im9-bIIImaj9-IIm9-bIIb9 Im9-bIImaj9-bIIIm9-bVI13-bIIm9
-Im9-bVII13-bIImaj9-bIIImaj7 Im9-bVIIm9-bIIm9-bIIIm9 Im9-bVIIm9-bIIm9
-Im9-bVIIm9-bVImaj7 Im9-bVIadd9-VIm9 Imaj7-IIIm7-VIImaj7-Imaj7 Imaj7-VIImaj7-Vmaj7-IVmaj7
-Imaj7-VIImaj7-bVIImaj7 Imaj7-bIIm7-bVIm-bVIm7 Imaj9-IIIm11-IVmaj9 Imaj9-VIm9-Im9-Vm11
-Imin11-bVII9-Imin11;
+#X obj 129 133 flatgui/popup 124 25 #808080 chord-seq I-VIIm7 I5-IV
+I5-VI5 I7-IIIm7 I7-bVIImaj7 I7sus4-VIsus4 Iadd11-IV Im-#IVmaj7 Im-IVm7
+Im-Vm Im-bIImaj Im-bVII Im-bVIIadd11 Im11-Vm11 Im11-Vm9 Im6-Vm9 Im7-II5
+Im7-IVm7 Im7-Vm9 Im9-Vm7 Im9-Vm9 Imaj7-IIm7 Imaj7-VIImaj7 Imaj7-VIm7
+;
 #X obj 129 140 r list-of-files;
 #X obj 129 140 s sequence-file;
 #X obj 81 132 bng 24 250 50 0 load-folder set-load-folder folder -3
@@ -2330,7 +2323,7 @@ Imin11-bVII9-Imin11;
 #X obj 121 110 cnv 15 150 50 empty empty sequence 5 12 1 12 -128992
 -228856 0;
 #X obj 210 84 tgl 42 0 play set-play play 0 -10 1 12 -128992 -128992
--166441 1 1;
+-166441 0 1;
 #X obj 254 118 bng 8 250 50 0 learn-play --- empty 17 7 0 10 -258113
 -1 -1;
 #X text 460 195 ___;
