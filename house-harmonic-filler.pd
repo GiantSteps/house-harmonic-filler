@@ -72,51 +72,49 @@
 #N struct 1003-mchord63 float x float dur;
 #N struct 1003-beat float x;
 #N struct 1003-line float pos float color;
-#N canvas -204 -1069 817 437 10;
+#N canvas 18 35 818 434 10;
 #X declare -path abs;
-#N canvas 749 23 520 496 patch 1;
-#N canvas 119 82 566 649 adt 0;
-#X obj 16 254 until;
-#X msg 85 253 0;
-#X obj 16 277 f 0, f 12;
-#X obj 106 277 + 1;
-#X obj 16 204 t b b l, f 45;
-#X msg 149 231 const 0;
-#X obj 16 53 f;
-#X obj 31 360 expr if($f2==1 \, 1 \, if($f1==1 \, -1 \, $f1)), f 41
+#N canvas 7 33 520 496 patch 0;
+#N canvas 283 100 563 604 adt 0;
+#X obj 9 254 until;
+#X msg 78 253 0;
+#X obj 9 277 f 0, f 12;
+#X obj 99 277 + 1;
+#X obj 9 204 t b b l, f 45;
+#X msg 142 231 const 0;
+#X obj 9 53 f;
+#X obj 24 360 expr if($f2==1 \, 1 \, if($f1==1 \, -1 \, $f1)), f 41
 ;
-#X obj 16 299 t f f f f f, f 54;
-#X obj 31 487 expr if($f2==-1 \, $f1 \, if($f1==1 \, 1 \, $f2)), f
+#X obj 9 299 t f f f f f, f 54;
+#X obj 24 487 expr if($f2==-1 \, $f1 \, if($f1==1 \, 1 \, $f2)), f
 52;
-#X obj 31 444 pack;
-#X obj 31 423 swap;
-#X obj 31 465 route 0 1;
-#X obj 56 512 expr if($f1==1 \, $f1 \, $f2), f 51;
-#X obj 177 94 list-abs/list-apply max 0;
-#X obj 177 136 zexy/sum;
-#X msg 184 50 64;
-#X msg 16 232 64;
-#X obj 16 556 sel 63;
-#X obj 52 402 > 64;
-#X obj 21 30 r \$0-update-density;
-#X obj 16 9 r \$0-density;
-#X obj 176 8 r \$0-end-analysis;
-#X obj 177 29 zexy/tabdump \$0-master-pattern;
-#X obj 184 71 s \$0-set-legato;
-#X obj 177 157 s \$0-set-density;
-#X obj 149 253 s \$0-slave-pattern;
-#X obj 283 228 zexy/tabset \$0-new-onsets;
-#X obj 16 578 s \$0-update-legato;
-#X obj 31 535 tabwrite \$0-slave-pattern, f 38;
-#X obj 52 382 r \$0-force-legato;
-#X obj 31 331 tabread \$0-master-pattern;
-#X obj 337 330 tabread \$0-legato-pattern;
-#X obj 16 183 populate-rhythm64, f 45;
-#X obj 193 330 tabread \$0-new-onsets;
-#X obj 390 137 s \$0-onsets-bass;
-#X obj 177 115 t l l l, f 36;
-#X obj 405 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 24 444 pack;
+#X obj 24 423 swap;
+#X obj 24 465 route 0 1;
+#X obj 49 512 expr if($f1==1 \, $f1 \, $f2), f 51;
+#X obj 170 94 list-abs/list-apply max 0;
+#X obj 170 136 zexy/sum;
+#X msg 177 50 64;
+#X msg 9 232 64;
+#X obj 9 556 sel 63;
+#X obj 45 402 > 64;
+#X obj 14 30 r \$0-update-density;
+#X obj 9 9 r \$0-density;
+#X obj 170 29 zexy/tabdump \$0-master-pattern;
+#X obj 177 71 s \$0-set-legato;
+#X obj 170 157 s \$0-set-density;
+#X obj 142 253 s \$0-slave-pattern;
+#X obj 276 228 zexy/tabset \$0-new-onsets;
+#X obj 9 578 s \$0-update-legato;
+#X obj 24 535 tabwrite \$0-slave-pattern, f 38;
+#X obj 45 382 r \$0-force-legato;
+#X obj 24 331 tabread \$0-master-pattern;
+#X obj 330 330 tabread \$0-legato-pattern;
+#X obj 9 183 populate-rhythm64, f 45;
+#X obj 186 330 tabread \$0-new-onsets;
+#X obj 383 137 s \$0-onsets-bass;
+#X obj 170 115 t l l l, f 36;
+#X obj 170 5 r \$0-load-rhythm;
 #X connect 0 0 2 0;
 #X connect 1 0 2 1;
 #X connect 2 0 3 0;
@@ -125,70 +123,68 @@
 #X connect 4 0 17 0;
 #X connect 4 1 1 0;
 #X connect 4 1 5 0;
-#X connect 4 2 27 0;
-#X connect 5 0 26 0;
-#X connect 6 0 33 0;
+#X connect 4 2 26 0;
+#X connect 5 0 25 0;
+#X connect 6 0 32 0;
 #X connect 7 0 11 0;
 #X connect 8 0 18 0;
-#X connect 8 1 31 0;
-#X connect 8 2 34 0;
-#X connect 8 3 29 1;
-#X connect 8 4 32 0;
-#X connect 9 0 29 0;
+#X connect 8 1 30 0;
+#X connect 8 2 33 0;
+#X connect 8 3 28 1;
+#X connect 8 4 31 0;
+#X connect 9 0 28 0;
 #X connect 10 0 12 0;
 #X connect 11 0 10 0;
 #X connect 11 1 10 1;
 #X connect 12 0 9 0;
 #X connect 12 1 13 0;
-#X connect 13 0 29 0;
-#X connect 14 0 36 0;
-#X connect 15 0 25 0;
-#X connect 16 0 24 0;
+#X connect 13 0 28 0;
+#X connect 14 0 35 0;
+#X connect 15 0 24 0;
+#X connect 16 0 23 0;
 #X connect 17 0 0 0;
-#X connect 18 0 28 0;
+#X connect 18 0 27 0;
 #X connect 19 0 11 1;
 #X connect 20 0 6 0;
 #X connect 21 0 6 0;
-#X connect 22 0 23 0;
-#X connect 23 0 16 0;
-#X connect 23 0 14 0;
-#X connect 30 0 19 0;
-#X connect 31 0 7 0;
-#X connect 32 0 9 1;
-#X connect 32 0 13 1;
-#X connect 33 0 4 0;
-#X connect 34 0 7 1;
-#X connect 36 0 15 0;
-#X connect 36 1 33 1;
-#X connect 36 2 35 0;
-#X connect 37 0 23 0;
+#X connect 22 0 16 0;
+#X connect 22 0 14 0;
+#X connect 29 0 19 0;
+#X connect 30 0 7 0;
+#X connect 31 0 9 1;
+#X connect 31 0 13 1;
+#X connect 32 0 4 0;
+#X connect 33 0 7 1;
+#X connect 35 0 15 0;
+#X connect 35 1 32 1;
+#X connect 35 2 34 0;
+#X connect 36 0 22 0;
 #X restore 211 169 pd adt;
-#N canvas 364 89 537 594 load-midi-loop 0;
-#X msg 44 139 flush;
-#X obj 14 368 / 4;
-#X obj 14 345 unpack 0 0 0 0 0;
-#X obj 44 161 t a b, f 9;
-#X msg 44 96 read \$1;
-#X obj 129 259 pdmus/midi-player;
-#X obj 391 481 t b b;
-#X obj 162 548 outlet;
-#X obj 162 527 pdmus/midi-sort-events;
-#X obj 282 415 * 8;
-#X obj 162 484 + 0;
-#X obj 44 117 t b a b, f 29;
-#X msg 215 138 0;
-#X obj 228 279 f;
-#X obj 162 439 unpack 0 0 0;
-#X obj 162 505 pack 0 0 0, f 12;
-#X obj 228 344 f 0;
-#X obj 258 344 + 1;
-#X obj 267 437 f;
-#X obj 228 367 sel 0 1, f 8;
-#X obj 228 299 sel 2 4;
-#X obj 228 392 t b b, f 7;
-#X msg 228 414 flush;
-#X obj 44 33 list prepend, f 21;
-#X obj 44 55 zexy/list2symbol /;
+#N canvas 27 28 618 611 load-midi-loop 0;
+#X msg 14 159 flush;
+#X obj 128 284 / 4;
+#X obj 128 261 unpack 0 0 0 0 0;
+#X msg 14 96 read \$1;
+#X obj 14 206 pdmus/midi-player;
+#X obj 267 449 t b b, f 19;
+#X obj 47 582 outlet;
+#X obj 47 561 pdmus/midi-sort-events, f 56;
+#X obj 167 452 * 8;
+#X obj 47 518 + 0, f 18;
+#X obj 14 117 t b a b, f 33;
+#X msg 209 138 0;
+#X obj 113 306 f;
+#X obj 47 496 unpack 0 0 0;
+#X obj 47 539 pack 0 0 0, f 12;
+#X obj 113 371 f 0;
+#X obj 143 371 + 1;
+#X obj 152 474 f;
+#X obj 113 394 sel 0 1, f 23;
+#X obj 113 326 sel 2 4, f 52;
+#X obj 113 429 t b b, f 7;
+#X msg 113 451 flush;
+#X obj 14 33 list prepend, f 21;
+#X obj 14 55 zexy/list2symbol /;
 #N canvas 220 50 420 739 load-folder 0;
 #X obj 23 308 hcs/folder_list;
 #X msg 51 563 append \$1;
@@ -270,72 +266,67 @@
 #X connect 35 1 7 0;
 #X connect 35 1 36 1;
 #X connect 36 0 8 0;
-#X restore 167 12 pd load-folder;
-#X obj 44 76 makefilename %s.mid;
-#X obj 44 12 r \$0-sequence-file;
-#X obj 215 159 s \$0-reset-count;
-#X obj 391 513 s \$0-end-analysis;
-#X obj 177 462 r \$0-reset-count;
-#X obj 14 389 s \$0-bars;
-#X obj 83 366 s \$0-ticks/4;
-#X obj 243 259 r \$0-bars;
-#X obj 282 393 r \$0-ticks/4;
-#X obj 243 322 r \$0-reset-count;
-#X obj 391 460 pdmus/oncev;
-#X obj 14 325 pdmus/oncev;
-#X obj 313 188 \$0;
-#X msg 313 209 \; \$1-master-pattern const -1 \; \$1-slave-pattern
-const -1;
-#X obj 170 197 s \$0-reset-chords;
-#X connect 0 0 3 0;
-#X connect 1 0 31 0;
+#X restore 137 12 pd load-folder;
+#X obj 14 76 makefilename %s.mid;
+#X obj 14 12 r \$0-sequence-file;
+#X obj 209 159 s \$0-reset-count;
+#X obj 267 471 s \$0-end-analysis;
+#X obj 197 282 s \$0-ticks/4;
+#X obj 167 430 r \$0-ticks/4;
+#X obj 128 349 r \$0-reset-count;
+#X obj 267 428 pdmus/oncev;
+#X obj 128 241 pdmus/oncev;
+#X obj 485 203 s \$0-reset-chords;
+#X obj 160 495 r \$0-reset-count;
+#X obj 14 181 t a b b, f 79;
+#X text 394 453 here we could send a bang when the midifile analysis
+is done., f 31;
+#X connect 0 0 36 0;
+#X connect 1 0 12 1;
 #X connect 2 0 1 0;
-#X connect 2 3 32 0;
-#X connect 3 0 5 0;
-#X connect 3 1 36 1;
-#X connect 3 1 37 1;
-#X connect 3 1 40 0;
-#X connect 4 0 11 0;
-#X connect 5 1 14 0;
-#X connect 5 2 37 0;
-#X connect 5 3 13 0;
-#X connect 6 0 29 0;
-#X connect 6 1 8 1;
-#X connect 8 0 7 0;
-#X connect 9 0 18 1;
-#X connect 10 0 15 0;
-#X connect 11 0 0 0;
-#X connect 11 1 5 0;
-#X connect 11 2 12 0;
-#X connect 12 0 28 0;
-#X connect 13 0 20 0;
-#X connect 14 0 10 0;
-#X connect 14 1 15 1;
-#X connect 14 2 15 2;
-#X connect 15 0 8 0;
-#X connect 16 0 17 0;
-#X connect 16 0 19 0;
-#X connect 17 0 16 1;
-#X connect 18 0 10 1;
-#X connect 19 0 21 0;
-#X connect 19 1 36 0;
-#X connect 20 0 16 0;
-#X connect 20 1 36 0;
-#X connect 21 0 22 0;
-#X connect 21 1 18 0;
-#X connect 22 0 5 0;
-#X connect 23 0 24 0;
-#X connect 24 0 26 0;
-#X connect 25 0 23 1;
-#X connect 26 0 4 0;
-#X connect 27 0 23 0;
-#X connect 30 0 10 1;
-#X connect 33 0 13 1;
-#X connect 34 0 9 0;
-#X connect 35 0 16 1;
-#X connect 36 0 6 0;
-#X connect 37 0 2 0;
-#X connect 38 0 39 0;
+#X connect 2 3 29 0;
+#X connect 3 0 10 0;
+#X connect 4 1 13 0;
+#X connect 4 2 33 0;
+#X connect 4 3 12 0;
+#X connect 5 1 7 1;
+#X connect 7 0 6 0;
+#X connect 8 0 17 1;
+#X connect 9 0 14 0;
+#X connect 10 0 0 0;
+#X connect 10 1 4 0;
+#X connect 10 2 11 0;
+#X connect 11 0 27 0;
+#X connect 12 0 19 0;
+#X connect 13 0 9 0;
+#X connect 13 1 14 1;
+#X connect 13 2 14 2;
+#X connect 14 0 7 0;
+#X connect 15 0 16 0;
+#X connect 15 0 18 0;
+#X connect 16 0 15 1;
+#X connect 17 0 9 1;
+#X connect 18 0 20 0;
+#X connect 18 1 32 0;
+#X connect 19 0 15 0;
+#X connect 19 1 32 0;
+#X connect 20 0 21 0;
+#X connect 20 1 17 0;
+#X connect 21 0 4 0;
+#X connect 22 0 23 0;
+#X connect 23 0 25 0;
+#X connect 24 0 22 1;
+#X connect 25 0 3 0;
+#X connect 26 0 22 0;
+#X connect 30 0 8 0;
+#X connect 31 0 15 1;
+#X connect 32 0 5 0;
+#X connect 33 0 2 0;
+#X connect 35 0 9 1;
+#X connect 36 0 4 0;
+#X connect 36 1 32 1;
+#X connect 36 1 33 1;
+#X connect 36 2 34 0;
 #X restore 211 109 pd load-midi-loop;
 #N canvas 0 50 450 300 (subpatch) 0;
 #X array \$0-master-pattern 65 float 2;
@@ -483,59 +474,61 @@ const -1;
 #X restore 212 69 pd clock;
 #X text 10 281 TO DO's:;
 #X text 9 335 rethink chord-substitution and expansion.;
-#X text 9 355 circular visualization?? processing??;
-#X text 9 375 add colors to chord height... (brigthness) and range.
+#X text 9 355 add colors to chord height... (brigthness) and range.
 ;
-#X text 10 298 density bug cuando llega a 15 hace 16;
 #X text 9 315 legato does not always visualize correctly.;
 #N canvas 3 89 263 490 loadbangs 0;
 #X obj 15 9 loadbang;
-#X obj 15 91 f \$0;
-#X obj 15 70 t b a, f 11;
-#X obj 15 51 zexy/list2symbol;
-#X msg 15 30 HOUSE HARMONIC FILLER;
-#X obj 15 112 list append;
-#X msg 15 132 \; \$1-title label \$2 \; \$1-title label_pos 20 18 \;
-\$1-title label_font 3 20 \; \$1-title vis_size 800 425 \; \$1-title
+#X obj 15 134 f \$0;
+#X obj 15 113 t b a, f 11;
+#X obj 15 94 zexy/list2symbol;
+#X msg 15 73 HOUSE HARMONIC FILLER;
+#X obj 15 155 list append;
+#X obj 15 51 del 10;
+#X obj 25 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 15 175 \; \$1-title label \$2 \; \$1-title label_pos 10 18 \;
+\$1-title label_font 3 20 \; \$1-title vis_size 800 415 \; \$1-title
 color 11 13 \; \$1-list-of-files bgcolour #808080 \; \$1-list-of-files
 name chord-seq \; \$1-set-chords-octave 3 \; \$1-set-register set 0
 \; \$1-set-tempo 125 \; \$1-set-bass-duration 12 \; \$1-set-bass-octave
 2 \; \$1-set-clock-mode 1 \; \$1-set-keyfifths set 6.5 \; \$1-set-keyseconds
-set 6.5 \; \$1-set-pattern 2;
-#X connect 0 0 4 0;
+set 6.5 \; \$1-set-pattern 2 \; \$1-set-bass-lock 0 \; \$1-set-lock-instrument
+0;
+#X connect 0 0 6 0;
 #X connect 1 0 5 0;
 #X connect 2 0 1 0;
 #X connect 2 1 5 1;
 #X connect 3 0 2 0;
 #X connect 4 0 3 0;
-#X connect 5 0 6 0;
+#X connect 5 0 8 0;
+#X connect 6 0 4 0;
+#X connect 7 0 6 0;
 #X restore 211 29 pd loadbangs;
-#N canvas 24 23 1036 665 get-chord-progression 0;
-#X obj 11 9 inlet;
-#X obj 380 51 unpack 0 0 0 0;
-#X obj 380 94 /;
-#X obj 434 95 != 0;
-#X obj 380 115 * 4;
-#X obj 560 244 route;
-#X obj 560 222 t l f, f 8;
-#X obj 380 137 pack, f 9;
-#X obj 11 30 t l l, f 62;
-#X msg 380 185 \$2 \$1;
-#X obj 11 609 outlet;
-#X obj 380 607 outlet;
-#X obj 11 52 pdmus/chord-make;
-#X obj 38 96 pdmus/chord-estimate;
-#X obj 380 158 pdmus/change-any;
-#X obj 77 257 list prepend;
-#X obj 77 310 list2symbol, f 15;
-#X obj 155 119 t f f;
-#X obj 155 182 -, f 5;
-#X obj 155 214 mod 12;
-#X obj 11 73 t l l;
-#X obj 239 182 * -1;
-#X text 426 609 onset position;
-#X obj 164 269 loadbang;
-#X msg 164 289 symbol;
+#N canvas 24 23 677 639 get-chord-progression 0;
+#X obj 11 5 inlet;
+#X obj 380 47 unpack 0 0 0 0;
+#X obj 380 90 /;
+#X obj 434 91 != 0;
+#X obj 380 111 * 4;
+#X obj 380 133 pack, f 9;
+#X obj 11 26 t l l, f 62;
+#X msg 380 175 \$2 \$1;
+#X obj 11 593 outlet;
+#X obj 380 593 outlet;
+#X obj 11 48 pdmus/chord-make;
+#X obj 38 92 pdmus/chord-estimate;
+#X obj 380 154 pdmus/change-any;
+#X obj 77 250 list prepend;
+#X obj 77 296 list2symbol, f 15;
+#X obj 155 112 t f f;
+#X obj 155 175 -, f 5;
+#X obj 155 207 mod 12;
+#X obj 11 69 t l l;
+#X obj 239 175 * -1;
+#X text 287 593 onset position;
+#X obj 164 255 loadbang;
+#X msg 164 275 symbol;
 #N canvas 353 435 416 248 pc2degrees 0;
 #X obj 9 10 inlet;
 #X obj 9 31 sel 0 1 2 3 4 5 6 7 8 9 10 11, f 64;
@@ -579,33 +572,29 @@ set 6.5 \; \$1-set-pattern 2;
 #X connect 12 0 13 0;
 #X connect 13 0 14 0;
 #X connect 15 0 13 0;
-#X restore 155 235 pd pc2degrees;
-#X obj 182 161 t f f, f 10;
-#X obj 11 421 t l l, f 21;
-#X obj 134 567 * -12;
-#X obj 11 398 pdmus/chord-transpose, f 38;
-#X obj 11 587 pdmus/chord-transpose;
-#X msg 52 76 bang;
-#X text 133 53 there was a zexy sort;
-#X obj 134 483 pdmus/list-sum;
-#X obj 134 442 add2list prepend;
-#X obj 134 462 t l l, f 16;
-#X obj 227 483 list length;
-#X obj 134 504 /, f 16;
-#X obj 134 526 int;
-#X obj 134 546 div 12;
-#X obj 249 265 pack, f 19;
-#X obj 249 221 - 5;
-#X obj 249 243 mod 12;
-#X obj 395 72 r \$0-ticks/4;
-#X obj 249 286 tabwrite \$0-bassseq;
-#X obj 560 267 tabwrite \$0-master-pattern;
-#X obj 182 140 pdmus/oncev;
-#X obj 77 354 pack s f, f 48;
-#X text 57 609 basic chord structure;
-#X text 655 170 there should be a different analysis here for the rhythmic
-patterns! or for now... just use markov!;
-#X text 520 171 desde aquí mismo;
+#X restore 155 228 pd pc2degrees;
+#X obj 182 154 t f f, f 10;
+#X obj 11 405 t l l, f 21;
+#X obj 134 551 * -12;
+#X obj 11 383 pdmus/chord-transpose, f 38;
+#X obj 11 571 pdmus/chord-transpose;
+#X msg 52 72 bang;
+#X text 133 49 there was a zexy sort;
+#X obj 134 467 pdmus/list-sum;
+#X obj 134 426 add2list prepend;
+#X obj 134 446 t l l, f 16;
+#X obj 227 467 list length;
+#X obj 134 488 /, f 16;
+#X obj 134 510 int;
+#X obj 134 530 div 12;
+#X obj 249 258 pack, f 19;
+#X obj 249 214 - 5;
+#X obj 249 236 mod 12;
+#X obj 395 68 r \$0-ticks/4;
+#X obj 249 279 tabwrite \$0-bassseq;
+#X obj 182 133 pdmus/oncev;
+#X obj 77 340 pack s f, f 49;
+#X text 57 593 basic chord structure;
 #N canvas 0 23 298 454 display-chord-names 0;
 #X obj 50 13 inlet;
 #X obj 77 58 f 0;
@@ -624,68 +613,65 @@ patterns! or for now... just use markov!;
 #X connect 5 0 4 0;
 #X connect 7 0 3 0;
 #X connect 7 1 1 0;
-#X restore 77 375 pd display-chord-names;
-#X obj 77 331 pdmus/list-change;
-#X obj 380 205 route 1;
-#X obj 245 119 r \$0-reset-chords;
-#X connect 0 0 8 0;
+#X restore 77 361 pd display-chord-names;
+#X obj 77 317 pdmus/list-change;
+#X obj 380 195 route 1;
+#X obj 245 112 r \$0-reset-chords;
+#X text 395 218 add step correction here!;
+#X connect 0 0 6 0;
 #X connect 1 0 2 0;
 #X connect 1 2 3 0;
 #X connect 2 0 4 0;
-#X connect 3 0 7 1;
-#X connect 4 0 7 0;
-#X connect 5 0 45 0;
-#X connect 6 0 5 0;
-#X connect 6 1 5 1;
-#X connect 6 1 45 1;
-#X connect 7 0 14 0;
-#X connect 8 0 12 0;
-#X connect 8 1 1 0;
-#X connect 9 0 53 0;
-#X connect 12 0 20 0;
-#X connect 13 1 15 0;
-#X connect 13 3 17 0;
-#X connect 14 0 9 0;
+#X connect 3 0 5 1;
+#X connect 4 0 5 0;
+#X connect 5 0 12 0;
+#X connect 6 0 10 0;
+#X connect 6 1 1 0;
+#X connect 7 0 48 0;
+#X connect 10 0 18 0;
+#X connect 11 1 13 0;
+#X connect 11 3 15 0;
+#X connect 12 0 7 0;
+#X connect 13 0 14 0;
+#X connect 14 0 47 0;
 #X connect 15 0 16 0;
-#X connect 16 0 52 0;
-#X connect 17 0 18 0;
-#X connect 17 1 46 0;
-#X connect 18 0 19 0;
-#X connect 18 0 41 0;
-#X connect 19 0 25 0;
-#X connect 20 0 29 0;
-#X connect 20 1 13 0;
-#X connect 21 0 29 1;
-#X connect 23 0 24 0;
+#X connect 15 1 43 0;
+#X connect 16 0 17 0;
+#X connect 16 0 39 0;
+#X connect 17 0 23 0;
+#X connect 18 0 27 0;
+#X connect 18 1 11 0;
+#X connect 19 0 27 1;
+#X connect 21 0 22 0;
+#X connect 22 0 14 1;
+#X connect 23 0 13 1;
 #X connect 24 0 16 1;
-#X connect 25 0 15 1;
-#X connect 26 0 18 1;
-#X connect 26 1 21 0;
-#X connect 27 0 30 0;
-#X connect 27 1 34 0;
-#X connect 28 0 30 1;
-#X connect 29 0 27 0;
-#X connect 30 0 10 0;
-#X connect 31 0 13 0;
-#X connect 33 0 37 0;
-#X connect 34 0 35 0;
-#X connect 35 0 33 0;
-#X connect 35 1 36 0;
-#X connect 36 0 37 1;
-#X connect 37 0 38 0;
-#X connect 38 0 39 0;
-#X connect 39 0 28 0;
-#X connect 40 0 44 0;
-#X connect 41 0 42 0;
-#X connect 42 0 40 0;
-#X connect 43 0 2 1;
-#X connect 46 0 26 0;
-#X connect 47 0 51 0;
-#X connect 52 0 47 0;
-#X connect 53 0 11 0;
-#X connect 53 0 40 1;
-#X connect 53 0 47 1;
-#X connect 54 0 46 1;
+#X connect 24 1 19 0;
+#X connect 25 0 28 0;
+#X connect 25 1 32 0;
+#X connect 26 0 28 1;
+#X connect 27 0 25 0;
+#X connect 28 0 8 0;
+#X connect 29 0 11 0;
+#X connect 31 0 35 0;
+#X connect 32 0 33 0;
+#X connect 33 0 31 0;
+#X connect 33 1 34 0;
+#X connect 34 0 35 1;
+#X connect 35 0 36 0;
+#X connect 36 0 37 0;
+#X connect 37 0 26 0;
+#X connect 38 0 42 0;
+#X connect 39 0 40 0;
+#X connect 40 0 38 0;
+#X connect 41 0 2 1;
+#X connect 43 0 24 0;
+#X connect 44 0 46 0;
+#X connect 47 0 44 0;
+#X connect 48 0 9 0;
+#X connect 48 0 38 1;
+#X connect 48 0 44 1;
+#X connect 49 0 43 1;
 #X restore 211 129 pd get-chord-progression;
 #N canvas 11 115 844 476 make-chord-variations 0;
 #X msg 330 92 clear;
@@ -790,20 +776,7 @@ easy to obtain the tonic of the shuttle., f 30;
 #X connect 48 0 45 0;
 #X connect 49 0 0 0;
 #X restore 211 149 pd make-chord-variations;
-#N canvas 837 432 276 275 reset 0;
-#X obj 8 27 \$0;
-#X obj 8 97 pdmus/forloop;
-#X obj 8 118 pack 0 \$0;
-#X msg 8 140 8 \; \$2-chordname-\$1 | 66 \;;
-#X msg 8 47 8 \; \$1-bassseq const -1 \; \$1-set-range 0 \;;
-#X obj 8 7 r \$0-reset-chords;
-#X connect 0 0 4 0;
-#X connect 1 0 2 0;
-#X connect 2 0 3 0;
-#X connect 4 0 1 0;
-#X connect 5 0 0 0;
-#X restore 211 49 pd reset;
-#N canvas 2 89 867 516 bass 0;
+#N canvas 3 46 828 559 bass 0;
 #X obj 537 432 poly 1 1, f 24;
 #X obj 607 454 noteout 1, f 24;
 #N canvas 0 50 691 699 salience 0;
@@ -1059,6 +1032,13 @@ on the pattern.;
 #X obj 195 151 list prepend 0;
 #X obj 195 129 pdmus/listv;
 #X obj 125 108 pdmus/listv;
+#X text 220 17 <- from markov drums!;
+#X obj 43 453 \$0;
+#X obj 15 431 select 0 1;
+#X obj 15 453 \$0;
+#X obj 15 409 r \$0-bass-lock;
+#X msg 43 474 \; \$1-set-lock-instrument color 2 13 10;
+#X msg 15 509 \; \$1-set-lock-instrument color 11 11 1;
 #X connect 0 1 1 0;
 #X connect 0 2 1 1;
 #X connect 2 1 3 0;
@@ -1129,6 +1109,11 @@ on the pattern.;
 #X connect 61 0 52 0;
 #X connect 62 0 61 0;
 #X connect 63 0 51 0;
+#X connect 65 0 69 0;
+#X connect 66 0 67 0;
+#X connect 66 1 65 0;
+#X connect 67 0 70 0;
+#X connect 68 0 66 0;
 #X restore 212 229 pd bass;
 #X obj 211 9 declare -path abs;
 #N canvas 3 50 709 465 range 0;
@@ -1167,9 +1152,9 @@ on the pattern.;
 #X connect 15 0 1 0;
 #X connect 15 1 2 1;
 #X restore 212 209 pd range;
-#X obj 11 449 s pd-\$0-house-harmonic-filler;
-#X msg 11 428 save;
-#X obj 11 407 r \$0-save-state;
+#X obj 11 429 s pd-\$0-house-harmonic-filler;
+#X msg 11 408 save;
+#X obj 11 387 r \$0-save-state;
 #N canvas 0 50 780 598 gui-transport 0;
 #X msg 144 46 59 17;
 #X obj 36 67 != 0;
@@ -1755,118 +1740,129 @@ on the pattern.;
 #X connect 50 0 49 0;
 #X connect 51 0 32 0;
 #X restore 368 69 pd gui-sequence;
-#N canvas 223 195 655 392 harmonic-rhythm 1;
-#X obj 15 114 cyclone/coll ./patterns1.txt;
+#N canvas 282 283 827 290 harmonic-rhythm 0;
+#X floatatom 14 36 5 0 0 0 - - -, f 5;
+#X text 57 34 select a rhytmhmic pattern!;
+#X obj 400 83 cyclone/coll ./patterns2.txt;
 #C restore;
-#X floatatom 15 67 5 0 0 0 - - -, f 5;
-#X obj 15 140 zexy/repack 2;
-#X obj 42 184 f 0;
-#X obj 72 184 + 1;
-#X obj 42 205 mod 64;
-#X obj 42 230 makefilename \$0-master-chord-fill-%d;
-#X obj 15 257 s;
-#X text 47 256 chord \, onset \, duration.;
-#X obj 15 162 t a b;
-#X text 58 65 select a rhytmhmic pattern!;
-#X obj 208 114 cyclone/coll ./patterns2.txt;
+#X obj 400 105 pdmus/tabsetv \$0-master-pattern;
+#X obj 593 105 pdmus/forloop;
+#X obj 593 126 pack 0 \$0;
+#X msg 593 83 64;
+#X obj 14 11 r \$0-set-pattern;
+#X obj 207 83 cyclone/coll ./patterns1.txt;
 #C restore;
-#X obj 208 136 pdmus/tabsetv \$0-master-pattern;
-#X obj 402 134 pdmus/forloop;
-#X obj 402 155 pack 0 \$0;
-#X obj 15 90 t f f b, f 65;
-#X msg 402 112 64;
-#X obj 313 228 \$0;
-#X obj 324 192 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 313 249 \; \$1-slave-pattern const -1;
-#X msg 402 177 \; \$2-master-chord-fill-\$1 66 0 \;;
-#X obj 15 42 r \$0-set-pattern;
-#X connect 0 0 2 0;
-#X connect 1 0 15 0;
-#X connect 2 0 9 0;
-#X connect 3 0 4 0;
-#X connect 3 0 5 0;
-#X connect 4 0 3 1;
-#X connect 5 0 6 0;
-#X connect 6 0 7 1;
-#X connect 9 0 7 0;
-#X connect 9 1 3 0;
-#X connect 11 0 12 0;
+#X obj 207 109 zexy/repack 2;
+#X obj 234 153 f 0;
+#X obj 264 153 + 1;
+#X obj 234 174 mod 64;
+#X obj 234 199 makefilename \$0-master-chord-fill-%d;
+#X obj 207 226 s;
+#X text 239 225 chord \, onset \, duration.;
+#X obj 207 131 t a b;
+#X obj 14 86 s \$0-load-rhythm;
+#X msg 593 148 \; \$2-master-chord-fill-\$1 65.2 0 \;;
+#X obj 14 59 t b f f b, f 97;
+#X connect 0 0 19 0;
+#X connect 2 0 3 0;
+#X connect 4 0 5 0;
+#X connect 5 0 18 0;
+#X connect 6 0 4 0;
+#X connect 7 0 0 0;
+#X connect 8 0 9 0;
+#X connect 9 0 16 0;
+#X connect 10 0 11 0;
+#X connect 10 0 12 0;
+#X connect 11 0 10 1;
+#X connect 12 0 13 0;
+#X connect 13 0 14 1;
+#X connect 16 0 14 0;
+#X connect 16 1 10 0;
+#X connect 19 0 17 0;
+#X connect 19 1 8 0;
+#X connect 19 2 2 0;
+#X connect 19 3 6 0;
+#X restore 365 129 pd harmonic-rhythm;
+#N canvas 837 432 183 212 reset-chords 0;
+#X obj 8 27 \$0;
+#X obj 8 97 pdmus/forloop;
+#X obj 8 118 pack 0 \$0;
+#X msg 8 47 8 \; \$1-bassseq const -1 \; \$1-set-range 0 \;;
+#X obj 8 7 r \$0-reset-chords;
+#X msg 8 139 \; \$2-chordname-\$1 x 65.2 \;;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 2 0 5 0;
+#X connect 3 0 1 0;
+#X connect 4 0 0 0;
+#X restore 211 49 pd reset-chords;
+#X text 10 298 density bug cuando llega a 15 hace 16 --> revisar esto!!!!!!
+;
+#X connect 1 0 13 0;
 #X connect 13 0 14 0;
-#X connect 14 0 20 0;
-#X connect 15 0 0 0;
-#X connect 15 1 11 0;
-#X connect 15 2 16 0;
-#X connect 16 0 13 0;
-#X connect 17 0 19 0;
-#X connect 18 0 17 0;
-#X connect 21 0 1 0;
-#X restore 366 129 pd harmonic-rhythm;
-#X connect 1 0 15 0;
-#X connect 15 0 16 0;
-#X connect 15 1 16 1;
-#X connect 22 0 21 0;
-#X connect 23 0 22 0;
-#X restore 748 -5 pd patch;
-#X obj 0 -5 cnv 15 800 425 empty \$0-title HOUSE HARMONIC FILLER 20
+#X connect 13 1 14 1;
+#X connect 19 0 18 0;
+#X connect 20 0 19 0;
+#X restore 747 -5 pd patch;
+#X obj -1 -5 cnv 15 800 415 empty \$0-title HOUSE HARMONIC FILLER 10
 18 0 20 -128992 -258699 0;
-#X obj 19 83 bng 24 250 50 0 \$0-scroll-up \$0-set-scroll-up up 5 -10
+#X obj 11 83 bng 24 250 50 0 \$0-scroll-up \$0-set-scroll-up up 5 -10
 1 12 -66577 -258113 -228856;
-#X obj 45 99 bng 8 250 50 0 \$0-learn-scrollup --- empty 17 7 0 10
+#X obj 37 99 bng 8 250 50 0 \$0-learn-scrollup --- empty 17 7 0 10
 -258113 -1 -1;
-#X obj 19 130 bng 24 250 50 0 \$0-scroll-down \$0-set-scroll-down down
+#X obj 11 130 bng 24 250 50 0 \$0-scroll-down \$0-set-scroll-down down
 -2 -8 1 12 -66577 -258113 -228856;
-#X obj 45 146 bng 8 250 50 0 \$0-learn-scrolldown --- empty 17 7 0
+#X obj 37 146 bng 8 250 50 0 \$0-learn-scrolldown --- empty 17 7 0
 10 -258113 -1 -1;
-#X obj 261 38 cnv 15 250 5 empty empty CHORDS 5 12 0 20 -128992 -228856
+#X obj 253 38 cnv 15 250 5 empty empty CHORDS 5 12 0 20 -128992 -228856
 0;
-#X obj 279 85 vsl 24 180 1 64 0 1 \$0-raw-density \$0-set-density density
--8 -12 1 12 -66577 -258113 -228856 1421 1;
-#X obj 305 260 bng 8 250 50 0 \$0-learn-density --- empty 17 7 0 10
+#X obj 271 85 vsl 24 180 1 64 0 1 \$0-raw-density \$0-set-density density
+-8 -12 1 12 -66577 -258113 -228856 2557 1;
+#X obj 297 260 bng 8 250 50 0 \$0-learn-density --- empty 17 7 0 10
 -258113 -1 -1;
-#X obj 322 85 vsl 24 180 1 66 0 1 \$0-raw-legato \$0-set-legato legato
+#X obj 314 85 vsl 24 180 1 66 0 1 \$0-raw-legato \$0-set-legato legato
 -6 -12 1 12 -66577 -258113 -228856 17349 0;
-#X obj 412 85 vsl 24 180 -3 3 0 0 \$0-raw-register \$0-set-register
-register -9 -12 1 12 -66577 -258113 -228856 8950 0;
-#X obj 455 85 vsl 24 180 0 3.9 0 0 \$0-raw-range \$0-set-range spread
+#X obj 454 85 vsl 24 180 -3 3 0 0 \$0-raw-register \$0-set-register
+register -7 -12 1 12 -66577 -258113 -228856 8950 0;
+#X obj 407 85 vsl 24 180 0 3.9 0 0 \$0-raw-range \$0-set-range spread
 -5 -12 1 12 -66577 -258113 -228856 0 1;
-#X obj 348 260 bng 8 250 50 0 \$0-learn-legato --- empty 17 7 0 10
+#X obj 340 260 bng 8 250 50 0 \$0-learn-legato --- empty 17 7 0 10
 -258113 -1 -1;
-#X obj 481 260 bng 8 250 50 0 \$0-learn-range --- empty 17 7 0 10 -258113
+#X obj 433 260 bng 8 250 50 0 \$0-learn-range --- empty 17 7 0 10 -258113
 -1 -1;
-#X obj 438 260 bng 8 250 50 0 \$0-learn-register --- empty 17 7 0 10
+#X obj 480 260 bng 8 250 50 0 \$0-learn-register --- empty 17 7 0 10
 -258113 -1 -1;
-#X obj 602 36 cnv 15 100 20 empty empty BASS 5 12 0 20 -128992 -228856
+#X obj 524 36 cnv 15 100 20 empty empty BASS 5 12 0 20 -128992 -228856
 0;
-#X obj 616 85 vsl 24 180 0 64 0 0 \$0-bass-density \$0-set-bass-density
-density -8 -12 1 12 -66577 -258113 -228856 1678 1;
-#X obj 659 85 vsl 24 180 0.2 16 0 0 \$0-bass-duration \$0-set-bass-duration
+#X obj 538 85 vsl 24 180 0 64 0 0 \$0-bass-density \$0-set-bass-density
+density -8 -12 1 12 -66577 -258113 -228856 2797 1;
+#X obj 581 85 vsl 24 180 0.2 16 0 0 \$0-bass-duration \$0-set-bass-duration
 length -5 -12 1 12 -66577 -258113 -228856 13368 1;
-#X obj 702 85 vsl 24 180 0.125 1 0 0 \$0-bass-velocity \$0-set-bass-velocity
+#X obj 624 85 vsl 24 180 0.125 1 0 0 \$0-bass-velocity \$0-set-bass-velocity
 accents -10 -12 1 12 -66577 -258113 -228856 0 1;
-#X obj 745 172 vradio 24 1 0 4 \$0-bass-octave \$0-set-bass-octave
-octave -6 -8 1 12 -66577 -258113 -228856 2;
-#X obj 642 260 bng 8 250 50 0 \$0-learn-bass-density --- empty 17 7
+#X obj 667 172 vradio 24 1 0 4 \$0-bass-octave \$0-set-bass-octave
+octave -6 -12 1 12 -66577 -258113 -228856 2;
+#X obj 564 260 bng 8 250 50 0 \$0-learn-bass-density --- empty 17 7
 0 10 -258113 -1 -1;
-#X obj 685 260 bng 8 250 50 0 \$0-learn-bass-duration --- empty 17
+#X obj 607 260 bng 8 250 50 0 \$0-learn-bass-duration --- empty 17
 7 0 10 -258113 -1 -1;
-#X obj 728 260 bng 8 250 50 0 \$0-learn-bass-accents --- empty 17 7
+#X obj 650 260 bng 8 250 50 0 \$0-learn-bass-accents --- empty 17 7
 0 10 -258113 -1 -1;
-#X obj 771 260 bng 8 250 50 0 \$0-learn-bass-octave --- empty 17 7
+#X obj 693 260 bng 8 250 50 0 \$0-learn-bass-octave --- empty 17 7
 0 10 -258113 -1 -1;
-#X obj 75 83 tgl 24 0 \$0-clock-mode \$0-set-clock-mode ext-sync -7
+#X obj 67 83 tgl 24 0 \$0-clock-mode \$0-set-clock-mode ext-sync -7
 -8 1 12 -66577 -258113 -228856 1 1;
-#X obj 12 38 cnv 15 100 20 empty empty GENERAL 5 12 0 20 -128992 -228856
+#X obj 4 38 cnv 15 100 20 empty empty GENERAL 5 12 0 20 -128992 -228856
 0;
-#X obj 141 82 nbx 3 24 20 999.9 0 0 \$0-tempo \$0-set-tempo bpm 0 -8
-1 12 -128992 -258699 -166441 118 256;
-#X obj 186 98 bng 8 250 50 0 \$0-learn-tempo --- empty 17 7 0 10 -258113
+#X obj 133 82 nbx 3 24 20 999.9 0 0 \$0-tempo \$0-set-tempo bpm 0 -8
+1 12 -128992 -258699 -166441 120 256;
+#X obj 178 98 bng 8 250 50 0 \$0-learn-tempo --- empty 17 7 0 10 -258113
 -1 -1;
-#X obj 101 99 bng 8 250 50 0 \$0-learn-sync --- empty 17 7 0 10 -258113
+#X obj 93 99 bng 8 250 50 0 \$0-learn-sync --- empty 17 7 0 10 -258113
 -1 -1;
-#X obj 368 84 vradio 23 1 0 8 \$0-chords-octave \$0-set-chords-octave
-octave -6 -10 1 12 -66577 -258113 -228856 3;
-#X obj 393 260 bng 8 250 50 0 \$0-learn-chords-octave --- empty 17
+#X obj 360 84 vradio 23 1 0 8 \$0-chords-octave \$0-set-chords-octave
+octave -6 -10 1 12 -66577 -258113 -228856 4;
+#X obj 385 260 bng 8 250 50 0 \$0-learn-chords-octave --- empty 17
 7 0 10 -258113 -1 -1;
 #N canvas 423 94 275 305 fifths 0;
 #X obj 33 29 flatgui/knob 65 65 0.5 12.5 0 0 \$0-key-fifths \$0-set-keyfifths
@@ -1988,7 +1984,7 @@ key -20 -5 1 12 -258113 -258113 -228856 3200 1;
 #X connect 18 0 17 0;
 #X connect 19 0 14 0;
 #X coords 0 -1 1 1 105 105 2 10 10;
-#X restore 19 163 pd fifths;
+#X restore 11 163 pd fifths;
 #N canvas 79 87 330 327 seconds 0;
 #X obj 30 29 flatgui/knob 65 65 0.5 12.5 0 0 \$0-key-seconds \$0-set-keyseconds
 key -18 -5 1 12 -258113 -258113 -228856 3200 1;
@@ -2109,12 +2105,12 @@ key -18 -5 1 12 -258113 -258113 -228856 3200 1;
 #X connect 18 0 17 0;
 #X connect 19 0 14 0;
 #X coords 0 -1 1 1 105 105 2 10 10;
-#X restore 139 163 pd seconds;
-#X obj 126 260 bng 8 250 50 0 \$0-learn-key5 --- empty 17 7 0 10 -258113
+#X restore 131 163 pd seconds;
+#X obj 118 260 bng 8 250 50 0 \$0-learn-key5 --- empty 17 7 0 10 -258113
 -1 -1;
-#X obj 246 260 bng 8 250 50 0 \$0-learn-key2 --- empty 17 7 0 10 -258113
+#X obj 238 260 bng 8 250 50 0 \$0-learn-key2 --- empty 17 7 0 10 -258113
 -1 -1;
-#X obj 122 131 flatgui/popup 124 25 #808080 chord-seq I-VIIm7 I-bVIImaj7-Im9-IIm9
+#X obj 114 131 flatgui/popup 124 25 #808080 chord-seq I-VIIm7 I-bVIImaj7-Im9-IIm9
 I5-IV I5-VI5 I7-IIIm7 I7-bVIImaj7 I7sus4-VIsus4 Iadd11-IV Iadd9-VIm7-IV6-Iadd9
 Im-#IVmaj7 Im-IVm7 Im-Im-bIIImaj7-bIIImaj7 Im-VIIm7-VIm7-Vmaj7 Im-Vm
 Im-bIImaj Im-bVII-bIII-bVII Im-bVII Im-bVIIadd11 Im11-Vm11 Im11-Vm9
@@ -2125,109 +2121,109 @@ Im9-bVII13-bIImaj9-bIIImaj7 Im9-bVIIm9-bIIm9-bIIIm9 Im9-bVIIm9-bIIm9
 Im9-bVIIm9-bVImaj7 Im9-bVIadd9-VIm9 Imaj7-IIIm7-VIImaj7-Imaj7 Imaj7-IIm7
 Imaj7-VIImaj7-Vmaj7-IVmaj7 Imaj7-VIImaj7-bVIImaj7 Imaj7-VIImaj7 Imaj7-VIm7
 Imaj7-bIIm7-bVIm-bVIm7 Imaj9-IIIm11-IVmaj9 Imaj9-VIm9-Im9-Vm11;
-#X obj 75 130 bng 24 250 50 0 \$0-load-folder \$0-set-load-folder folder
+#X obj 67 130 bng 24 250 50 0 \$0-load-folder \$0-set-load-folder folder
 -3 -10 1 12 -66577 -258113 -228856;
-#X obj 115 108 cnv 15 150 50 empty empty sequence 5 12 1 12 -128992
+#X obj 107 108 cnv 15 150 50 empty empty sequence 5 12 1 12 -128992
 -228856 0;
-#X obj 204 82 tgl 42 0 \$0-play \$0-set-play play 0 -10 1 12 -128992
+#X obj 196 82 tgl 42 0 \$0-play \$0-set-play play 0 -10 1 12 -128992
 -128992 -166441 1 1;
-#X obj 248 116 bng 8 250 50 0 \$0-learn-play --- empty 17 7 0 10 -258113
+#X obj 240 116 bng 8 250 50 0 \$0-learn-play --- empty 17 7 0 10 -258113
 -1 -1;
-#X text 414 193 ___;
-#X text 414 203 ___;
-#X text 414 213 ___;
-#X text 414 223 ___;
-#X text 414 233 ___;
-#X text 414 183 ___;
-#X text 414 173 ___;
-#X text 414 163 ___;
-#X text 414 153 ___;
-#X text 414 143 ___;
-#X text 414 133 ___;
-#X text 414 123 ___;
-#X text 414 113 ___;
-#X text 414 103 ___;
-#X text 414 93 ___;
-#X text 414 83 ___;
-#X text 414 243 ___;
-#X obj 745 83 tgl 24 0 \$0-mute-bass \$0-set-mute-bass mute -1 -10
+#X text 456 193 ___;
+#X text 456 203 ___;
+#X text 456 213 ___;
+#X text 456 223 ___;
+#X text 456 233 ___;
+#X text 456 183 ___;
+#X text 456 173 ___;
+#X text 456 163 ___;
+#X text 456 153 ___;
+#X text 456 143 ___;
+#X text 456 133 ___;
+#X text 456 123 ___;
+#X text 456 113 ___;
+#X text 456 103 ___;
+#X text 456 93 ___;
+#X text 456 83 ___;
+#X text 456 243 ___;
+#X obj 667 83 tgl 24 0 \$0-mute-bass \$0-set-mute-bass mute -1 -10
 1 12 -66577 -258113 -228856 0 1;
-#X obj 771 99 bng 8 250 50 0 \$0-learn-mute-bass --- empty 17 7 0 10
+#X obj 693 99 bng 8 250 50 0 \$0-learn-mute-bass --- empty 17 7 0 10
 -258113 -1 -1;
 #N canvas 0 50 959 334 \$0-data 0;
-#X scalar 1003-chord0 29 0 I7sus4 \;;
-#X scalar 1003-chord1 429 0 VIsus4 \;;
-#X scalar 1003-chord2 829 0 I7sus4 \;;
-#X scalar 1003-chord3 1229 0 VIsus4 \;;
-#X scalar 1003-chord4 1679 0 | \;;
-#X scalar 1003-chord5 1679 0 | \;;
-#X scalar 1003-chord6 1679 0 | \;;
-#X scalar 1003-chord7 1679 0 | \;;
-#X scalar 1003-mchord0 1678 -5 \;;
-#X scalar 1003-mchord1 1678 -5 \;;
-#X scalar 1003-mchord2 1678 -5 \;;
-#X scalar 1003-mchord3 1678 -5 \;;
-#X scalar 1003-mchord4 1678 -5 \;;
-#X scalar 1003-mchord5 1678 -5 \;;
-#X scalar 1003-mchord6 28 395 \;;
-#X scalar 1003-mchord7 428 220 \;;
-#X scalar 1003-mchord8 678 120 \;;
-#X scalar 1003-mchord9 828 395 \;;
-#X scalar 1003-mchord10 1228 220 \;;
-#X scalar 1003-mchord11 1478 120 \;;
-#X scalar 1003-mchord12 1678 -5 \;;
-#X scalar 1003-mchord13 1678 -5 \;;
-#X scalar 1003-mchord14 1678 -5 \;;
-#X scalar 1003-mchord15 1678 -5 \;;
-#X scalar 1003-mchord16 1678 -5 \;;
-#X scalar 1003-mchord17 1678 -5 \;;
-#X scalar 1003-mchord18 1678 -5 \;;
-#X scalar 1003-mchord19 1678 -5 \;;
-#X scalar 1003-mchord20 1678 -5 \;;
-#X scalar 1003-mchord21 1678 -5 \;;
-#X scalar 1003-mchord22 1678 -5 \;;
-#X scalar 1003-mchord23 1678 -5 \;;
-#X scalar 1003-mchord24 1678 -5 \;;
-#X scalar 1003-mchord25 1678 -5 \;;
-#X scalar 1003-mchord26 1678 -5 \;;
-#X scalar 1003-mchord27 1678 -5 \;;
-#X scalar 1003-mchord28 1678 -5 \;;
-#X scalar 1003-mchord29 1678 -5 \;;
-#X scalar 1003-mchord30 1678 -5 \;;
-#X scalar 1003-mchord31 1678 -5 \;;
-#X scalar 1003-mchord32 1678 -5 \;;
-#X scalar 1003-mchord33 1678 -5 \;;
-#X scalar 1003-mchord34 1678 -5 \;;
-#X scalar 1003-mchord35 1678 -5 \;;
-#X scalar 1003-mchord36 1678 -5 \;;
-#X scalar 1003-mchord37 1678 -5 \;;
-#X scalar 1003-mchord38 1678 -5 \;;
-#X scalar 1003-mchord39 1678 -5 \;;
-#X scalar 1003-mchord40 1678 -5 \;;
-#X scalar 1003-mchord41 1678 -5 \;;
-#X scalar 1003-mchord42 1678 -5 \;;
-#X scalar 1003-mchord43 1678 -5 \;;
-#X scalar 1003-mchord44 1678 -5 \;;
-#X scalar 1003-mchord45 1678 -5 \;;
-#X scalar 1003-mchord46 1678 -5 \;;
-#X scalar 1003-mchord47 1678 -5 \;;
-#X scalar 1003-mchord48 1678 -5 \;;
-#X scalar 1003-mchord49 1678 -5 \;;
-#X scalar 1003-mchord50 1678 -5 \;;
-#X scalar 1003-mchord51 1678 -5 \;;
-#X scalar 1003-mchord52 1678 -5 \;;
-#X scalar 1003-mchord53 1678 -5 \;;
-#X scalar 1003-mchord54 1678 -5 \;;
-#X scalar 1003-mchord55 1678 -5 \;;
-#X scalar 1003-mchord56 1678 -5 \;;
-#X scalar 1003-mchord57 1678 -5 \;;
-#X scalar 1003-mchord58 1678 -5 \;;
-#X scalar 1003-mchord59 1678 -5 \;;
-#X scalar 1003-mchord60 1678 -5 \;;
-#X scalar 1003-mchord61 1678 -5 \;;
-#X scalar 1003-mchord62 1678 -5 \;;
-#X scalar 1003-mchord63 1678 -5 \;;
-#X scalar 1003-beat 625 \;;
+#X scalar 1003-chord0 29 0 I7 \;;
+#X scalar 1003-chord1 429 0 bVIImaj7 \;;
+#X scalar 1003-chord2 829 0 I7 \;;
+#X scalar 1003-chord3 1229 0 bVIImaj7 \;;
+#X scalar 1003-chord4 1659 0 x \;;
+#X scalar 1003-chord5 1659 0 x \;;
+#X scalar 1003-chord6 1659 0 x \;;
+#X scalar 1003-chord7 1659 0 x \;;
+#X scalar 1003-mchord0 1658 -5 \;;
+#X scalar 1003-mchord1 1658 -5 \;;
+#X scalar 1003-mchord2 1658 -5 \;;
+#X scalar 1003-mchord3 1658 -5 \;;
+#X scalar 1003-mchord4 1658 -5 \;;
+#X scalar 1003-mchord5 1658 -5 \;;
+#X scalar 1003-mchord6 1658 -5 \;;
+#X scalar 1003-mchord7 1658 -5 \;;
+#X scalar 1003-mchord8 1658 -5 \;;
+#X scalar 1003-mchord9 1658 -5 \;;
+#X scalar 1003-mchord10 1658 -5 \;;
+#X scalar 1003-mchord11 1658 -5 \;;
+#X scalar 1003-mchord12 1658 -5 \;;
+#X scalar 1003-mchord13 1658 -5 \;;
+#X scalar 1003-mchord14 1658 -5 \;;
+#X scalar 1003-mchord15 1658 -5 \;;
+#X scalar 1003-mchord16 1658 -5 \;;
+#X scalar 1003-mchord17 1658 -5 \;;
+#X scalar 1003-mchord18 1658 -5 \;;
+#X scalar 1003-mchord19 1658 -5 \;;
+#X scalar 1003-mchord20 1658 -5 \;;
+#X scalar 1003-mchord21 1658 -5 \;;
+#X scalar 1003-mchord22 1658 -5 \;;
+#X scalar 1003-mchord23 1658 -5 \;;
+#X scalar 1003-mchord24 1658 -5 \;;
+#X scalar 1003-mchord25 1658 -5 \;;
+#X scalar 1003-mchord26 1658 -5 \;;
+#X scalar 1003-mchord27 1658 -5 \;;
+#X scalar 1003-mchord28 1658 -5 \;;
+#X scalar 1003-mchord29 1658 -5 \;;
+#X scalar 1003-mchord30 1658 -5 \;;
+#X scalar 1003-mchord31 1658 -5 \;;
+#X scalar 1003-mchord32 1658 -5 \;;
+#X scalar 1003-mchord33 1658 -5 \;;
+#X scalar 1003-mchord34 1658 -5 \;;
+#X scalar 1003-mchord35 1658 -5 \;;
+#X scalar 1003-mchord36 1658 -5 \;;
+#X scalar 1003-mchord37 1658 -5 \;;
+#X scalar 1003-mchord38 28 395 \;;
+#X scalar 1003-mchord39 428 70 \;;
+#X scalar 1003-mchord40 528 20 \;;
+#X scalar 1003-mchord41 603 95 \;;
+#X scalar 1003-mchord42 728 20 \;;
+#X scalar 1003-mchord43 828 395 \;;
+#X scalar 1003-mchord44 1228 70 \;;
+#X scalar 1003-mchord45 1328 20 \;;
+#X scalar 1003-mchord46 1403 95 \;;
+#X scalar 1003-mchord47 1528 20 \;;
+#X scalar 1003-mchord48 1658 -5 \;;
+#X scalar 1003-mchord49 1658 -5 \;;
+#X scalar 1003-mchord50 1658 -5 \;;
+#X scalar 1003-mchord51 1658 -5 \;;
+#X scalar 1003-mchord52 1658 -5 \;;
+#X scalar 1003-mchord53 1658 -5 \;;
+#X scalar 1003-mchord54 1658 -5 \;;
+#X scalar 1003-mchord55 1658 -5 \;;
+#X scalar 1003-mchord56 1658 -5 \;;
+#X scalar 1003-mchord57 1658 -5 \;;
+#X scalar 1003-mchord58 1658 -5 \;;
+#X scalar 1003-mchord59 1658 -5 \;;
+#X scalar 1003-mchord60 1658 -5 \;;
+#X scalar 1003-mchord61 1658 -5 \;;
+#X scalar 1003-mchord62 1658 -5 \;;
+#X scalar 1003-mchord63 1658 -5 \;;
+#X scalar 1003-beat 325 \;;
 #X scalar 1003-line 25 900 \;;
 #X scalar 1003-line 50 333 \;;
 #X scalar 1003-line 75 333 \;;
@@ -2294,14 +2290,26 @@ Imaj7-bIIm7-bVIm-bVIm7 Imaj9-IIIm11-IVmaj9 Imaj9-VIm9-Im9-Vm11;
 #X scalar 1003-line 1600 333 \;;
 #X scalar 1003-line 1625 900 \;;
 #X coords 0 0 1650 120 800 120 2 0 0;
-#X restore -1 300 pd \$0-data;
-#X obj 124 134 s \$0-index;
-#X obj 123 138 s \$0-sequence-file;
-#X obj 123 138 r \$0-list-of-files;
-#X obj 745 127 tgl 24 0 \$0-bass-lock \$0-set-bass-lock lock 1 -7 1
+#X restore -1 291 pd \$0-data;
+#X obj 116 134 s \$0-index;
+#X obj 115 138 s \$0-sequence-file;
+#X obj 115 138 r \$0-list-of-files;
+#X obj 710 133 tgl 24 0 \$0-bass-lock \$0-set-bass-lock lock 1 -7 1
 12 -66577 -258113 -228856 0 1;
-#X obj 771 143 bng 8 250 50 0 \$0-learn-lock-bass --- empty 17 7 0
+#X obj 736 149 bng 8 250 50 0 \$0-learn-lock-bass --- empty 17 7 0
 10 -258113 -1 -1;
+#X obj 710 172 vradio 24 1 0 4 lock-instrument \$0-set-lock-instrument
+empty 0 -8 0 10 -128992 -128992 -166441 0;
+#X obj 741 174 cnv 15 30 20 empty empty kick 0 12 1 12 -128992 -228856
+0;
+#X obj 740 196 cnv 15 30 20 empty empty snare 0 12 1 12 -128992 -228856
+0;
+#X obj 741 220 cnv 15 30 20 empty empty cl-hat 0 12 1 12 -128992 -228856
+0;
+#X obj 736 260 bng 8 250 50 0 \$0-learn-lock --- empty 17 7 0 10 -258113
+-1 -1;
+#X obj 741 241 cnv 15 30 10 empty empty o-hat 0 12 1 12 -128992 -228856
+0;
 #X connect 35 0 60 0;
 #X connect 35 1 61 0;
 #X connect 62 0 35 0;
