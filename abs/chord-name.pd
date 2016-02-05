@@ -9,7 +9,7 @@
 #X obj 146 102 t b f, f 7;
 #X msg 185 142 traverse pd-\$1-data;
 #X obj 146 81 \$2;
-#N canvas 501 129 430 234 \$2-chord\$1 1;
+#N canvas 501 129 430 234 \$2-chord\$1 0;
 #X obj 4 13 struct \$2-chord\$1 float x float y symbol name;
 #X obj 4 38 drawsymbol name 0 25 999;
 #X restore 24 17 pd \$2-chord\$1;
