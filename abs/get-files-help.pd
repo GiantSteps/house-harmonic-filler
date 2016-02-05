@@ -1,0 +1,52 @@
+#N canvas 1 23 555 544 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header get-files 3 12 0
+18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2016;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 99 310 bang;
+#X msg 34 100 bang;
+#X msg 43 122 refresh;
+#X text 95 121 "refresh" to get list of files and init;
+#X text 77 98 "bang" to retrieve filenames individually;
+#X floatatom 121 216 5 0 0 0 - - -, f 5;
+#X text 161 217 files with matching extension in selected folder;
+#X symbolatom 34 243 70 0 0 0 - - -, f 70;
+#X text 399 276 see also:;
+#X text 64 150 argument: folder to look for files.;
+#X text 29 58 gets all the files in a folder that match the selected
+criteria and outputs them as a symbol one-by-one.;
+#X text 4 23 get files in a folder matching selected criteria;
+#X text 60 167 (note the asterisk to find all files with a given extension)
+;
+#X obj 34 193 get-files /*.pd;
+#X text 169 310 - retrieves filenames individually;
+#X text 99 340 selector;
+#X text 169 340 - "refresh" updates the list of files in folder matching
+the selected criteria;
+#X text 99 388 symbol;
+#X text 169 388 - filename;
+#X obj 79 419 cnv 17 3 12 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 99 418 float;
+#X text 169 418 - number of files matching criteria;
+#X text 169 478 folder and criteria (extension) to look at for files.
+;
+#X text 89 478 1) symbol;
+#X obj 459 276 pddp/helplink folder_list;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/pd-symbolic
+;
+#X connect 9 0 21 0;
+#X connect 10 0 21 0;
+#X connect 21 0 15 0;
+#X connect 21 1 13 0;

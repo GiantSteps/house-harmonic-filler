@@ -1,0 +1,14 @@
+#N canvas 547 119 320 261 10;
+#X obj 74 88 list \$1;
+#X obj 128 112 t l;
+#X obj 74 135 outlet;
+#X obj 11 23 inlet;
+#X obj 113 43 inlet;
+#X obj 11 43 route clear;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 3 0 5 0;
+#X connect 4 0 0 1;
+#X connect 5 0 0 1;
+#X connect 5 1 0 0;

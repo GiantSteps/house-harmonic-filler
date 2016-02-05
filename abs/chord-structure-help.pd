@@ -1,0 +1,40 @@
+#N canvas 1 23 555 545 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header chord-structure
+3 12 0 18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 99 310 list;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2016;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X floatatom 255 204 5 0 0 0 - - -, f 5;
+#X msg 178 149 2 5 4 1;
+#X obj 168 182 chord-structure;
+#X msg 168 124 60 64 67 73;
+#X obj 168 209 print;
+#X text 295 203 lowest (real) pitch in the chord;
+#X text 2 23 outputs the basic structure of a chord;
+#X text 169 310 - list (supposedly a collection of midi notes or pitch
+classes).;
+#X text 169 388 - list with the chord structure;
+#X obj 79 419 cnv 17 3 1 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 99 418 float;
+#X text 99 388 list;
+#X text 169 418 - float representing the lowest pitch in the chord.
+;
+#X text 172 102 chord or pitch class set.;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/pd-symbolic
+;
+#X connect 10 0 11 0;
+#X connect 11 0 13 0;
+#X connect 11 1 9 0;
+#X connect 12 0 11 0;

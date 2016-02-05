@@ -1,0 +1,41 @@
+#N canvas 1 23 555 543 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header distance-spearman
+3 12 0 18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 99 310 list;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2016;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 79 351 cnv 17 3 12 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 99 388 float;
+#X text 99 350 list;
+#X text 169 350 - list to compare to.;
+#X text 169 310 - list that is compared to a list on the right inlet.
+;
+#X text 169 330 - bang outputs the last result;
+#X text 99 330 bang;
+#X text 108 91 Calculates Spearman's Rank Correlation between two lists
+of the same length.;
+#X floatatom 112 230 10 0 0 0 - - -, f 10;
+#X msg 112 136 86 97 99 100 101 103 106 110 112 113;
+#X msg 211 162 0 20 28 27 50 29 7 17 6 12;
+#X obj 112 198 distance-spearman;
+#X text 169 388 - Spearman's rank correlation between the two lists
+;
+#X text 2 23 calculates the Spearman's rank correlation between two
+lists;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/pd-symbolic
+;
+#X connect 18 0 20 0;
+#X connect 19 0 20 1;
+#X connect 20 0 17 0;
