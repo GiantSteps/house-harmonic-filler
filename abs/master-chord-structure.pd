@@ -16,9 +16,9 @@
 #X obj 19 82 unpack f f;
 #X obj 19 60 t a b, f 16;
 #X obj 80 150 - 5;
-#X obj 19 149 + 3;
 #X obj 19 125 * 26;
 #X obj 80 126 * 26;
+#X obj 19 149 + 2;
 #X connect 0 0 6 0;
 #X connect 1 0 2 1;
 #X connect 1 1 5 2;
@@ -29,12 +29,12 @@
 #X connect 7 1 8 0;
 #X connect 8 0 6 0;
 #X connect 9 0 7 0;
-#X connect 10 0 15 0;
+#X connect 10 0 14 0;
 #X connect 11 0 10 0;
-#X connect 11 1 16 0;
+#X connect 11 1 15 0;
 #X connect 12 0 11 0;
 #X connect 12 1 9 0;
 #X connect 13 0 5 1;
-#X connect 14 0 5 0;
-#X connect 15 0 14 0;
-#X connect 16 0 13 0;
+#X connect 14 0 16 0;
+#X connect 15 0 13 0;
+#X connect 16 0 5 0;
