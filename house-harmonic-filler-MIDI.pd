@@ -40,8 +40,9 @@
 #N struct mchord7 float x float dur symbol chordname;
 #N struct beat float x;
 #N struct line float pos float color;
-#N canvas 1 89 812 440 10;
-#X declare -stdpath unauthorized -path abs -stdpath pdmus;
+#N canvas 24 29 812 440 10;
+#X declare -stdpath unauthorized -path abs -stdpath pdmus -stdpath
+vabs;
 #N canvas 112 348 605 433 patch 0;
 #N canvas 100 50 595 685 adt 0;
 #X obj 73 29 r density;
@@ -130,7 +131,7 @@
 #X connect 35 0 36 0;
 #X connect 36 0 5 0;
 #X connect 38 0 32 0;
-#X restore 217 133 pd adt;
+#X restore 217 153 pd adt;
 #N canvas 48 50 839 739 get-chord-progression 0;
 #X obj 23 19 inlet;
 #X obj 489 57 unpack 0 0 0 0;
@@ -256,7 +257,7 @@
 #X connect 53 0 14 0;
 #X connect 53 1 15 0;
 #X connect 53 2 18 0;
-#X restore 218 203 pd get-chord-progression;
+#X restore 218 223 pd get-chord-progression;
 #N canvas 131 101 674 601 make-chord-variations 0;
 #X msg 129 184 clear;
 #X obj 111 44 t l l l;
@@ -347,7 +348,7 @@ on the same index!;
 #X connect 37 0 41 0;
 #X connect 38 0 30 0;
 #X connect 41 0 39 0;
-#X restore 218 225 pd make-chord-variations;
+#X restore 218 245 pd make-chord-variations;
 #N canvas 180 89 466 618 load-midi-loop 0;
 #X msg 65 191 flush;
 #X obj 39 546 / 4;
@@ -410,7 +411,7 @@ on the same index!;
 #X connect 25 0 1 0;
 #X connect 26 0 2 0;
 #X connect 27 0 11 0;
-#X restore 218 183 pd load-midi-loop;
+#X restore 218 203 pd load-midi-loop;
 #N canvas 0 50 450 300 (subpatch) 0;
 #X array master-pattern 33 float 2;
 #X coords 0 2 32 -2 200 50 1 0 0;
@@ -476,7 +477,7 @@ on the same index!;
 #X connect 20 0 19 0;
 #X connect 20 1 14 0;
 #X connect 20 2 18 0;
-#X restore 261 133 pd legato;
+#X restore 261 153 pd legato;
 #N canvas 44 162 1164 595 control 0;
 #X obj 29 312 s saturation;
 #X obj 30 339 s substitution;
@@ -716,7 +717,7 @@ on the same index!;
 #X connect 121 0 73 0;
 #X connect 122 0 123 0;
 #X connect 123 0 97 0;
-#X restore 216 41 pd control from pd-gui;
+#X restore 216 61 pd control from pd-gui;
 #N canvas 318 50 572 466 clock 0;
 #X obj 197 146 /;
 #X obj 176 367 + 1;
@@ -800,7 +801,7 @@ on the same index!;
 #X connect 28 0 29 1;
 #X connect 29 0 30 0;
 #X connect 33 0 2 1;
-#X restore 356 41 pd clock;
+#X restore 356 61 pd clock;
 #N canvas 61 50 928 751 activity 0;
 #X obj 583 184 listfind;
 #X msg 583 162 1;
@@ -1011,7 +1012,7 @@ on the same index!;
 #X connect 80 0 31 1;
 #X connect 81 0 38 1;
 #X connect 82 0 3 0;
-#X restore 323 133 pd activity;
+#X restore 323 153 pd activity;
 #N canvas 342 114 582 441 register 0;
 #X msg 144 119 dump;
 #X obj 103 167 t b l;
@@ -1085,7 +1086,7 @@ on the same index!;
 #X connect 30 0 13 0;
 #X connect 30 1 14 1;
 #X connect 31 0 6 1;
-#X restore 217 153 pd register and range;
+#X restore 217 173 pd register and range;
 #X text 9 288 TO DO's:;
 #X text 8 342 rethink chord-substitution and expansion.;
 #X text 8 362 circular visualization?? processing??;
@@ -1422,7 +1423,7 @@ on the pattern.;
 #X connect 11 0 12 0;
 #X connect 13 1 9 0;
 #X connect 13 2 9 1;
-#X restore 218 253 pd BASS;
+#X restore 218 273 pd BASS;
 #N canvas 413 209 382 569 legato-visualization 0;
 #X obj 96 344 f 0;
 #X obj 126 344 + 1;
@@ -1475,7 +1476,7 @@ on the pattern.;
 #X connect 21 1 5 0;
 #X connect 21 2 7 1;
 #X connect 22 0 16 0;
-#X restore 217 83 pd legato-visualization;
+#X restore 217 103 pd legato-visualization;
 #N canvas 10 50 603 751 event-visualization 0;
 #X obj 302 726 s;
 #X obj 20 131 until;
@@ -1582,7 +1583,7 @@ on the pattern.;
 #X connect 40 0 18 0;
 #X connect 41 0 18 0;
 #X connect 42 0 0 0;
-#X restore 217 62 pd event-visualization;
+#X restore 217 82 pd event-visualization;
 #X text 8 402 bass duration;
 #N canvas 0 50 851 600 data-visualisation 0;
 #N canvas 789 423 334 157 line 0;
@@ -1979,7 +1980,7 @@ slave-chord-pos-2 100 \; slave-chord-pos-3 100 \; slave-chord-pos-4
 #X connect 24 1 1 1;
 #X connect 25 0 27 0;
 #X connect 26 0 28 0;
-#X restore 217 103 pd data-visualisation;
+#X restore 217 123 pd data-visualisation;
 #N canvas 0 50 312 534 loadbangs 0;
 #X obj 19 11 loadbang;
 #X obj 19 98 f \$0;
@@ -2002,15 +2003,15 @@ color 11 13 \; set-tempo 125 \; set-bass-duration 1 \; set-bass-octave
 #X connect 5 0 3 0;
 #X connect 7 0 6 0;
 #X connect 8 0 7 0;
-#X restore 357 62 pd loadbangs;
+#X restore 357 82 pd loadbangs;
 #X obj 216 20 declare -stdpath unauthorized -path abs -stdpath pdmus
-;
+-stdpath vabs;
 #X connect 1 0 2 0;
 #X connect 1 1 2 1;
 #X connect 3 0 1 0;
 #X restore 734 -1 pd patch;
-#X obj -4 -1 cnv 15 800 425 empty \$0-title House Harmonic Filler 5
-18 1 25 -128992 -258699 0;
+#X obj -4 -1 cnv 15 100 60 empty \$0-title House 20 12 0 14 -233017
+-66577 0;
 #X obj -1 34 r playlist;
 #X obj -1 281 s file-by-name;
 #X obj -4 32 cnv 15 250 266 empty empty SHUTTLE 5 12 0 20 -128992 -228856
@@ -2040,7 +2041,7 @@ color 11 13 \; set-tempo 125 \; set-bass-duration 1 \; set-bass-octave
 #X obj 301 89 vsl 24 180 0 1 0 0 raw-activity set-activity activity
 -8 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 344 89 vsl 24 180 -6 6 0 0 raw-register set-register register
--9 -12 1 12 -66577 -258113 -228856 8950 1;
+-9 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 387 89 vsl 24 180 0 3.9 0 0 raw-range set-range range -5 -12
 1 12 -66577 -258113 -228856 0 1;
 #X obj 284 264 bng 8 250 50 0 learn-legato --- empty 17 7 0 10 -262144
@@ -2054,9 +2055,9 @@ color 11 13 \; set-tempo 125 \; set-bass-duration 1 \; set-bass-octave
 #X obj 448 32 cnv 15 100 20 empty empty BASS 5 12 0 20 -128992 -228856
 0;
 #X obj 462 89 vsl 24 180 0 32 0 0 bass-density set-bass-density density
--8 -12 1 12 -66577 -258113 -228856 2797 1;
+-8 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 505 89 vsl 24 180 0.2 16 0 0 bass-duration set-bass-duration
-length -5 -12 1 12 -66577 -258113 -228856 906 1;
+length -5 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 548 89 vsl 24 180 1 0.125 0 0 bass-velocity set-bass-velocity
 accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 591 200 vradio 24 1 0 3 bass-octave set-bass-octave octave -6
@@ -2072,11 +2073,11 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj 718 224 tgl 48 0 play set-play play 0 -12 1 12 -128992 -128992
 -166441 0 1;
 #X obj 718 175 tgl 24 0 clock-mode set-clock-mode ext-sync 0 -12 1
-12 -66577 -258113 -228856 1 1;
+12 -66577 -258113 -228856 0 1;
 #X obj 768 264 bng 8 250 50 0 learn-play --- empty 17 7 0 10 -262144
 -1 -1;
 #X obj 665 89 vsl 24 180 40 239 0 0 tempo set-tempo tempo -6 -12 1
-12 -128992 -128992 -166441 7646 1;
+12 -128992 -128992 -166441 0 1;
 #X obj 691 264 bng 8 250 50 0 learn-tempo --- empty 17 7 0 10 -262144
 -1 -1;
 #X obj 648 32 cnv 15 100 20 empty empty TRANSPORT 5 12 0 20 -128992
@@ -2161,6 +2162,6 @@ accents -10 -12 1 12 -66577 -258113 -228856 0 1;
 #X obj -1 51 playlist mid 140 240 {Helvetica 12 normal} #999999 grey
 black red;
 #X obj 715 87 nbx 3 24 -1e+37 1e+37 0 0 notasdfasdfadsfadfad vis-tempo
-bpm 0 -8 1 12 -66577 -258699 -233017 125 256;
+bpm 0 -8 1 12 -66577 -258699 -233017 0 256;
 #X connect 2 0 39 0;
 #X connect 39 0 3 0;
