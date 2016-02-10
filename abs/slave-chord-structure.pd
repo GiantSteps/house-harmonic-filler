@@ -5,7 +5,7 @@
 #X obj 145 296 t b p;
 #X obj 145 221 until;
 #X obj 4 242 + 1;
-#X obj 269 74 r slave-chord-name-\$1;
+#X obj 269 104 r slave-chord-name-\$1;
 #X obj 49 129 t b f b;
 #X obj 120 134 t b f b;
 #X msg 171 349 symbol;
@@ -15,9 +15,9 @@
 ;
 #X text 205 53 60;
 #X obj 7 36 filledpolygon 222 666 1 0 60 dur 60 dur 90 0 90;
-#X restore 48 26 pd \$2-schord\$1;
-#X obj 49 51 r \$2-slave-chord-pos-\$1;
-#X obj 120 74 r \$2-slave-chord-dur-\$1;
+#X restore 48 56 pd \$2-schord\$1;
+#X obj 49 81 r \$2-slave-chord-pos-\$1;
+#X obj 120 104 r \$2-slave-chord-dur-\$1;
 #X obj 185 215 \$2;
 #X msg 185 240 traverse pd-\$1-data;
 #X obj 145 273 pointer \$2-schord\$1;
@@ -49,6 +49,8 @@
 #X connect 8 1 0 0;
 #X connect 8 2 1 0;
 #X connect 9 0 16 0;
+#X connect 11 0 7 0;
+#X connect 12 0 8 0;
 #X connect 13 0 14 0;
 #X connect 14 0 15 0;
 #X connect 15 0 3 0;
