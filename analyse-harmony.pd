@@ -1,4 +1,4 @@
-#N canvas 10 625 406 137 10;
+#N canvas 127 468 442 136 10;
 #N canvas 300 23 423 568 load-folder 0;
 #X obj 13 76 openpanel;
 #X obj 13 55 ggee/getdir;
