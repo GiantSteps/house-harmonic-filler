@@ -2,7 +2,7 @@
 #X msg 115 142 next;
 #X obj 115 193 t b p;
 #X obj 115 123 until;
-#N canvas 0 50 373 97 \$2-mchord\$1 1;
+#N canvas 0 50 373 97 \$2-mchord\$1 0;
 #X obj 5 8 struct \$2-mchord\$1 float x float dur;
 #X obj 5 28 filledpolygon 555 666 1 0 40 dur 40 dur 90 0 90;
 #X restore 20 17 pd \$2-mchord\$1;
