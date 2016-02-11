@@ -1,0 +1,18 @@
+#N canvas 519 314 435 296 10;
+#X obj 73 11 cnv 15 18 15 empty \$0-print empty 2 9 1 12 -262144 -250685
+0;
+#X obj 120 35 loadbang;
+#X obj 120 58 \$0;
+#X obj 12 39 inlet;
+#X obj 12 102 s \$0-print;
+#X msg 12 80 label \$1;
+#X obj 12 59 zexy/list2symbol;
+#X msg 120 80 \; \$1-print label \; \$1-print label_pos 2 9 \; \$1-print
+label_font 1 12 \; \$1-print vis_size 18 15 \; \$1-print color 0 979
+;
+#X connect 1 0 2 0;
+#X connect 2 0 7 0;
+#X connect 3 0 6 0;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X coords 0 -1 1 1 80 17 1 10 10;

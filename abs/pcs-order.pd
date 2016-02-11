@@ -1,0 +1,6 @@
+#N canvas 74 49 297 175 10;
+#X obj 15 14 inlet;
+#X obj 15 60 outlet;
+#X obj 15 37 zexy/sort;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
