@@ -1,0 +1,42 @@
+#N canvas 489 102 705 627 10;
+#X obj 22 244 print;
+#X text 21 276 parameters that we will control from a gui object \,
+represeinting a chord...;
+#X text 18 336 2) Number of Notes. Somehow associated to the previous
+one \, but not exactly., f 70;
+#X text 34 501 3) Inversion. This could be done with the chord-foldover
+object. Ideally a 2D control for register and range., f 70;
+#X text 18 316 1) Chord-Type. It could be associated to rotation of
+a circle., f 70;
+#X text 174 541 (root does not need to be stored);
+#X obj 22 99 pow 2;
+#X floatatom 22 121 5 0 0 0 - - -, f 5;
+#X text 29 570 que la reducción en número de notas se produca a posteriori
+\, ya que es una regla sencilla;
+#X obj 22 161 cyclone/coll chord-types.txt;
+#C restore;
+#X obj 22 77 pack;
+#X obj 32 53 t b f;
+#X floatatom 32 33 5 0 0 0 - - -, f 5;
+#X floatatom 22 13 5 0 0 0 - - -, f 5;
+#X text 68 32 expansion;
+#X text 58 122 index;
+#X msg 30 139 read chord-types.txt;
+#X text 59 12 base chord-type (2 \, 3 \, 5 \, 6 \, 7 \, 11);
+#X obj 22 188 chord-transpose 60;
+#X text 366 44 0 - maj;
+#X text 366 64 1 - min;
+#X text 366 84 2 - dim;
+#X text 366 104 3 - aug;
+#X text 366 124 4 - sus4;
+#X text 366 144 5 - sus2;
+#X connect 6 0 7 0;
+#X connect 7 0 9 0;
+#X connect 9 0 18 0;
+#X connect 10 0 6 0;
+#X connect 11 0 10 0;
+#X connect 11 1 10 1;
+#X connect 12 0 11 0;
+#X connect 13 0 10 0;
+#X connect 16 0 9 0;
+#X connect 18 0 0 0;

@@ -1,0 +1,40 @@
+#N canvas 93 90 554 543 10;
+#X obj 1 1 cnv 15 552 40 empty \$0-pddp.cnv.header change-any 3 12
+0 18 -204280 -1 0;
+#X obj 1 303 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 381 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 312 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 311 188 see also:;
+#X text 99 389 list;
+#X msg 193 156 10 11;
+#X msg 183 136 9 11;
+#X text 99 311 list;
+#X text 169 311 - two-element list.;
+#X text 169 389 - list (2 elements).;
+#X obj 1 506 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 459 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X text 335 507 angelfaraldo@gmail.com \, 2015-2016;
+#X obj 79 390 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 2 24 outputs incoming list if any element differ;
+#X text 70 67 change-any works like pd's native object [change] on
+packages of two floats. It will output the duple if any of the two
+elements is different from the previous incoming package.;
+#X obj 372 188 pddp/helplink change;
+#X obj 372 203 pddp/helplink change-any;
+#X obj 7 507 pddp/pddplink https://github.com/angelfaraldo/pd-symbolic
+;
+#X msg 213 196 10 12 1;
+#X msg 203 176 10 11 2;
+#X obj 183 236 list-change;
+#X obj 183 260 print;
+#X connect 6 0 22 0;
+#X connect 7 0 22 0;
+#X connect 20 0 22 0;
+#X connect 21 0 22 0;
+#X connect 22 0 23 0;

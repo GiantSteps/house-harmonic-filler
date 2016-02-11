@@ -1,0 +1,39 @@
+#N canvas 0 23 554 544 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header midi-note-duration
+3 12 0 18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2016;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 99 310 midi data;
+#X text 169 310 - incoming midi data (from a notein object).;
+#X text 99 390 list;
+#X obj 187 221 midi-note-duration;
+#X text 93 75 reports the duration of a midi note-on event... when
+its over.;
+#X msg 187 144 65;
+#X obj 187 245 print;
+#X obj 187 197 pack;
+#X obj 187 169 makenote 127 500;
+#X text 169 390 - list with note event information and appended duration.
+;
+#X floatatom 280 148 5 0 0 0 - - -, f 5;
+#X text 319 147 change duration;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/pd-symbolic
+;
+#X text 2 23 reports duration of midi event;
+#X connect 11 0 14 0;
+#X connect 13 0 16 0;
+#X connect 15 0 11 0;
+#X connect 16 0 15 0;
+#X connect 16 1 15 1;
+#X connect 18 0 16 2;

@@ -1,0 +1,30 @@
+#N canvas 0 23 555 543 10;
+#X obj 1 1 cnv 15 552 40 empty \$0-pddp.cnv.header midi-panic-all 3
+12 0 18 -204280 -1 0;
+#X obj 1 303 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 381 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 312 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 506 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 459 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X text 335 507 angelfaraldo@gmail.com \, 2015-2016;
+#X obj 79 390 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 2 24 midi panic (all notes off) in all channels;
+#X obj 102 175 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 100 109 PANIC message (resets all midi voices) to all midi
+channels.;
+#X obj 102 197 midi-panic-all;
+#X text 99 311 bang;
+#X text 169 311 - Sends a panic message and all-notes-off in all channels
+;
+#X text 100 129 You still have to set the correct midi device in the
+midi preferences.;
+#X obj 7 507 pddp/pddplink https://github.com/angelfaraldo/pd-symbolic
+;
+#X connect 9 0 11 0;

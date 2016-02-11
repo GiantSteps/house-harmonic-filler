@@ -1,0 +1,68 @@
+#N canvas 2 23 555 543 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header midi-sync 3 12 0
+18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2016;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 99 310 resolution;
+#X text 169 310 - resolution can be specified with integers representing
+divisions of a whole note.;
+#X text 99 390 bang;
+#X obj 79 412 cnv 17 3 12 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 169 413 - play (1) / stop messages;
+#X text 99 413 boolean;
+#X obj 79 435 cnv 17 3 12 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 99 436 float;
+#X text 169 436 - approximate tempo in bmp;
+#X text 169 390 - bang on step (determined by the resolution);
+#X floatatom 87 161 5 0 0 0 - - -, f 5;
+#X obj 36 275 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 124 160 bmp;
+#X text 58 272 play/stop;
+#X obj 61 183 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 85 182 steps (to use instead of metro);
+#X obj 61 207 f 0;
+#X obj 91 207 + 1;
+#X obj 61 252 hradio 15 1 0 16 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
+#X msg 36 97 resolution 16;
+#X obj 61 230 mod 16;
+#X msg 36 77 resolution 8;
+#X msg 36 118 resolution 32;
+#X msg 36 57 resolution 4;
+#X obj 36 138 midi-sync;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/pd-symbolic
+;
+#X text 168 57 [midi_sync] receives play/stop messages and bangs-on-step
+from an external midi-clock. The quantization factor of the tempo can
+be adjusted manually with the method "resolution" (default = 16 = semiquaver
+= 16th note). On the third inlet you get an estimation of the tempo
+of the external source (calculated in pd \, only for informative purposes).
+;
+#X text 1 23 receives transport info from external midi source;
+#X connect 22 0 24 0;
+#X connect 24 0 25 0;
+#X connect 24 0 28 0;
+#X connect 25 0 24 1;
+#X connect 27 0 32 0;
+#X connect 28 0 26 0;
+#X connect 29 0 32 0;
+#X connect 30 0 32 0;
+#X connect 31 0 32 0;
+#X connect 32 0 19 0;
+#X connect 32 1 22 0;
+#X connect 32 2 18 0;

@@ -1,0 +1,37 @@
+#N canvas 3 23 555 543 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header chord-intervals
+3 12 0 18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 269 202 see also:;
+#X text 99 310 list;
+#X text 99 388 lists;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2016;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 114 222 chord-intervals;
+#X obj 114 176 chord-structure;
+#X msg 114 152 60 64 67 70;
+#X text 191 151 ... a C7...;
+#X text 103 92 Returns the intervals between different elements of
+a "chord structure".;
+#X text 169 310 list (supposedly a chord-structure).;
+#X text 169 388 - list of chord intervals;
+#X obj 122 198 print structure;
+#X obj 114 244 print intervals;
+#X text 2 23 outputs the intervals of a chord structure;
+#X obj 330 202 pddp/helplink chord-structure;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/pd-symbolic
+;
+#X connect 11 0 19 0;
+#X connect 12 0 11 0;
+#X connect 12 0 18 0;
+#X connect 13 0 12 0;
