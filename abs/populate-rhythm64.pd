@@ -231,7 +231,7 @@
 #X connect 94 0 95 0;
 #X restore 125 92 pd cooked_salience;
 #X obj 125 69 list;
-#N canvas 220 50 817 634 order-syncopations 1;
+#N canvas 220 50 817 634 order-syncopations 0;
 #X obj 333 32 inlet;
 #X obj 498 106 list split 1;
 #X obj 498 136 t b f;
