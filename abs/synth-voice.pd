@@ -1,4 +1,4 @@
-#N canvas 460 503 692 536 10;
+#N canvas 457 516 692 536 10;
 #X obj 47 209 osc~;
 #X obj 17 251 +~;
 #X obj 63 161 t b f;
@@ -15,7 +15,7 @@
 #X obj 87 10 r \$2-carrier;
 #X obj 63 139 r \$2-ratio;
 #X obj 79 209 r \$2-index;
-#X obj 395 299 r \$2-panic-chords;
+#X obj 395 298 r \$2-panic-chords;
 #X obj 294 413 throw~ \$2-synth-out;
 #X obj 420 149 change;
 #X obj 420 128 != 0;
@@ -23,15 +23,16 @@
 #X obj 255 139 sel 0;
 #X obj 114 51 unpack f f f, f 22;
 #X obj 87 31 t l l;
-#X obj 172 282 tabread4~ \$2-env;
-#X obj 172 237 phasor~ 0.1;
+#X obj 161 280 tabread4~ \$2-env;
+#X obj 161 235 phasor~ 0.1;
 #X msg 420 192 0 10;
 #X obj 77 328 *~;
 #X obj 282 169 t b f;
 #X obj 309 194 / 127;
-#X msg 235 213 0;
-#X obj 172 259 *~ 1000;
-#X obj 228 313;
+#X msg 224 211 0;
+#X obj 161 257 *~ 1000;
+#X msg 337 240 \$1 10;
+#X obj 469 232 vabs/prnt;
 #X connect 0 0 12 0;
 #X connect 1 0 10 0;
 #X connect 2 0 11 0;
@@ -49,6 +50,7 @@
 #X connect 11 0 0 0;
 #X connect 12 0 1 1;
 #X connect 13 0 23 0;
+#X connect 13 0 33 0;
 #X connect 14 0 2 0;
 #X connect 15 0 12 1;
 #X connect 16 0 9 0;
@@ -65,6 +67,8 @@
 #X connect 27 0 7 0;
 #X connect 28 0 30 0;
 #X connect 28 1 29 0;
-#X connect 29 0 6 0;
+#X connect 29 0 32 0;
+#X connect 29 0 33 0;
 #X connect 30 0 25 1;
 #X connect 31 0 24 0;
+#X connect 32 0 6 0;
