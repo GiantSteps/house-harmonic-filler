@@ -137,12 +137,10 @@
 #N struct 1003-beat float x;
 #N struct 1003-line float pos float color;
 #N struct 1003-point float x float y float c float t;
-#N struct 1003-ysis float x float y float heigth float vis;
-#N struct 1003-xsis float x float y float length;
 #N struct 1003-area float x float y float size;
-#N canvas 556 159 1067 438 10;
+#N canvas 626 232 1067 438 10;
 #X declare -path abs;
-#N canvas 1 576 486 458 patch 1;
+#N canvas 218 473 486 458 patch 1;
 #N canvas 228 102 1060 653 load-midi-loop 0;
 #X msg 394 151 flush;
 #X obj 508 276 / 4;
@@ -282,7 +280,7 @@ is done., f 31;
 #X connect 58 0 56 0;
 #X connect 60 0 41 0;
 #X restore 261 89 pd load-midi-loop;
-#N canvas 0 115 646 500 clock 0;
+#N canvas 0 128 649 559 clock 1;
 #X obj 145 148 /;
 #X obj 204 309 + 1;
 #X obj 174 309 f 0;
@@ -324,6 +322,11 @@ is done., f 31;
 #X obj 19 418 sel 0 1;
 #X obj 19 461 pdmus/midi-panic-ch 1;
 #X obj 38 440 s \$0-panic-bass;
+#X obj 399 461 zexy/dirac~;
+#X obj 390 487 dac~;
+#X obj 399 387 r \$0-current-step;
+#X obj 399 411 mod 4;
+#X obj 399 439 sel 0;
 #X connect 0 0 4 1;
 #X connect 1 0 2 1;
 #X connect 2 0 1 0;
@@ -372,6 +375,11 @@ is done., f 31;
 #X connect 35 1 31 0;
 #X connect 36 0 37 0;
 #X connect 36 1 38 0;
+#X connect 39 0 40 0;
+#X connect 39 0 40 1;
+#X connect 41 0 42 0;
+#X connect 42 0 43 0;
+#X connect 43 0 39 0;
 #X restore 261 49 pd clock;
 #X text 10 274 TO DO's:;
 #X text 9 295 rethink chord-substitution and expansion., f 29;
@@ -1540,7 +1548,7 @@ on the pattern.;
 #X obj 442 292 int;
 #X obj 442 334 + 0.5;
 #X obj 442 355 s \$0-set-keyseconds;
-#X msg 343 437 26 17;
+#X msg 343 437 0 0;
 #X msg 341 251 8 17;
 #X obj 208 208 r \$0-learn-tempo;
 #X obj 235 313 s \$0-set-tempo;
@@ -2793,7 +2801,7 @@ folder -3 -10 1 12 -66577 -258113 -228856;
 #X connect 35 0 4 0;
 #X connect 36 0 24 0;
 #X restore 261 149 pd adt;
-#N canvas 605 151 622 597 play-chord-sequence-- 0;
+#N canvas 602 164 622 597 play-chord-sequence-- 0;
 #X msg 250 92 clear;
 #X obj 239 28 inlet;
 #X obj 308 28 inlet;
@@ -2916,7 +2924,7 @@ easy to obtain the tonic of the shuttle., f 30;
 #X connect 56 0 57 0;
 #X connect 56 1 58 0;
 #X restore 290 411 pd play-chord-sequence--;
-#N canvas 329 153 700 582 make-chord-variations 1;
+#N canvas 863 256 700 582 make-chord-variations 0;
 #X msg 340 94 clear;
 #X obj 329 30 inlet;
 #X obj 398 30 inlet;
@@ -2977,7 +2985,6 @@ quite easy to obtain the tonic of the shuttle., f 30;
 #X obj 134 499 route 0 1;
 #X obj 134 542 noteout 2;
 #X obj 159 520 s \$0-chord-synth;
-#X obj 366 511 vabs/prnt;
 #X connect 0 0 39 0;
 #X connect 1 0 3 0;
 #X connect 2 0 3 1;
@@ -3029,11 +3036,10 @@ quite easy to obtain the tonic of the shuttle., f 30;
 #X connect 50 0 48 0;
 #X connect 51 0 52 1;
 #X connect 52 0 53 0;
-#X connect 52 0 56 0;
 #X connect 53 0 54 0;
 #X connect 53 1 55 0;
 #X restore 261 129 pd make-chord-variations;
-#N canvas 272 50 729 751 adt-new 0;
+#N canvas 269 89 729 751 adt-new 0;
 #X obj 479 169 s \$0-onsets-bass;
 #X obj 266 4 r \$0-load-rhythm;
 #X obj 266 149 t l l l, f 36;
@@ -3514,11 +3520,11 @@ quite easy to obtain the tonic of the shuttle., f 30;
 #X obj 0 2 cnv 15 1065 430 empty \$0-title HOUSE HARMONIC FILLER 20
 18 0 20 -128992 -258699 0;
 #X obj 551 225 vsl 24 180 1 64 0 1 \$0-density \$0-set-density density
--8 -12 1 12 -66577 -258113 -228856 9600 0;
+-8 -12 1 12 -66577 -258113 -228856 2557 0;
 #X obj 577 400 bng 8 250 50 0 \$0-learn-density --- empty 17 7 0 10
 -258113 -1 -1;
 #X obj 594 225 vsl 24 180 1 64 0 1 \$0-raw-legato \$0-set-legato legato
--6 -12 1 12 -66577 -258113 -228856 0 0;
+-6 -12 1 12 -66577 -258113 -228856 17900 0;
 #X obj 734 225 vsl 24 180 -2 2 0 0 \$0-raw-register \$0-set-register
 register -7 -12 1 12 -66577 -258113 -228856 8950 0;
 #X obj 687 225 vsl 24 180 0 3.9 0 0 \$0-range \$0-set-range spread
@@ -3532,9 +3538,9 @@ register -7 -12 1 12 -66577 -258113 -228856 8950 0;
 #X obj 794 176 cnv 15 100 20 empty empty BASS 5 12 0 20 -128992 -228856
 0;
 #X obj 808 225 vsl 24 180 0 64 0 0 \$0-bass-density \$0-set-bass-density
-density -8 -12 1 12 -66577 -258113 -228856 0 0;
+density -8 -12 1 12 -66577 -258113 -228856 2797 0;
 #X obj 851 225 vsl 24 180 0.2 16 0 0 \$0-bass-duration \$0-set-bass-duration
-length -5 -12 1 12 -66577 -258113 -228856 6100 0;
+length -5 -12 1 12 -66577 -258113 -228856 13368 0;
 #X obj 894 225 vsl 24 180 0.125 1 0 0 \$0-bass-velocity \$0-set-bass-velocity
 accents -10 -12 1 12 -66577 -258113 -228856 0 0;
 #X obj 937 312 vradio 24 1 0 4 \$0-bass-octave \$0-set-bass-octave
@@ -3552,7 +3558,7 @@ octave -6 -10 1 12 -66577 -258113 -228856 2;
 #X obj 14 178 cnv 15 100 20 empty empty GENERAL 5 12 0 20 -128992 -228856
 0;
 #X obj 77 318 nbx 3 24 20 999.9 0 0 \$0-tempo \$0-set-tempo bpm 0 -8
-1 12 -66577 -258699 -233017 23 256;
+1 12 -66577 -258699 -233017 125 256;
 #X obj 122 334 bng 8 250 50 0 \$0-learn-tempo --- empty 17 7 0 10 -258113
 -1 -1;
 #X obj 103 240 bng 8 250 50 0 \$0-learn-synth --- empty 17 7 0 10 -258113
@@ -3808,7 +3814,7 @@ key -18 -5 1 12 -258113 -258113 -228856 3200 1;
 #X obj 248 400 bng 8 250 50 0 \$0-learn-key2 --- empty 17 7 0 10 -258113
 -1 -1;
 #X obj 77 367 tgl 42 0 \$0-play \$0-set-play play 0 -10 1 12 -66577
--258699 -233017 0 1;
+-258699 -233017 1 1;
 #X obj 121 401 bng 8 250 50 0 \$0-learn-play --- empty 17 7 0 10 -258113
 -1 -1;
 #X text 736 333 ___;
@@ -3833,24 +3839,24 @@ key -18 -5 1 12 -258113 -258113 -228856 3200 1;
 #X obj 963 279 bng 8 250 50 0 \$0-learn-mute-bass --- empty 17 7 0
 10 -258113 -1 -1;
 #N canvas 0 50 959 334 \$0-data 0;
-#X scalar 1003-chord0 30 0 Imaj7 \;;
-#X scalar 1003-chord1 446 0 bVIImaj7 \;;
-#X scalar 1003-chord2 862 0 VImaj7 \;;
-#X scalar 1003-chord3 1772 0 x \;;
+#X scalar 1003-chord0 30 0 Imaj \;;
+#X scalar 1003-chord1 446 0 VIImin7 \;;
+#X scalar 1003-chord2 862 0 Imaj \;;
+#X scalar 1003-chord3 1278 0 VIImin7 \;;
 #X scalar 1003-chord4 1772 0 x \;;
 #X scalar 1003-chord5 1772 0 x \;;
 #X scalar 1003-chord6 1772 0 x \;;
 #X scalar 1003-chord7 1772 0 x \;;
-#X scalar 1003-mchord0 28 229 \;;
-#X scalar 1003-mchord1 288 21 \;;
-#X scalar 1003-mchord2 366 73 \;;
-#X scalar 1003-mchord3 444 411 \;;
-#X scalar 1003-mchord4 860 229 \;;
-#X scalar 1003-mchord5 1120 21 \;;
-#X scalar 1003-mchord6 1198 73 \;;
-#X scalar 1003-mchord7 1276 411 \;;
-#X scalar 1003-mchord8 100 0 \;;
-#X scalar 1003-mchord9 100 0 \;;
+#X scalar 1003-mchord0 28 411 \;;
+#X scalar 1003-mchord1 444 177 \;;
+#X scalar 1003-mchord2 652 21 \;;
+#X scalar 1003-mchord3 704 21 \;;
+#X scalar 1003-mchord4 782 73 \;;
+#X scalar 1003-mchord5 860 411 \;;
+#X scalar 1003-mchord6 1276 177 \;;
+#X scalar 1003-mchord7 1484 21 \;;
+#X scalar 1003-mchord8 1536 21 \;;
+#X scalar 1003-mchord9 1614 73 \;;
 #X scalar 1003-mchord10 100 0 \;;
 #X scalar 1003-mchord11 100 0 \;;
 #X scalar 1003-mchord12 100 0 \;;
@@ -3969,7 +3975,7 @@ key -18 -5 1 12 -258113 -258113 -228856 3200 1;
 #X scalar 1003-schord61 100 0 \;;
 #X scalar 1003-schord62 100 0 \;;
 #X scalar 1003-schord63 100 0 \;;
-#X scalar 1003-beat 860 \;;
+#X scalar 1003-beat 548 \;;
 #X scalar 1003-line 26 900 \;;
 #X scalar 1003-line 52 333 \;;
 #X scalar 1003-line 78 333 \;;
@@ -4038,11 +4044,11 @@ key -18 -5 1 12 -258113 -258113 -228856 3200 1;
 #X coords 0 0 1715 120 1024 120 2 0 0;
 #X restore 21 42 pd \$0-data;
 #X obj 980 263 tgl 24 0 \$0-bass-lock \$0-set-bass-lock lock 1 -10
-1 12 -66577 -258113 -228856 1 1;
+1 12 -66577 -258113 -228856 0 1;
 #X obj 1006 279 bng 8 250 50 0 \$0-learn-lock-bass --- empty 17 7 0
 10 -258113 -1 -1;
 #X obj 980 312 vradio 24 1 0 4 lock-instrument \$0-set-lock-instrument
-empty 0 -8 0 10 -66577 -258699 -233017 0;
+empty 0 -8 0 10 -128992 -128992 -166441 0;
 #X obj 1011 314 cnv 15 30 20 empty empty kick 0 12 1 12 -128992 -228856
 0;
 #X obj 1010 336 cnv 15 30 20 empty empty snare 0 12 1 12 -128992 -228856
@@ -4054,11 +4060,11 @@ empty 0 -8 0 10 -66577 -258699 -233017 0;
 #X obj 1011 381 cnv 15 30 10 empty empty o-hat 0 12 1 12 -128992 -228856
 0;
 #X obj 27 226 vsl 24 180 0 27 0 1 \$0-chord-pattern \$0-set-chord-pattern
-pattern -8 -12 1 12 -66577 -258113 -228856 12900 0;
+pattern -8 -12 1 12 -66577 -258113 -228856 14800 0;
 #X obj 54 400 bng 8 250 50 0 \$0-learn-rhythm --- empty 17 7 0 10 -258113
 -1 -1;
 #N canvas 0 50 450 300 \$0-plot 0;
-#X scalar 1003-point 171.053 123.846 222 5 \;;
+#X scalar 1003-point 171.053 123.846 900 5 \;;
 #X scalar 1003-point 110.15 96.1538 222 5 \;;
 #X scalar 1003-point 122.969 185.385 222 5 \;;
 #X scalar 1003-point 157.518 188.462 222 5 \;;
@@ -4100,14 +4106,12 @@ pattern -8 -12 1 12 -66577 -258113 -228856 12900 0;
 #X scalar 1003-point 188.947 40.7692 222 5 \;;
 #X scalar 1003-point 136.316 157.692 222 5 \;;
 #X scalar 1003-point 142.969 59.2308 222 5 \;;
-#X scalar 1003-point 166.311 102.308 900 5 \;;
+#X scalar 1003-point 166.311 102.308 222 5 \;;
 #X scalar 1003-point 193.158 130 222 5 \;;
 #X scalar 1003-point 179.474 120.769 222 5 \;;
 #X scalar 1003-point 36.6532 65.3846 222 5 \;;
 #X scalar 1003-point 163.684 34.6154 222 5 \;;
 #X scalar 1003-point 150 34.6154 222 5 \;;
-#X scalar 1003-ysis 110 10 200 0 \;;
-#X scalar 1003-xsis 10 110 200 \;;
 #X scalar 1003-area 10 10 200 \;;
 #X coords 10 10 210 210 200 200 2 0 0;
 #X restore 279 208 pd \$0-plot;
