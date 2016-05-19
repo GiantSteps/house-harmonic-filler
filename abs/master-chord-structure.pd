@@ -1,15 +1,15 @@
-#N canvas 774 247 326 266 10;
+#N canvas 771 260 326 266 10;
 #X msg 128 142 next;
 #X obj 128 193 t b p;
 #X obj 128 123 until;
-#N canvas 0 128 538 206 \$2-mchord\$1 0;
+#N canvas 0 141 538 206 \$2-mchord\$1 1;
 #X obj 5 8 struct \$2-mchord\$1 float x float dur;
 #X obj 5 30 r \$2-master-chord-show;
 #X obj 5 52 sel 64;
 #X msg 5 78 0;
 #X obj 37 78 sel \$1;
 #X msg 37 101 1;
-#X obj 5 123 filledpolygon 555 666 2 0 40 dur 40 dur 90 0 90;
+#X obj 5 123 filledpolygon 555 333 2 0 40 dur 40 dur 90 0 90;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 2 1 4 0;
