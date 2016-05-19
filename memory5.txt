@@ -1,0 +1,16 @@
+-set-chord-pattern 12.8182;
+-file-index 0;
+-set-keyfifths 8.1875;
+-preset-density 1;
+-preset-legato 16;
+-set-octave 0;
+-set-spread 0;
+-set-register 0;
+-set-mute-chords 0;
+-set-chords-volume 0;
+-set-bass-density 5.7313;
+-set-bass-duration 16;
+-set-bass-velocity 0;
+-set-bass-octave 1;
+-set-mute-bass 0;
+-set-bass-volume 0;
