@@ -1,0 +1,45 @@
+#N canvas 2 25 555 539 10;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header add2list 3 12 0
+18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2016;
+#X msg 120 156 clear;
+#X obj 106 226 print;
+#X obj 199 181 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 106 132 5 0 0 0 - - -, f 5;
+#X obj 106 200 add2list prepend;
+#X text 331 155 see also:;
+#X text 98 75 Appends or prepends elements to a list \, according to
+its creation argument.;
+#X text 2 23 adds elements to a list;
+#X text 169 310 - element(s) to add to list;
+#X obj 79 349 cnv 17 3 17 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 99 348 bang;
+#X text 169 350 - empties the list;
+#X text 169 388 - list;
+#X text 99 388 list;
+#X text 82 476 1) add mode;
+#X text 99 310 anything;
+#X text 169 330 - "clear" method empties the list.;
+#X text 169 476 - "prepend" (default) or "append".;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 333 173 pddp/helplink prepend;
+#X obj 333 193 pddp/helplink list prepend;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/pd-symbolic
+;
+#X connect 7 0 11 0;
+#X connect 9 0 11 1;
+#X connect 10 0 11 0;
+#X connect 11 0 8 0;

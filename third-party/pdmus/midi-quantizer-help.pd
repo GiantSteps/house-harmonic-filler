@@ -1,0 +1,86 @@
+#N canvas 6 23 554 653 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header midi-quantizer 3
+12 0 18 -204280 -1 0;
+#X obj 1 412 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 490 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 421 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 615 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 568 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X text 335 616 angelfaraldo@gmail.com \, 2015-2016;
+#X obj 79 499 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 2 23 receives transport info from external application;
+#X obj 79 522 cnv 17 3 12 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X obj 79 545 cnv 17 3 12 empty \$0-pddp.cnv.let.0 2 5 9 0 16 -228856
+-162280 0;
+#X text 99 546 float;
+#X text 184 48 [midi-quantizer] receives midi note data and quantizes
+it to a given tempo and subdivision. This object is not so much intended
+for playing as it is for analysis \, especially for detecting MIDI
+chords.;
+#X obj 18 131 notein;
+#X obj 18 159 pack 0 0 0;
+#X msg 191 238 quantize \$1;
+#X msg 211 169 4;
+#X msg 220 190 8;
+#X msg 228 212 16;
+#X text 256 211 semiquaver;
+#X text 239 167 crotchet;
+#X text 219 126 semibreve;
+#X text 227 147 minim;
+#X msg 191 128 1;
+#X msg 200 149 2;
+#X msg 98 137 tempo \$1;
+#X floatatom 98 116 5 0 0 0 - - -, f 5;
+#X obj 287 287 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 308 285 reset counter and phase;
+#X floatatom 178 361 5 0 0 1 - - -, f 5;
+#X floatatom 219 341 5 0 0 1 - - -, f 5;
+#X text 259 340 ms. Refresh period;
+#X text 216 361 Counter. Useful for aligning data.;
+#X obj 138 383 print CHORDS;
+#X text 246 189 quaver (default);
+#X obj 355 215 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 113 159 tempo 120;
+#X obj 138 320 midi-quantizer;
+#X text 416 237 metronome click on?;
+#X text 99 420 midi data;
+#X text 169 420 - receives midi packs to quantize.;
+#X text 99 440 selector;
+#X text 169 440 - takes different methods to adjust quantization factors.
+;
+#X text 99 500 midi data;
+#X text 169 500 - quantized midi;
+#X text 99 523 float;
+#X text 169 523 - counter... incremental steps;
+#X text 169 546 - refresh period (quantization time in ms.);
+#X msg 355 237 click \$1;
+#X obj 7 616 pddp/pddplink https://github.com/angelfaraldo/pd-symbolic
+;
+#X connect 13 0 14 0;
+#X connect 13 1 14 1;
+#X connect 13 2 14 2;
+#X connect 14 0 37 0;
+#X connect 15 0 37 0;
+#X connect 16 0 15 0;
+#X connect 17 0 15 0;
+#X connect 18 0 15 0;
+#X connect 23 0 15 0;
+#X connect 24 0 15 0;
+#X connect 25 0 37 0;
+#X connect 26 0 25 0;
+#X connect 27 0 37 0;
+#X connect 35 0 48 0;
+#X connect 36 0 37 0;
+#X connect 37 0 33 0;
+#X connect 37 1 29 0;
+#X connect 37 2 30 0;
+#X connect 48 0 37 0;

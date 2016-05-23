@@ -143,9 +143,9 @@
 #N struct 1270-line float pos;
 #N struct 1274-line float pos;
 #N struct 1278-line float pos;
-#N canvas 464 23 634 528 8;
-#X declare -path abs;
-#N canvas 4 23 518 395 patch 0;
+#N canvas 508 23 634 528 8;
+#X declare -path abs -path third-party;
+#N canvas 4 23 590 405 patch 0;
 #N canvas 119 23 622 750 adt 0;
 #X obj 254 159 s \$0-onsets-bass;
 #X obj 89 5 r \$0-load-rhythm;
@@ -531,7 +531,6 @@ is done., f 31;
 #X obj 25 105 zexy/list2symbol;
 #X obj 25 162 list append;
 #X obj 25 66 del 200;
-#X msg 25 86 GS-HARMONY;
 #X obj 33 44 s \$0-create-visuals;
 #X obj 6 27 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -544,18 +543,19 @@ set 16 \; \$1-preset-density 4 \; \$1-preset-bass-density 4 \; \$1-preset-legato
 16 \; \$1-set-clock-mode 0 \; \$1-set-chord-pattern 2 \; \$1-set-keyfifths
 set 6.5 \; \$1-set-bass-lock 0 \; \$1-set-lock-instrument 0 \; \$1-set-int-synth
 0 \; \$1-init-plot bang \; \$1-load-corpus bang;
+#X msg 25 86 HOUSE HARMONIC FILLER;
 #X connect 0 0 5 0;
-#X connect 0 0 7 0;
+#X connect 0 0 6 0;
 #X connect 1 0 4 0;
 #X connect 2 0 1 0;
 #X connect 2 1 4 1;
 #X connect 3 0 2 0;
-#X connect 4 0 9 0;
-#X connect 4 0 9 0;
-#X connect 5 0 6 0;
-#X connect 6 0 3 0;
-#X connect 8 0 7 0;
-#X connect 8 0 5 0;
+#X connect 4 0 8 0;
+#X connect 4 0 8 0;
+#X connect 5 0 9 0;
+#X connect 7 0 6 0;
+#X connect 7 0 5 0;
+#X connect 9 0 3 0;
 #X restore 345 29 pd loadbangs;
 #N canvas 0 102 522 653 get-chord-progression 0;
 #X obj 11 5 inlet;
@@ -1255,7 +1255,6 @@ set 6.5 \; \$1-set-bass-lock 0 \; \$1-set-lock-instrument 0 \; \$1-set-int-synth
 #X connect 52 0 36 1;
 #X connect 52 0 9 0;
 #X restore 346 125 pd get-chord-progression;
-#X obj 345 9 declare -path abs;
 #X obj 11 217 r \$0-save-state;
 #N canvas 4 50 982 523 gui-transport 0;
 #X msg 741 47 9 18;
@@ -2208,9 +2207,9 @@ set 6.5 \; \$1-set-bass-lock 0 \; \$1-set-lock-instrument 0 \; \$1-set-int-synth
 #X restore 346 304 pd struct-definitions;
 #N canvas 0 50 450 278 (subpatch) 0;
 #X array \$0-master-pattern 64 float 1;
-#A 0 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 16 15 14 13 12 11 10 9
-8 7 6 5 4 3 2 1 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 16 15 14 13
-12 11 10 9 8 7 6 5 4 3 2 1;
+#A 0 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 15 14 13 12 11 10 9 8 7
+6 5 4 3 2 1 0 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 15 14 13 12 11
+10 9 8 7 6 5 4 3 2 1 0;
 #X coords 0 64 63 0 100 100 1 0 0;
 #X restore 4 21 graph;
 #N canvas 0 193 634 695 make-gui-sequence 0;
@@ -3437,14 +3436,15 @@ add -set-bass-density \$12 \, add -set-bass-duration \$13 \, add -set-bass-veloc
 #X array \$0-new-pattern 64 float 0;
 #X coords 0 64 63 0 100 100 1 0 0;
 #X restore 224 21 graph;
+#X obj 345 9 declare -path abs -path third-party;
 #X connect 1 0 7 0;
-#X connect 7 0 23 0;
-#X connect 7 1 23 1;
-#X connect 9 0 18 0;
-#X connect 18 0 19 0;
+#X connect 7 0 22 0;
+#X connect 7 1 22 1;
+#X connect 8 0 17 0;
+#X connect 17 0 18 0;
 #X restore 574 4 pd patch;
-#X obj 6 4 cnv 15 620 510 empty \$0-title GS-HARMONY 10 18 0 16 -128992
--233017 0;
+#X obj 6 4 cnv 15 620 510 empty \$0-title HOUSE HARMONIC FILLER 10
+18 0 16 -128992 -233017 0;
 #X obj 273 265 hsl 100 15 -2 2 0 0 \$0-raw-register \$0-set-register
 register 106 11 1 11 -66577 -258113 -228856 4950 0;
 #X obj 273 240 hsl 100 15 0 3.9 0 0 \$0-spread \$0-set-spread spread
@@ -3564,18 +3564,18 @@ key -20 -5 1 11 -258113 -258113 -228856 3200 1;
 #X scalar 1003-line 1482 666 \;;
 #X scalar 1003-line 1586 666 \;;
 #X scalar 1003-line 1690 900 \;;
-#X scalar 1003-chord0 30 0 Imaj \;;
-#X scalar 1003-chord1 446 0 VIImin7 \;;
-#X scalar 1003-chord2 862 0 Imaj \;;
-#X scalar 1003-chord3 1278 0 VIImin7 \;;
+#X scalar 1003-chord0 30 0 Imaj7 \;;
+#X scalar 1003-chord1 446 0 VIImaj7 \;;
+#X scalar 1003-chord2 862 0 Vmaj7 \;;
+#X scalar 1003-chord3 1278 0 IVmaj7 \;;
 #X scalar 1003-chord4 1772 0 x \;;
 #X scalar 1003-chord5 1772 0 x \;;
 #X scalar 1003-chord6 1772 0 x \;;
 #X scalar 1003-chord7 1772 0 x \;;
-#X scalar 1003-mchord0 33.2 404.6 \;;
-#X scalar 1003-mchord1 449.2 404.6 \;;
-#X scalar 1003-mchord2 865.2 404.6 \;;
-#X scalar 1003-mchord3 1281.2 404.6 \;;
+#X scalar 1003-mchord0 33.2 379 \;;
+#X scalar 1003-mchord1 449.2 379 \;;
+#X scalar 1003-mchord2 865.2 379 \;;
+#X scalar 1003-mchord3 1281.2 379 \;;
 #X scalar 1003-mchord4 -100 0 \;;
 #X scalar 1003-mchord5 -100 0 \;;
 #X scalar 1003-mchord6 -100 0 \;;
@@ -3704,11 +3704,11 @@ key -20 -5 1 11 -258113 -258113 -228856 3200 1;
 #X coords 0 0 1715 120 600 80 2 0 0;
 #X restore 15 41 pd \$0-data;
 #X obj 453 165 hsl 100 15 0 27 0 1 \$0-chord-pattern \$0-set-chord-pattern
-pattern 106 11 1 11 -66577 -258113 -228856 733 0;
+pattern 106 11 1 11 -66577 -258113 -228856 1800 0;
 #X obj 440 165 bng 8 250 50 0 \$0-learn-rhythm --- empty 17 7 0 10
 -258113 -1 -1;
 #N canvas 0 92 450 297 \$0-plot 0;
-#X scalar 1003-point 172.443 65.3846 900 5 \;;
+#X scalar 1003-point 172.443 65.3846 222 5 \;;
 #X scalar 1003-point 103.834 99.2308 222 5 \;;
 #X scalar 1003-point 127.18 188.462 222 5 \;;
 #X scalar 1003-point 159.623 185.385 222 5 \;;
@@ -3749,7 +3749,7 @@ pattern 106 11 1 11 -66577 -258113 -228856 733 0;
 #X scalar 1003-point 116.696 56.1538 222 5 \;;
 #X scalar 1003-point 193.158 37.6923 222 5 \;;
 #X scalar 1003-point 136.316 160.769 222 5 \;;
-#X scalar 1003-point 147.18 68.4615 222 5 \;;
+#X scalar 1003-point 147.18 68.4615 900 5 \;;
 #X scalar 1003-point 164.205 90 222 5 \;;
 #X scalar 1003-point 197.368 130 222 5 \;;
 #X scalar 1003-point 173.158 126.923 222 5 \;;
