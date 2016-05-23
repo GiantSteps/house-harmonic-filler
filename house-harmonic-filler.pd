@@ -143,10 +143,10 @@
 #N struct 1270-line float pos;
 #N struct 1274-line float pos;
 #N struct 1278-line float pos;
-#N canvas 1 23 634 528 8;
+#N canvas 368 23 634 528 8;
 #X declare -path abs -path third-party -path third-party/kiosk-plugin
 ;
-#N canvas 4 23 784 468 patch 1;
+#N canvas 4 23 784 468 patch 0;
 #N canvas 119 23 622 750 adt 0;
 #X obj 254 159 s \$0-onsets-bass;
 #X obj 89 5 r \$0-load-rhythm;
@@ -1708,7 +1708,7 @@ set 6.5 \; \$1-set-bass-lock 0 \; \$1-set-lock-instrument 0 \; \$1-set-int-synth
 #X connect 59 0 58 0;
 #X connect 61 0 59 0;
 #X restore 346 268 pd gui-bass;
-#N canvas 0 23 581 363 harmonic-rhythm 1;
+#N canvas 0 23 581 363 harmonic-rhythm 0;
 #X obj 166 138 zexy/repack 2;
 #X obj 220 200 f 0;
 #X obj 250 200 + 1;
