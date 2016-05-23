@@ -1,4 +1,5 @@
-#N canvas 579 89 431 169 10;
+#N canvas 6 23 467 245 10;
+#X declare -path third-party;
 #N canvas 299 50 326 362 load-folder 0;
 #X obj 13 76 openpanel;
 #X obj 13 55 ggee/getdir;
@@ -37,11 +38,11 @@
 #X connect 15 0 14 1;
 #X connect 16 0 17 0;
 #X connect 17 0 10 0;
-#X restore 44 57 pd load-folder;
-#X obj 44 35 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X restore 14 97 pd load-folder;
+#X obj 14 75 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X text 64 34 select corpus folder to analyse;
-#N canvas 110 143 548 529 read-midi-file 1;
+#X text 34 74 select corpus folder to analyse;
+#N canvas 110 143 548 529 read-midi-file 0;
 #X msg 44 76 flush;
 #X obj 20 305 / 4;
 #X obj 20 282 unpack 0 0 0 0 0;
@@ -121,8 +122,8 @@
 #X connect 31 0 4 0;
 #X connect 33 0 2 0;
 #X connect 34 0 6 0;
-#X restore 44 81 pd read-midi-file;
-#N canvas 342 89 503 567 analyse-file 0;
+#X restore 14 121 pd read-midi-file;
+#N canvas 2 23 503 567 analyse-file 0;
 #X obj 5 6 inlet;
 #X obj 5 28 unpack 0 0 0 0;
 #X obj 5 71 /;
@@ -151,7 +152,7 @@
 #X obj 5 376 vabs/add2list prepend;
 #X obj 162 398 s \$0-master-pattern;
 #X msg 162 376 const -1;
-#X obj 292 532 cyclone/coll ./rhythm.txt;
+#X obj 292 532 cyclone/coll ./user/rhythm.txt;
 #C restore;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
@@ -185,11 +186,12 @@
 #X connect 24 0 6 0;
 #X connect 25 0 20 1;
 #X connect 27 0 26 0;
-#X restore 44 105 pd analyse-file;
-#X msg 291 93 clear;
-#X msg 291 71 writeagain;
-#X msg 291 49 readagain;
-#X obj 291 115 s \$0-manage-file;
+#X restore 14 145 pd analyse-file;
+#X msg 261 133 clear;
+#X msg 261 111 writeagain;
+#X msg 261 89 readagain;
+#X obj 261 155 s \$0-manage-file;
+#X obj 11 20 declare -path third-party;
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;
 #X connect 3 0 4 0;
