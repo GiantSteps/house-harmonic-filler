@@ -54,10 +54,17 @@ To perform chord variations over the rhythmic master pattern you can use the con
 
 #####Bass
 
+The program also generates a simple bass line based on the chord progressions and the harmonic rhythm proposed. Up to now, the bass only uses the root of the chords analysed. However, you can play with a few parameters:
+
 <p align="center">
   <img src="/doc/img-bass.png"/>
 </p>
 
+- The *density* changes the number of events per loop.
+- The *duration* is similar to the legato control described above. It changes the duration of the notes in the bass line.
+- The *accents* parameter creates different accentuations (midi velocity) depending on the position of the note in the beat structure.
+- The *octave* control lets you choose among three different octaves to play be bass line.
+- - *mute* and *volume* controls mute and set the volume of this layer.
 
 #####Transport and Storage
 The *TRANSPORT* section offers basic transport options. Besides *playing* and setting the *tempo* of the loop, this is the section where you set the main behaviour of the program:
@@ -74,6 +81,5 @@ Last, a *MEMORY* section lets you store and recall up to 7 presets. Transport in
 <p align="center">
   <img src="/doc/img-memory.png"/>
 </p>
-
 
 *(Tested on on Ubuntu 15.10 and OSX El Capitan)*
