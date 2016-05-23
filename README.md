@@ -20,8 +20,10 @@ For the current study, we have used limited resources publicly available on the 
 
 
 It takes a single MIDI chord loop, which serves as the reference musical material on which variations are performed in real-time. As already discussed, loops are limited to two bars in length, although this will be expanded to lengthier excerpts in the near future. The loop is analyzed in terms of rhythm, duration, chord progression and scale, in order to extract different layers of information and manipulation.
-!["The graphic interface"](/doc/img-harmony.png?raw=true)
 
+<p align="center">
+  <img src="/doc/img-harmony.png"/>
+</p>
 
 #####Keyboard
 
@@ -30,8 +32,9 @@ As explained above, harmony is a complex musical category that can not be consid
 
 <p align="center">
   <img src="/doc/img-bass.png"/>
-  
 </p>
+
+
 !["The graphic interface"](/doc/img-bass.png?raw=true)
 
 
@@ -42,12 +45,14 @@ As explained above, harmony is a complex musical category that can not be consid
 
 
 #####Transport and Storage
-We have pl
+The *Transport* section offers basic transport options. Besides playing and setting the tempo of the loop, this is the section where you set the behaviour of the program_
 
-<center>!["The graphic interface"](/doc/img-transport.png?raw=true)
+- *int-synth* enables a small synthesiser for testing without needing an external midi synthesiser.
+- *ext-sync* sets the program to operate as a slave of an external midi devide. When activated, the playback and tempo options are disabled, and the program expect midi transport information on a midi in port. This is useful to integrate this program within any DAW.
 
-
-!["The graphic interface"](/doc/img-memory.png?raw=true)
-
+<p align="center">
+  <img src="/doc/img-transport.png"/>
+  <img src="/doc/img-memory.png"/>
+</p>
 
 *(Tested on on Ubuntu 15.10 and OSX El Capitan)*
