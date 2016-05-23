@@ -34,6 +34,13 @@ As explained above, harmony is a complex musical category that can not be consid
   <img src="/doc/img-bass.png"/>
 </p>
 
+<p align="center">
+  <img src="/doc/img-bass.png"/>
+</p>
+
+<p align="center">
+  <img src="/doc/img-bass.png"/>
+</p>
 
 !["The graphic interface"](/doc/img-bass.png?raw=true)
 
@@ -45,7 +52,7 @@ As explained above, harmony is a complex musical category that can not be consid
 
 
 #####Transport and Storage
-The *Transport* section offers basic transport options. Besides playing and setting the tempo of the loop, this is the section where you set the behaviour of the program:
+The *Transport* section offers basic transport options. Besides *playing* and setting the *tempo* of the loop, this is the section where you set the main behaviour of the program:
 
 - *int-synth* enables a small synthesiser for testing without needing an external midi synthesiser.
 - *ext-sync* sets the program to operate as a slave of an external midi devide. When activated, the playback and tempo options are disabled, and the program expect midi transport information on a midi in port. This is useful to integrate this program within any DAW.
@@ -54,7 +61,7 @@ The *Transport* section offers basic transport options. Besides playing and sett
   <img src="/doc/img-transport.png"/>
 </p>
 
-Last, a *Memory* section lets you store in memory and recall up to 7 presets. Transport instructions (tempo, play) are not stored with the memories.
+Last, a *Memory* section lets you store and recall up to 7 presets. Transport instructions (tempo, play) are not stored with the memories.
 
 <p align="center">
   <img src="/doc/img-memory.png"/>
