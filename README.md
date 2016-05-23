@@ -15,7 +15,7 @@ The program offers simple manipulation of MIDI harmonic loops. You can use it in
 It comes with *MIDI learn* fuctionality, in case you want to control its parameter with a hardware controller or an external interface. The MIDI learn function is represented by the **red dots** next to each parameter. To assign a MIDI CC to a parameter, simply move the controller you want to assign and then hit on the red dot. The last-used CC should be automatically assigned and remembered for future sessions.
 
 #####Harmony
-The HARMONY section is the core of the application. It operates on a previously analysed a collection of MIDI loops. The current version, offers a pre-loaded selection of homophonic MIDI chord loops freely available on the internet. You could alternatively analyise your own folder with MIDI files using the patch named *analysis-corpus.pd*, also provided with this repository, although this feature is still experimental.
+The HARMONY section is the core of the application. It operates on a previously analysed a collection of MIDI loops. The current version, offers a pre-loaded selection of homophonic MIDI chord loops freely available on the internet. You could alternatively analyise your own folder with MIDI files using the patch named *analyse-corpus.pd*, also provided with this repository, although this feature is still experimental.
 
 House harmonic loops normally consist of sequences of 2 or 4 bars, with a tendency to have a single chord per bar. 8-bar loops are less frequent, and in most cases, they result from a repetition of a 4-bar pattern with some small variation toward the end of the second half, so we have limited the performance of the *House Harmonic Filler* to 4-bar loops.
 
