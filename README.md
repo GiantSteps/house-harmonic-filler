@@ -12,7 +12,7 @@ We suggest you to download the dependencies via the deken plugin (https://github
 
 !["The graphic interface"](/doc/img-chords.png?raw=true)
 
-!["The graphic interface"](/doc/imgloop.png?raw=true)
+!["The graphic interface"](/doc/img-loop.png?raw=true)
 
 !["The graphic interface"](/doc/img-transport.png?raw=true)
 
