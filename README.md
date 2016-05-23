@@ -28,7 +28,10 @@ It takes a single MIDI chord loop, which serves as the reference musical materia
 As explained above, harmony is a complex musical category that can not be considered in isolation from other musical parameters. In relation to rhythm, harmony progresses in time displaying a certain harmonic rhythm, which is the pace at which chord-changes structure time. This tends to be regular, especially in the styles we are studying, with chords changing at every bar. However the harmonic loops we are presenting have a clear motivic identity (call this hook, vamp or riff, the underlying concept is that of a harmonic-rhythmic-melodic compound recognizable as a unit and characteristic of a piece of music).
 
 
-
+<p align="center">
+  <img src="/doc/img-bass.png"/>
+  
+</p>
 !["The graphic interface"](/doc/img-bass.png?raw=true)
 
 
