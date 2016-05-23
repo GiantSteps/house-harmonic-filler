@@ -1,7 +1,7 @@
 
 ##House-Harmonic-Filler
 
-The *House Harmonic Filler* is a temptative model for chord variation that could be used in contexts of live electronic music performance. Based on corpus analysis of MIDI files, it provides a framework for variation and extension of chord progressions, generating MIDI data that is sent out to the preferred MIDI device or DAW.
+The *House Harmonic Filler* is a temptative model for chord variation that could be used in contexts of live electronic music performance. Based on corpus analysis of MIDI files, it provides a framework for variation and extension of chord progressions, generating MIDI data that is sent out to your preferred device or DAW.
 
 <p align="center">
   <img src="/doc/img-hhf.png"/>
@@ -13,9 +13,17 @@ To run the **House-Harmonic-Filler** you need the latests stable Pd-vanilla dist
 
 ####Description
 
+The program offers simple manipulation of MIDI loops. You can use it in standalone mode (in which case, the program uses an internal synthesiser to produce sounds) and more interestingly, as a *slave* MIDI instrument sending data to your preferred device or Digital Audio Workstation. 
+
+It also has *MIDI learn* fuctions, in case you want to control its parameter with a hardware controller or an external interface. The midi learn function is represented by the **red dots** next to each parameter. To assign a MIDI CC to a parameter, simply move the controller you want to assign and then hit on the red dot. The last-used CC should be automatically assigned and remembered for future sessions.
+
 #####Harmony
 
 House harmonic loops normally consist of sequences of 2 or 4 bars, with a tendency to have a single chord per bar. 8-bar loops are less frequent, and in most cases, they result from a repetition of a 4-bar pattern with some small variation toward the end of the second half. Currently, the House Harmonic Filler operates with 4-bar loops.
+
+<p align="center">
+  <img src="/doc/img-harmony.png"/>
+</p>
 
 
 For the current study, we have used limited resources publicly available on the internet. We have selected homophonic MIDI chord loops under tags of deep house piano, classic house piano and deep house chords. However, you could analyize your own corpus of MIDI files with the analysis patch provided.
@@ -24,9 +32,6 @@ For the current study, we have used limited resources publicly available on the 
 
 It takes a single MIDI chord loop, which serves as the reference musical material on which variations are performed in real-time. As already discussed, loops are limited to two bars in length, although this will be expanded to lengthier excerpts in the near future. The loop is analyzed in terms of rhythm, duration, chord progression and scale, in order to extract different layers of information and manipulation.
 
-<p align="center">
-  <img src="/doc/img-harmony.png"/>
-</p>
 
 #####Keyboard
 
