@@ -1,28 +1,26 @@
 
 ##House-Harmonic-Filler
 
-The *House Harmonic Filler* is a temptative model for chord variation that could be used in contexts of live electronic music performance. Despite harmony not being a prominent aspect of many electronic popular music genres, it is still prevalent in those evolving directly from the song tradition, such as electro-pop and disco variants. Furthermore, certain sub-styles of house, especially so-called deep house, make use of chord loops borrowed from what we could call a black-american tradition, such as soul, rhythm-and-blues or even jazz, using extended chords other than simple triads (especially major and minor 7ths and 9ths, but also 13ths, suspensions and alterations). Deep house tracks often favour instrumental timbres (as opposed to synthesized ones), such as pianos, vibraphones as well as an extensive use of vocals.
+The *House Harmonic Filler* is a temptative model for chord variation that could be used in contexts of live electronic music performance. Based on corpus analysis of MIDI files, it provides a framework for variation and extension of chord progressions, generating MIDI data that is sent out to the preferred MIDI device or DAW.
+
 !["The graphic interface"](/doc/img-hhf.png?raw=true)
 
-###Installation
+####Installation
 
 To run the **House-Harmonic-Filler** you need the latests stable Pd-vanilla distribution (0.46.7). You can download it from Miller Puckette's website (http://msp.ucsd.edu/software.html), of from the Pd main site (http://puredata.info). Beware that Pd-extended is now obsolete. For ease of use, we have included with this download all the externals needed, so downloading this repository is all you need to do to start using the program, once you have Pd installed.
 
+####Description
+
+House harmonic loops normally consist of sequences of 2 or 4 bars, with a tendency to have a single chord per bar. 8-bar loops are less frequent, and in most cases, they result from a repetition of a 4-bar pattern with some small variation toward the end of the second half. Currently, the House Harmonic Filler operates with 4-bar loops. For the current study, we have used limited resources publicly available on the internet. We have selected homophonic MIDI chord loops under tags of deep house piano, classic house piano and deep house chords. However, you could analyize your own corpus of MIDI files with the analysis patch provided.
 
 
-
-###Chord Shuttles
-House harmonic loops normally consist of sequences of 2 or 4 bars, with a tendency to have a single chord per bar. 8-bar loops are less frequent, and in most cases, they result from a repetition of a 4-bar pattern with some small variation toward the end of the second half. Currently, the House Harmonic Filler operates with 4-bar loops.
-
-###Statistical Analysis and Music Theory
-For the current study, we have used limited resources publicly available on the internet. We have selected homophonic MIDI chord loops under tags of deep house piano, classic house piano and deep house chords.
+#####Harmony
+It takes a single MIDI chord loop, which serves as the reference musical material on which variations are performed in real-time. As already discussed, loops are limited to two bars in length, although this will be expanded to lengthier excerpts in the near future. The loop is analyzed in terms of rhythm, duration, chord progression and scale, in order to extract different layers of information and manipulation.
+!["The graphic interface"](/doc/img-harmony.png?raw=true)
 
 
+#####Keyboard
 
-
-
-##Software Description and Interaction
-Our application promotes the source-variation model introduced in section ???XXX. It takes a single MIDI chord loop, which serves as the reference musical material on which variations are performed in real-time. As already discussed, loops are limited to two bars in length, although this will be expanded to lengthier excerpts in the near future. The loop is analyzed in terms of rhythm, duration, chord progression and scale, in order to extract different layers of information and manipulation.
 Rhythmic Variation: Style Agnostic Density Transformer
 As explained above, harmony is a complex musical category that can not be considered in isolation from other musical parameters. In relation to rhythm, harmony progresses in time displaying a certain harmonic rhythm, which is the pace at which chord-changes structure time. This tends to be regular, especially in the styles we are studying, with chords changing at every bar. However the harmonic loops we are presenting have a clear motivic identity (call this hook, vamp or riff, the underlying concept is that of a harmonic-rhythmic-melodic compound recognizable as a unit and characteristic of a piece of music).
 This surface rhythmic layer is processed according to the Agnostic Density Transformer described in D4.1, section 2.1:
@@ -41,33 +39,9 @@ A register expansion control allows variations in the vertical layout of the cho
 Overall Activity Control
 Last, we offer an Overall Activity control which simultaneously influences the amount of variation of the tonal parameters just described, resulting in a sort of voice leading control according to the color, substitution and register parameters, from a single change per chord on one extreme, to changes in the vertical configuration of the chord at every new onset.
 Again, the activity control follows a model based on the theory behind the agnostic density transformer (Lerdahl and Jakendoff, 1983) by which less rhythmically-significant steps are modified first.
-Visualization
-The House Harmonic Filler is presented as a two-window GUI. The real-time interaction is limited to a very simple interface with a series of sliders controlling the parameters just described (Figure 22).
-
  
-Figure 22. Control interface of the House Harmonic Filler
-
 A second window (Figure 23) provides visualization information about the live transformations on the MIDI Loop. This window presents a two-bar length grid quantized at 16th notes, with a three-layer box system on top. The layer at the background represents a metronome progressing along the sequence beats in sync with the tempo set by the user. The middle-ground layer represents the original pattern: each box represents a chord event, labeled with its chord name, where start- and end-points, as well as duration are represented by the rectangles position and horizontal length. Similarly, the forefront layer displays the modifications on real-time requested by the user. In the screenshot shown in Figure 23, density is set to 8 and legato to 0 (all 16th notes).
 
-Figure 23. Visualization window of the House Harmonic Filler
-Installation
-The current prototype is implemented in the Pd/Gem environment, and is delivered as a folder with a collection of original MIDI loops and all the files necessary for its usage.
-The prototype and some Midi loops can be downloaded from the GiantSteps Github page:
-https://github.com/GiantSteps/House-Harmonic-Filler
-The user needs to meet some dependencies, in principle available on all major OS’s:
-Pd-extended (>=0.43.4) with Gem image extension.
-Python (>= 2.7)
-Tcl/Tk (>= 8.5). This is also needed for Pd itself, so if Pd runs normally, it means that this dependency is already installed.
-We provide a bash script that opens Pd in the background, launching a two-window user interface.
-Future Development
-We are already expanding the current framework to operate with larger excerpts of music. This demands new theoretical formalizations that we are gaining through manual and computational analysis. Furthermore, as the corpus of styles grows, we will be able to contrast our theoretical findings with statistical truth, and rely less and less in pre-cooked musical knowledge that may seem arbitrary at some points (i.e. chord substitutions).
-In terms of functionality, we are implementing MIDI-learn and master/slave synchronization with external MIDI clocks. We are also working at packaging the prototype as a vst-plugin, to facilitate integration with professional audio software, especially aimed at the demos that will be carried on with expert users (i.e. Red Bull Music Academy & STEIM).
-
-
-
-***Instructions***
-
-!["The graphic interface"](/doc/img-harmony.png?raw=true)
 
 
 !["The graphic interface"](/doc/img-bass.png?raw=true)
