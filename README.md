@@ -4,7 +4,9 @@ To run the **House-Harmonic-Filler** you need a recent a pd-vanilla distribution
 
 We suggest you to download the dependencies via the deken plugin (https://github.com/pure-data/deken). External objects are always referenced as such in the patch, so you don't need to declare anything in advance.
 
+<p align="center">
 !["The graphic interface"](/doc/img-hhf.png?raw=true)
+</p>
 
 !["The graphic interface"](/doc/img-harmony.png?raw=true)
 
