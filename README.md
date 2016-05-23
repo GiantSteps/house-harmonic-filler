@@ -3,13 +3,16 @@
 
 The *House Harmonic Filler* is a temptative model for chord variation that could be used in contexts of live electronic music performance. Based on corpus analysis of MIDI files, it provides a framework for variation and extension of chord progressions, generating MIDI data that is sent out to the preferred MIDI device or DAW.
 
-!["The graphic interface"](/doc/img-hhf.png?raw=true)
+<p align="center">
+  <img src="/doc/img-hhf.png"/>
+</p>
 
 ####Installation
 
 To run the **House-Harmonic-Filler** you need the latests stable Pd-vanilla distribution (0.46.7). You can download it from Miller Puckette's website (http://msp.ucsd.edu/software.html), of from the Pd main site (http://puredata.info). Beware that Pd-extended is now obsolete. For ease of use, we have included with this download all the externals needed, so downloading this repository is all you need to do to start using the program, once you have Pd installed.
 
 ####Description
+
 #####Harmony
 
 House harmonic loops normally consist of sequences of 2 or 4 bars, with a tendency to have a single chord per bar. 8-bar loops are less frequent, and in most cases, they result from a repetition of a 4-bar pattern with some small variation toward the end of the second half. Currently, the House Harmonic Filler operates with 4-bar loops.
@@ -35,20 +38,12 @@ As explained above, harmony is a complex musical category that can not be consid
 </p>
 
 <p align="center">
-  <img src="/doc/img-bass.png"/>
+  <img src="/doc/img-loop.png"/>
 </p>
 
 <p align="center">
-  <img src="/doc/img-bass.png"/>
+  <img src="/doc/img-chords.png"/>
 </p>
-
-!["The graphic interface"](/doc/img-bass.png?raw=true)
-
-
-!["The graphic interface"](/doc/img-chords.png?raw=true)
-
-
-!["The graphic interface"](/doc/img-loop.png?raw=true)
 
 
 #####Transport and Storage
