@@ -19,7 +19,7 @@ It also has *MIDI learn* fuctions, in case you want to control its parameter wit
 
 #####Harmony
 
-The *Harmony* section is the core of the application. We have previously analysed a collection of MIDI loops in terms of harmonic rhythm and chord progressions. You could alternatively analyise your own folder with MIDI files using the patch named *analyis-corpus.pd* also provided with this repository, although this feature is still experimental.   
+The *Harmony* section is the core of the application. We have previously analysed a collection of MIDI loops in terms of harmonic rhythm and chord progressions. In the current version, we have used limited resources publicly available on the internet. We have selected homophonic MIDI chord loops under tags of deep house piano, classic house piano and deep house chords. You could alternatively analyise your own folder with MIDI files using the patch named *analyis-corpus.pd* also provided with this repository, although this feature is still experimental.   
 
 House harmonic loops normally consist of sequences of 2 or 4 bars, with a tendency to have a single chord per bar. 8-bar loops are less frequent, and in most cases, they result from a repetition of a 4-bar pattern with some small variation toward the end of the second half, so we have limited the performance of the *House Harmonic Filler* to 4-bar loops.
 
@@ -27,13 +27,11 @@ House harmonic loops normally consist of sequences of 2 or 4 bars, with a tenden
   <img src="/doc/img-harmony.png"/>
 </p>
 
-Each dot in the two-dimensional grid represents one MIDI file in the analysed corpus, which serves as the reference musical material on which variations are performed in real-time.
+Each dot in the two-dimensional plot represents one of such 4-bar MIDI loop in the analysed corpus, which serves as the reference musical material on which variations are performed in real-time. They are organized following a double classification of diatonic-chromatic (measured as the number of semitones present on each file) and minor-major (calculated as the distance with theoretical scales and modes). You could select a different progression by clicking on each dot, or alternatively by clicking on the *next* and *previous* buttons above.
 
+The loops are analyised relatively, so you could transpose each midi loop to any of the twelve pitch classes with the *key* wheel.
 
-For the current study, we have used limited resources publicly available on the internet. We have selected homophonic MIDI chord loops under tags of deep house piano, classic house piano and deep house chords. However, you could analyize your own corpus of MIDI files with the analysis patch provided.
-
-
-
+#####Keyboard
 
 <p align="center">
   <img src="/doc/img-loop.png"/>
@@ -41,7 +39,6 @@ For the current study, we have used limited resources publicly available on the 
 
 
 
-#####Keyboard
 
 As explained above, harmony is a complex musical category that can not be considered in isolation from other musical parameters. In relation to rhythm, harmony progresses in time displaying a certain harmonic rhythm, which is the pace at which chord-changes structure time. This tends to be regular, especially in the styles we are studying, with chords changing at every bar. However the harmonic loops we are presenting have a clear motivic identity (call this hook, vamp or riff, the underlying concept is that of a harmonic-rhythmic-melodic compound recognizable as a unit and characteristic of a piece of music).
 
