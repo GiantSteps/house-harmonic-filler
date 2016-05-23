@@ -25,4 +25,4 @@ To run the **House-Harmonic-Filler** you need the latests stable Pd-vanilla dist
 !["The graphic interface"](/doc/img-memory.png?raw=true)
 
 
-(Tested on on Ubuntu 15.10 and OSX El Capitan)
+*(Tested on on Ubuntu 15.10 and OSX El Capitan)*
