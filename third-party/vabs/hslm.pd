@@ -6,7 +6,7 @@
 #X msg 333 63 traverse pd-\$1-data \, bang;
 #X msg 370 85 \; pd-\$1-data clear;
 #N canvas 84 234 376 410 \$0-data 0;
-#X scalar 1270-line 12.5238 \;;
+#X scalar 1270-line 7 \;;
 #X coords 0 0 106 15 106 15 2 100 100;
 #X restore 70 100 pd \$0-data;
 #X obj 10 9 inlet;
@@ -22,14 +22,14 @@
 #X obj 14 31 drawpolygon 559 3 pos -5 pos 5;
 #X restore 9 261 pd line;
 #X obj 73 100 hsl 101 15 0 100 0 0 \$0-out \$0-in empty -2 -8 0 10
--66577 -258113 -258113 951 1;
+-66577 -258113 -258113 0 1;
 #X obj 296 128 + 3;
 #X obj 10 217 + 3;
 #X obj 296 192 append \$0-line pos;
 #X obj 10 238 set \$0-line pos;
-#X obj 70 73 vabs/rescale 0 127 0 100;
-#X obj 70 121 vabs/rescale 0 100 \$3 \$4;
-#X obj 10 197 vabs/rescale \$3 \$4 0 100;
+#X obj 70 73 vabs/vscale 0 127 0 100;
+#X obj 70 121 vabs/vscale 0 100 \$3 \$4;
+#X obj 10 197 vabs/vscale \$3 \$4 0 100;
 #X connect 0 0 18 1;
 #X connect 0 0 19 1;
 #X connect 1 0 2 0;

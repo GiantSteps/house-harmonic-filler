@@ -2207,9 +2207,9 @@ set 6.5 \; \$1-set-bass-lock 0 \; \$1-set-lock-instrument 0 \; \$1-set-int-synth
 #X restore 346 304 pd struct-definitions;
 #N canvas 0 50 450 278 (subpatch) 0;
 #X array \$0-master-pattern 64 float 1;
-#A 0 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 15 14 13 12 11 10 9 8 7
-6 5 4 3 2 1 0 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 15 14 13 12 11
-10 9 8 7 6 5 4 3 2 1 0;
+#A 0 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 16 15 14 13 12 11 10 9
+8 7 6 5 4 3 2 1 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 16 15 14 13
+12 11 10 9 8 7 6 5 4 3 2 1;
 #X coords 0 64 63 0 100 100 1 0 0;
 #X restore 4 21 graph;
 #N canvas 0 193 634 695 make-gui-sequence 0;
@@ -3564,18 +3564,18 @@ key -20 -5 1 11 -258113 -258113 -228856 3200 1;
 #X scalar 1003-line 1482 666 \;;
 #X scalar 1003-line 1586 666 \;;
 #X scalar 1003-line 1690 900 \;;
-#X scalar 1003-chord0 30 0 Imaj7 \;;
-#X scalar 1003-chord1 446 0 VIImaj7 \;;
-#X scalar 1003-chord2 862 0 Vmaj7 \;;
-#X scalar 1003-chord3 1278 0 IVmaj7 \;;
-#X scalar 1003-chord4 1772 0 x \;;
-#X scalar 1003-chord5 1772 0 x \;;
-#X scalar 1003-chord6 1772 0 x \;;
-#X scalar 1003-chord7 1772 0 x \;;
-#X scalar 1003-mchord0 33.2 379 \;;
-#X scalar 1003-mchord1 449.2 379 \;;
-#X scalar 1003-mchord2 865.2 379 \;;
-#X scalar 1003-mchord3 1281.2 379 \;;
+#X scalar 1003-chord0 1434 0 bIImin9 \;;
+#X scalar 1003-chord1 1772 0 x \;;
+#X scalar 1003-chord2 1772 0 x \;;
+#X scalar 1003-chord3 1772 0 x \;;
+#X scalar 1003-chord4 30 0 Imin9 \;;
+#X scalar 1003-chord5 446 0 bIImaj9 \;;
+#X scalar 1003-chord6 862 0 bIIImin9 \;;
+#X scalar 1003-chord7 1278 0 bVI13 \;;
+#X scalar 1003-mchord0 33.2 404.6 \;;
+#X scalar 1003-mchord1 449.2 404.6 \;;
+#X scalar 1003-mchord2 865.2 404.6 \;;
+#X scalar 1003-mchord3 1281.2 404.6 \;;
 #X scalar 1003-mchord4 -100 0 \;;
 #X scalar 1003-mchord5 -100 0 \;;
 #X scalar 1003-mchord6 -100 0 \;;
@@ -3704,7 +3704,7 @@ key -20 -5 1 11 -258113 -258113 -228856 3200 1;
 #X coords 0 0 1715 120 600 80 2 0 0;
 #X restore 15 41 pd \$0-data;
 #X obj 453 165 hsl 100 15 0 27 0 1 \$0-chord-pattern \$0-set-chord-pattern
-pattern 106 11 1 11 -66577 -258113 -228856 1800 0;
+pattern 106 11 1 11 -66577 -258113 -228856 733 0;
 #X obj 440 165 bng 8 250 50 0 \$0-learn-rhythm --- empty 17 7 0 10
 -258113 -1 -1;
 #N canvas 0 92 450 297 \$0-plot 0;
@@ -3741,7 +3741,7 @@ pattern 106 11 1 11 -66577 -258113 -228856 1800 0;
 #X scalar 1003-point 73.1579 157.692 222 5 \;;
 #X scalar 1003-point 94.3601 90 222 5 \;;
 #X scalar 1003-point 102.632 40.7692 222 5 \;;
-#X scalar 1003-point 55.2632 28.4615 222 5 \;;
+#X scalar 1003-point 55.2632 28.4615 900 5 \;;
 #X scalar 1003-point 42.6316 120.769 222 5 \;;
 #X scalar 1003-point 55.2632 31.5385 222 5 \;;
 #X scalar 1003-point 112.485 22.3077 222 5 \;;
@@ -3749,7 +3749,7 @@ pattern 106 11 1 11 -66577 -258113 -228856 1800 0;
 #X scalar 1003-point 116.696 56.1538 222 5 \;;
 #X scalar 1003-point 193.158 37.6923 222 5 \;;
 #X scalar 1003-point 136.316 160.769 222 5 \;;
-#X scalar 1003-point 147.18 68.4615 900 5 \;;
+#X scalar 1003-point 147.18 68.4615 222 5 \;;
 #X scalar 1003-point 164.205 90 222 5 \;;
 #X scalar 1003-point 197.368 130 222 5 \;;
 #X scalar 1003-point 173.158 126.923 222 5 \;;
