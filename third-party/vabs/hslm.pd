@@ -1,4 +1,4 @@
-#N struct 1294-line float pos;
+#N struct 1280-line float pos;
 #N canvas 287 405 633 361 8;
 #X obj 333 128 pointer;
 #X obj 259 1 loadbang;
@@ -6,31 +6,31 @@
 #X msg 333 63 traverse pd-\$1-data \, bang;
 #X msg 370 85 \; pd-\$1-data clear;
 #N canvas 84 234 376 410 \$0-data 0;
-#X scalar 1294-line 83 \;;
+#X scalar 1280-line 9.34921 \;;
 #X coords 0 0 106 15 106 15 2 100 100;
-#X restore 70 100 pd \$0-data;
+#X restore 80 100 pd \$0-data;
 #X obj 10 4 inlet;
 #X msg 259 63 next;
 #X obj 259 42 t b b f f, f 19;
-#X obj 70 160 outlet;
+#X obj 80 160 outlet;
 #X obj 296 63 \$2;
-#X obj 80 141 s \$1;
+#X obj 90 141 s \$1;
 #X obj 17 23 r set-\$1;
-#N canvas 357 855 277 84 line 0;
+#N canvas 357 104 277 84 line 0;
 #X obj 12 11 struct \$0-line float pos;
-#X obj 14 31 drawpolygon 559 3 pos -5 pos 5;
+#X obj 14 31 drawpolygon 955 3 pos -5 pos 5;
 #X restore 9 261 pd line;
-#X obj 73 100 hsl 101 15 0 100 0 0 \$0-out \$0-in empty -2 -8 0 10
--66577 -258113 -258113 0 1;
+#X obj 83 100 hsl 101 15 0 100 0 0 \$0-out \$0-in empty -2 -8 0 10
+-66577 -258113 -258113 551 0;
 #X obj 296 128 + 3;
 #X obj 10 217 + 3;
 #X obj 296 192 append \$0-line pos;
 #X obj 10 238 set \$0-line pos;
-#X obj 70 78 vabs/vscale 0 127 0 100;
-#X obj 70 121 vabs/vscale 0 100 \$3 \$4;
+#X obj 80 78 vabs/vscale 0 127 0 100;
+#X obj 80 121 vabs/vscale 0 100 \$3 \$4;
 #X obj 10 197 vabs/vscale \$3 \$4 0 100;
 #X obj 10 43 route mark;
-#X obj 84 44 route float;
+#X obj 80 43 route float;
 #X connect 0 0 17 1;
 #X connect 0 0 18 1;
 #X connect 1 0 2 0;
@@ -56,4 +56,4 @@
 #X connect 22 1 23 0;
 #X connect 23 0 19 0;
 #X connect 23 1 14 0;
-#X coords 0 -1 1 1 106 15 2 70 100;
+#X coords 0 -1 1 1 106 15 2 80 100;
