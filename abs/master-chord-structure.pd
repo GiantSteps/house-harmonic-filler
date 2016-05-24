@@ -2,7 +2,7 @@
 #X msg 128 142 next;
 #X obj 128 193 t b p;
 #X obj 128 123 until;
-#N canvas 0 141 538 206 \$2-mchord\$1 1;
+#N canvas 0 141 538 206 \$2-mchord\$1 0;
 #X obj 5 8 struct \$2-mchord\$1 float x float dur;
 #X obj 5 30 r \$2-master-chord-show;
 #X obj 5 52 sel 64;
