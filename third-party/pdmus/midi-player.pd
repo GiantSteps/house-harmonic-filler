@@ -1,4 +1,4 @@
-#N canvas 3 23 1117 699 10;
+#N canvas 0 89 1117 699 10;
 #X obj 627 379 /;
 #X obj 627 400 / 1000;
 #X obj 740 398 s \$0-ticks;
@@ -105,7 +105,7 @@
 #X obj 209 241 s \$0-flush;
 #X obj 314 265 r \$0-flush;
 #X obj 203 588 r \$0-flush;
-#X obj 77 214 metro 1;
+#X obj 70 214 metro 1;
 #X obj 585 728 outlet;
 #X msg 203 611 1;
 #X msg 147 611 0;
