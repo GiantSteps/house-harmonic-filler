@@ -1,150 +1,150 @@
-#N struct 1293-line float pos float color;
-#N struct 1293-chord0 float x float y symbol name;
-#N struct 1293-chord1 float x float y symbol name;
-#N struct 1293-chord2 float x float y symbol name;
-#N struct 1293-chord3 float x float y symbol name;
-#N struct 1293-chord4 float x float y symbol name;
-#N struct 1293-chord5 float x float y symbol name;
-#N struct 1293-chord6 float x float y symbol name;
-#N struct 1293-chord7 float x float y symbol name;
-#N struct 1293-mchord0 float x float dur;
-#N struct 1293-mchord1 float x float dur;
-#N struct 1293-mchord2 float x float dur;
-#N struct 1293-mchord3 float x float dur;
-#N struct 1293-mchord4 float x float dur;
-#N struct 1293-mchord5 float x float dur;
-#N struct 1293-mchord6 float x float dur;
-#N struct 1293-mchord7 float x float dur;
-#N struct 1293-mchord8 float x float dur;
-#N struct 1293-mchord9 float x float dur;
-#N struct 1293-mchord10 float x float dur;
-#N struct 1293-mchord11 float x float dur;
-#N struct 1293-mchord12 float x float dur;
-#N struct 1293-mchord13 float x float dur;
-#N struct 1293-mchord14 float x float dur;
-#N struct 1293-mchord15 float x float dur;
-#N struct 1293-mchord16 float x float dur;
-#N struct 1293-mchord17 float x float dur;
-#N struct 1293-mchord18 float x float dur;
-#N struct 1293-mchord19 float x float dur;
-#N struct 1293-mchord20 float x float dur;
-#N struct 1293-mchord21 float x float dur;
-#N struct 1293-mchord22 float x float dur;
-#N struct 1293-mchord23 float x float dur;
-#N struct 1293-mchord24 float x float dur;
-#N struct 1293-mchord25 float x float dur;
-#N struct 1293-mchord26 float x float dur;
-#N struct 1293-mchord27 float x float dur;
-#N struct 1293-mchord28 float x float dur;
-#N struct 1293-mchord29 float x float dur;
-#N struct 1293-mchord30 float x float dur;
-#N struct 1293-mchord31 float x float dur;
-#N struct 1293-mchord32 float x float dur;
-#N struct 1293-mchord33 float x float dur;
-#N struct 1293-mchord34 float x float dur;
-#N struct 1293-mchord35 float x float dur;
-#N struct 1293-mchord36 float x float dur;
-#N struct 1293-mchord37 float x float dur;
-#N struct 1293-mchord38 float x float dur;
-#N struct 1293-mchord39 float x float dur;
-#N struct 1293-mchord40 float x float dur;
-#N struct 1293-mchord41 float x float dur;
-#N struct 1293-mchord42 float x float dur;
-#N struct 1293-mchord43 float x float dur;
-#N struct 1293-mchord44 float x float dur;
-#N struct 1293-mchord45 float x float dur;
-#N struct 1293-mchord46 float x float dur;
-#N struct 1293-mchord47 float x float dur;
-#N struct 1293-mchord48 float x float dur;
-#N struct 1293-mchord49 float x float dur;
-#N struct 1293-mchord50 float x float dur;
-#N struct 1293-mchord51 float x float dur;
-#N struct 1293-mchord52 float x float dur;
-#N struct 1293-mchord53 float x float dur;
-#N struct 1293-mchord54 float x float dur;
-#N struct 1293-mchord55 float x float dur;
-#N struct 1293-mchord56 float x float dur;
-#N struct 1293-mchord57 float x float dur;
-#N struct 1293-mchord58 float x float dur;
-#N struct 1293-mchord59 float x float dur;
-#N struct 1293-mchord60 float x float dur;
-#N struct 1293-mchord61 float x float dur;
-#N struct 1293-mchord62 float x float dur;
-#N struct 1293-mchord63 float x float dur;
-#N struct 1293-schord0 float x float dur;
-#N struct 1293-schord1 float x float dur;
-#N struct 1293-schord2 float x float dur;
-#N struct 1293-schord3 float x float dur;
-#N struct 1293-schord4 float x float dur;
-#N struct 1293-schord5 float x float dur;
-#N struct 1293-schord6 float x float dur;
-#N struct 1293-schord7 float x float dur;
-#N struct 1293-schord8 float x float dur;
-#N struct 1293-schord9 float x float dur;
-#N struct 1293-schord10 float x float dur;
-#N struct 1293-schord11 float x float dur;
-#N struct 1293-schord12 float x float dur;
-#N struct 1293-schord13 float x float dur;
-#N struct 1293-schord14 float x float dur;
-#N struct 1293-schord15 float x float dur;
-#N struct 1293-schord16 float x float dur;
-#N struct 1293-schord17 float x float dur;
-#N struct 1293-schord18 float x float dur;
-#N struct 1293-schord19 float x float dur;
-#N struct 1293-schord20 float x float dur;
-#N struct 1293-schord21 float x float dur;
-#N struct 1293-schord22 float x float dur;
-#N struct 1293-schord23 float x float dur;
-#N struct 1293-schord24 float x float dur;
-#N struct 1293-schord25 float x float dur;
-#N struct 1293-schord26 float x float dur;
-#N struct 1293-schord27 float x float dur;
-#N struct 1293-schord28 float x float dur;
-#N struct 1293-schord29 float x float dur;
-#N struct 1293-schord30 float x float dur;
-#N struct 1293-schord31 float x float dur;
-#N struct 1293-schord32 float x float dur;
-#N struct 1293-schord33 float x float dur;
-#N struct 1293-schord34 float x float dur;
-#N struct 1293-schord35 float x float dur;
-#N struct 1293-schord36 float x float dur;
-#N struct 1293-schord37 float x float dur;
-#N struct 1293-schord38 float x float dur;
-#N struct 1293-schord39 float x float dur;
-#N struct 1293-schord40 float x float dur;
-#N struct 1293-schord41 float x float dur;
-#N struct 1293-schord42 float x float dur;
-#N struct 1293-schord43 float x float dur;
-#N struct 1293-schord44 float x float dur;
-#N struct 1293-schord45 float x float dur;
-#N struct 1293-schord46 float x float dur;
-#N struct 1293-schord47 float x float dur;
-#N struct 1293-schord48 float x float dur;
-#N struct 1293-schord49 float x float dur;
-#N struct 1293-schord50 float x float dur;
-#N struct 1293-schord51 float x float dur;
-#N struct 1293-schord52 float x float dur;
-#N struct 1293-schord53 float x float dur;
-#N struct 1293-schord54 float x float dur;
-#N struct 1293-schord55 float x float dur;
-#N struct 1293-schord56 float x float dur;
-#N struct 1293-schord57 float x float dur;
-#N struct 1293-schord58 float x float dur;
-#N struct 1293-schord59 float x float dur;
-#N struct 1293-schord60 float x float dur;
-#N struct 1293-schord61 float x float dur;
-#N struct 1293-schord62 float x float dur;
-#N struct 1293-schord63 float x float dur;
-#N struct 1293-beat float x;
-#N struct 1293-point float x float y float c float t;
-#N struct 1293-ysis float x float y float heigth float vis;
-#N struct 1293-xsis float x float y float length;
-#N struct 1293-area float x float y float size;
-#N struct 1574-line float pos;
-#N struct 1578-line float pos;
-#N canvas 980 402 633 533 8;
+#N struct 2041-line float pos float color;
+#N struct 2041-chord0 float x float y symbol name;
+#N struct 2041-chord1 float x float y symbol name;
+#N struct 2041-chord2 float x float y symbol name;
+#N struct 2041-chord3 float x float y symbol name;
+#N struct 2041-chord4 float x float y symbol name;
+#N struct 2041-chord5 float x float y symbol name;
+#N struct 2041-chord6 float x float y symbol name;
+#N struct 2041-chord7 float x float y symbol name;
+#N struct 2041-mchord0 float x float dur;
+#N struct 2041-mchord1 float x float dur;
+#N struct 2041-mchord2 float x float dur;
+#N struct 2041-mchord3 float x float dur;
+#N struct 2041-mchord4 float x float dur;
+#N struct 2041-mchord5 float x float dur;
+#N struct 2041-mchord6 float x float dur;
+#N struct 2041-mchord7 float x float dur;
+#N struct 2041-mchord8 float x float dur;
+#N struct 2041-mchord9 float x float dur;
+#N struct 2041-mchord10 float x float dur;
+#N struct 2041-mchord11 float x float dur;
+#N struct 2041-mchord12 float x float dur;
+#N struct 2041-mchord13 float x float dur;
+#N struct 2041-mchord14 float x float dur;
+#N struct 2041-mchord15 float x float dur;
+#N struct 2041-mchord16 float x float dur;
+#N struct 2041-mchord17 float x float dur;
+#N struct 2041-mchord18 float x float dur;
+#N struct 2041-mchord19 float x float dur;
+#N struct 2041-mchord20 float x float dur;
+#N struct 2041-mchord21 float x float dur;
+#N struct 2041-mchord22 float x float dur;
+#N struct 2041-mchord23 float x float dur;
+#N struct 2041-mchord24 float x float dur;
+#N struct 2041-mchord25 float x float dur;
+#N struct 2041-mchord26 float x float dur;
+#N struct 2041-mchord27 float x float dur;
+#N struct 2041-mchord28 float x float dur;
+#N struct 2041-mchord29 float x float dur;
+#N struct 2041-mchord30 float x float dur;
+#N struct 2041-mchord31 float x float dur;
+#N struct 2041-mchord32 float x float dur;
+#N struct 2041-mchord33 float x float dur;
+#N struct 2041-mchord34 float x float dur;
+#N struct 2041-mchord35 float x float dur;
+#N struct 2041-mchord36 float x float dur;
+#N struct 2041-mchord37 float x float dur;
+#N struct 2041-mchord38 float x float dur;
+#N struct 2041-mchord39 float x float dur;
+#N struct 2041-mchord40 float x float dur;
+#N struct 2041-mchord41 float x float dur;
+#N struct 2041-mchord42 float x float dur;
+#N struct 2041-mchord43 float x float dur;
+#N struct 2041-mchord44 float x float dur;
+#N struct 2041-mchord45 float x float dur;
+#N struct 2041-mchord46 float x float dur;
+#N struct 2041-mchord47 float x float dur;
+#N struct 2041-mchord48 float x float dur;
+#N struct 2041-mchord49 float x float dur;
+#N struct 2041-mchord50 float x float dur;
+#N struct 2041-mchord51 float x float dur;
+#N struct 2041-mchord52 float x float dur;
+#N struct 2041-mchord53 float x float dur;
+#N struct 2041-mchord54 float x float dur;
+#N struct 2041-mchord55 float x float dur;
+#N struct 2041-mchord56 float x float dur;
+#N struct 2041-mchord57 float x float dur;
+#N struct 2041-mchord58 float x float dur;
+#N struct 2041-mchord59 float x float dur;
+#N struct 2041-mchord60 float x float dur;
+#N struct 2041-mchord61 float x float dur;
+#N struct 2041-mchord62 float x float dur;
+#N struct 2041-mchord63 float x float dur;
+#N struct 2041-schord0 float x float dur;
+#N struct 2041-schord1 float x float dur;
+#N struct 2041-schord2 float x float dur;
+#N struct 2041-schord3 float x float dur;
+#N struct 2041-schord4 float x float dur;
+#N struct 2041-schord5 float x float dur;
+#N struct 2041-schord6 float x float dur;
+#N struct 2041-schord7 float x float dur;
+#N struct 2041-schord8 float x float dur;
+#N struct 2041-schord9 float x float dur;
+#N struct 2041-schord10 float x float dur;
+#N struct 2041-schord11 float x float dur;
+#N struct 2041-schord12 float x float dur;
+#N struct 2041-schord13 float x float dur;
+#N struct 2041-schord14 float x float dur;
+#N struct 2041-schord15 float x float dur;
+#N struct 2041-schord16 float x float dur;
+#N struct 2041-schord17 float x float dur;
+#N struct 2041-schord18 float x float dur;
+#N struct 2041-schord19 float x float dur;
+#N struct 2041-schord20 float x float dur;
+#N struct 2041-schord21 float x float dur;
+#N struct 2041-schord22 float x float dur;
+#N struct 2041-schord23 float x float dur;
+#N struct 2041-schord24 float x float dur;
+#N struct 2041-schord25 float x float dur;
+#N struct 2041-schord26 float x float dur;
+#N struct 2041-schord27 float x float dur;
+#N struct 2041-schord28 float x float dur;
+#N struct 2041-schord29 float x float dur;
+#N struct 2041-schord30 float x float dur;
+#N struct 2041-schord31 float x float dur;
+#N struct 2041-schord32 float x float dur;
+#N struct 2041-schord33 float x float dur;
+#N struct 2041-schord34 float x float dur;
+#N struct 2041-schord35 float x float dur;
+#N struct 2041-schord36 float x float dur;
+#N struct 2041-schord37 float x float dur;
+#N struct 2041-schord38 float x float dur;
+#N struct 2041-schord39 float x float dur;
+#N struct 2041-schord40 float x float dur;
+#N struct 2041-schord41 float x float dur;
+#N struct 2041-schord42 float x float dur;
+#N struct 2041-schord43 float x float dur;
+#N struct 2041-schord44 float x float dur;
+#N struct 2041-schord45 float x float dur;
+#N struct 2041-schord46 float x float dur;
+#N struct 2041-schord47 float x float dur;
+#N struct 2041-schord48 float x float dur;
+#N struct 2041-schord49 float x float dur;
+#N struct 2041-schord50 float x float dur;
+#N struct 2041-schord51 float x float dur;
+#N struct 2041-schord52 float x float dur;
+#N struct 2041-schord53 float x float dur;
+#N struct 2041-schord54 float x float dur;
+#N struct 2041-schord55 float x float dur;
+#N struct 2041-schord56 float x float dur;
+#N struct 2041-schord57 float x float dur;
+#N struct 2041-schord58 float x float dur;
+#N struct 2041-schord59 float x float dur;
+#N struct 2041-schord60 float x float dur;
+#N struct 2041-schord61 float x float dur;
+#N struct 2041-schord62 float x float dur;
+#N struct 2041-schord63 float x float dur;
+#N struct 2041-beat float x;
+#N struct 2041-point float x float y float c float t;
+#N struct 2041-ysis float x float y float heigth float vis;
+#N struct 2041-xsis float x float y float length;
+#N struct 2041-area float x float y float size;
+#N struct 2323-line float pos;
+#N struct 2327-line float pos;
+#N canvas 96 452 1060 560 8;
 #X declare -path abs -path third-party;
-#N canvas 397 270 571 409 patch 0;
+#N canvas 924 401 571 409 patch 0;
 #N canvas 442 115 745 704 adt 0;
 #X obj 322 129 s \$0-onsets-bass;
 #X obj 109 -17 r \$0-load-rhythm;
@@ -360,7 +360,7 @@
 #X connect 92 0 90 0;
 #X connect 93 0 30 0;
 #X restore 346 101 pd adt;
-#N canvas 138 189 1060 655 load-midi-loop 0;
+#N canvas 135 202 1060 655 load-midi-loop 0;
 #X msg 394 171 flush;
 #X obj 508 296 / 4;
 #X obj 508 273 unpack 0 0 0 0 0;
@@ -518,7 +518,7 @@ is done., f 31;
 #X text 9 155 rethink chord-substitution and expansion.;
 #X text 9 175 add colors to chord height... (brigthness) and range.
 , f 54;
-#N canvas 198 273 234 554 loadbangs 0;
+#N canvas 195 313 234 554 loadbangs 0;
 #X obj 14 125 f \$0;
 #X obj 14 106 t b a, f 11;
 #X obj 14 87 zexy/list2symbol;
@@ -535,7 +535,7 @@ is done., f 31;
 \$1-title color 11 10 \; \$1-set-chords-volume 80 \; \$1-set-bass-volume
 80 \; \$1-set-chords-octave 3 \; \$1-set-register set 0 \; \$1-set-tempo
 125 \; \$1-set-bass-duration 12 \; \$1-set-bass-octave 1 \; \$1-set-clock-mode
-0 \; \$1-set-keyfifths set 6.5 \; \$1-set-bass-lock 0 \; \$1-set-lock-instrument
+0 \; \$1-set-keyfifths set 6 \; \$1-set-bass-lock 0 \; \$1-set-lock-instrument
 0 \; \$1-set-int-synth 0 \; \$1-init-plot bang \; \$1-preset-bass-density
 4 \; \$1-preset-density 4 \; \$1-set-legato set 100 \; \$1-init bang
 \; \$1-load-corpus bang;
@@ -553,7 +553,7 @@ is done., f 31;
 #X connect 10 0 5 0;
 #X connect 11 0 6 0;
 #X restore 345 44 pd loadbangs;
-#N canvas 219 132 522 653 get-chord-progression 0;
+#N canvas 210 171 522 653 get-chord-progression 0;
 #X obj 11 5 inlet;
 #X obj 380 47 unpack 0 0 0 0;
 #X obj 380 88 /;
@@ -1252,7 +1252,7 @@ is done., f 31;
 #X connect 52 0 21 0;
 #X restore 346 139 pd get-chord-progression;
 #X obj 9 203 r \$0-save-state;
-#N canvas 4 50 982 523 gui-transport 0;
+#N canvas 0 115 982 523 gui-transport 0;
 #X msg 741 47 9 18;
 #X obj 633 68 != 0;
 #X msg 741 242 10 18;
@@ -1733,7 +1733,7 @@ is done., f 31;
 #X connect 19 0 18 0;
 #X connect 20 0 11 0;
 #X restore 346 82 pd harmonic-rhythm;
-#N canvas 1 50 993 388 scattered-plot 0;
+#N canvas 0 89 993 388 scattered-plot 0;
 #N canvas 531 148 461 310 area 0;
 #X obj 14 15 struct \$0-area float x float y float size;
 #X obj 14 41 drawpolygon -x 1 2 0 0 size 0 size size 0 size 0 0;
@@ -1865,7 +1865,7 @@ is done., f 31;
 #X obj 573 219 s \$0-file-index;
 #X obj 117 20 r \$0-create-visuals;
 #X obj 117 38 delay 500;
-#N canvas 0 89 412 643 manipoint 0;
+#N canvas 0 102 412 643 manipoint 0;
 #X obj 84 58 until, f 21;
 #X obj 84 203 sel 0;
 #X obj 154 108 + 1;
@@ -2181,9 +2181,9 @@ is done., f 31;
 #X restore 346 318 pd struct-definitions;
 #N canvas 0 50 450 278 (subpatch) 0;
 #X array \$0-master-pattern 64 float 1;
-#A 0 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 15 14 13 12 11 10 9 8 7 6 5 4
-3 2 1 0 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 15 14 13 12 11 10 9 8
-7 6 5 4 3 2 1 0;
+#A 0 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 16 15 14 13 12 11 10 9
+8 7 6 5 4 3 2 1 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 16 15 14 13
+12 11 10 9 8 7 6 5 4 3 2 1;
 #X coords 0 64 63 0 100 100 1 0 0;
 #X restore 4 21 graph;
 #N canvas 207 50 711 699 make-gui-sequence 0;
@@ -3061,7 +3061,7 @@ on the pattern.;
 #X connect 32 3 31 0;
 #X connect 34 0 5 0;
 #X restore 346 278 pd synths;
-#N canvas 120 50 889 743 make-chord-variations 0;
+#N canvas 681 164 889 743 make-chord-variations 0;
 #X msg 530 161 clear;
 #X obj 519 100 inlet;
 #X obj 588 100 inlet;
@@ -3074,9 +3074,6 @@ on the pattern.;
 #X obj 699 395 * 12;
 #X obj 735 397 t b f, f 10;
 #X obj 699 421 +, f 16;
-#X text 672 162 we use the argumentation by Tagg to take the first
-chord of the shuttle as "tonic." According to this... it should be
-quite easy to obtain the tonic of the shuttle., f 30;
 #X text 516 79 chord;
 #X text 585 80 onset position.;
 #X obj 519 321 pdmus/chord-foldover;
@@ -3092,8 +3089,6 @@ quite easy to obtain the tonic of the shuttle., f 30;
 #X obj 423 459 s \$0-chord-variations;
 #X obj 585 525 s \$0-bass;
 #X obj 735 344 r \$0-key;
-#X obj 519 223 cyclone/coll \$0-one;
-#C restore;
 #X obj 30 528 pack 0 0 2;
 #X obj 530 141 r \$0-reset-chords;
 #X obj 30 508 vabs/list-dripv;
@@ -3126,8 +3121,8 @@ quite easy to obtain the tonic of the shuttle., f 30;
 #X obj 244 666 pipe 1 2 3 1;
 #X obj 278 610 t f f, f 12;
 #X obj 244 688 pack f f f, f 12;
-#X text 336 239 manipulate duration as multiples of tempo!!!!!!!,
-f 17;
+#X text 330 237 manipulate duration as multiples of tempo!!!!!!!,
+f 12;
 #X obj 188 691 del 20;
 #X obj 57 215 - 20;
 #X obj 64 611 t f f, f 8;
@@ -3146,98 +3141,100 @@ f 17;
 #X obj 349 687 vabs/oncev;
 #X obj 558 441 pdmus/chord-transpose 60;
 #X obj 735 367 play-update 64 \$0;
-#X connect 0 0 28 0;
+#X obj 519 223 cyclone/coll \$0-one;
+#C restore;
+#X connect 0 0 78 0;
 #X connect 1 0 3 0;
 #X connect 2 0 3 1;
-#X connect 3 0 28 0;
-#X connect 4 0 31 0;
-#X connect 5 0 26 0;
+#X connect 3 0 78 0;
+#X connect 4 0 29 0;
+#X connect 5 0 25 0;
 #X connect 6 0 4 1;
 #X connect 6 1 7 0;
 #X connect 7 0 5 0;
 #X connect 9 0 11 0;
 #X connect 10 0 11 0;
 #X connect 10 1 11 1;
-#X connect 11 0 78 1;
-#X connect 15 0 20 0;
-#X connect 16 0 46 0;
-#X connect 16 1 28 0;
-#X connect 16 2 19 1;
-#X connect 17 0 37 0;
-#X connect 18 0 17 0;
-#X connect 18 1 15 1;
-#X connect 19 0 25 0;
-#X connect 20 0 19 0;
-#X connect 20 1 78 0;
-#X connect 21 0 51 0;
-#X connect 22 0 28 0;
-#X connect 23 0 17 1;
-#X connect 24 0 47 0;
-#X connect 27 0 79 0;
-#X connect 28 0 18 0;
-#X connect 29 0 33 0;
-#X connect 30 0 0 0;
-#X connect 31 0 29 0;
-#X connect 32 0 33 1;
-#X connect 33 0 34 0;
-#X connect 34 0 55 0;
-#X connect 34 1 57 0;
-#X connect 37 0 15 0;
+#X connect 11 0 76 1;
+#X connect 14 0 19 0;
+#X connect 15 0 44 0;
+#X connect 15 1 78 0;
+#X connect 15 2 18 1;
+#X connect 16 0 35 0;
+#X connect 17 0 16 0;
+#X connect 17 1 14 1;
+#X connect 18 0 24 0;
+#X connect 19 0 18 0;
+#X connect 19 1 76 0;
+#X connect 20 0 49 0;
+#X connect 21 0 78 0;
+#X connect 22 0 16 1;
+#X connect 23 0 45 0;
+#X connect 26 0 77 0;
+#X connect 27 0 31 0;
+#X connect 28 0 0 0;
+#X connect 29 0 27 0;
+#X connect 30 0 31 1;
+#X connect 31 0 32 0;
+#X connect 32 0 53 0;
+#X connect 32 1 55 0;
+#X connect 35 0 14 0;
+#X connect 36 0 40 0;
+#X connect 37 0 41 1;
 #X connect 38 0 42 0;
-#X connect 39 0 43 1;
-#X connect 40 0 44 0;
-#X connect 41 1 53 0;
-#X connect 42 0 39 0;
-#X connect 43 0 63 0;
-#X connect 44 0 45 0;
-#X connect 45 0 4 0;
-#X connect 45 1 29 1;
-#X connect 46 0 41 0;
-#X connect 47 0 9 0;
-#X connect 48 0 49 0;
-#X connect 49 0 50 0;
-#X connect 50 0 51 1;
-#X connect 51 0 16 0;
-#X connect 52 0 54 1;
+#X connect 39 1 51 0;
+#X connect 40 0 37 0;
+#X connect 41 0 61 0;
+#X connect 42 0 43 0;
+#X connect 43 0 4 0;
+#X connect 43 1 27 1;
+#X connect 44 0 39 0;
+#X connect 45 0 9 0;
+#X connect 46 0 47 0;
+#X connect 47 0 48 0;
+#X connect 48 0 49 1;
+#X connect 49 0 15 0;
+#X connect 50 0 52 1;
+#X connect 51 0 52 0;
+#X connect 51 1 41 0;
+#X connect 52 0 43 0;
 #X connect 53 0 54 0;
-#X connect 53 1 43 0;
-#X connect 54 0 45 0;
+#X connect 53 1 62 0;
+#X connect 53 2 54 2;
+#X connect 54 0 33 0;
+#X connect 54 1 33 1;
+#X connect 54 2 33 2;
 #X connect 55 0 56 0;
-#X connect 55 1 64 0;
+#X connect 55 1 57 0;
 #X connect 55 2 56 2;
-#X connect 56 0 35 0;
-#X connect 56 1 35 1;
-#X connect 56 2 35 2;
-#X connect 57 0 58 0;
-#X connect 57 1 59 0;
-#X connect 57 2 58 2;
-#X connect 58 0 60 0;
-#X connect 58 1 60 1;
-#X connect 58 2 60 2;
-#X connect 59 0 58 1;
-#X connect 59 1 70 0;
-#X connect 60 0 36 0;
-#X connect 62 0 76 1;
-#X connect 63 0 40 0;
-#X connect 64 0 56 1;
+#X connect 56 0 58 0;
+#X connect 56 1 58 1;
+#X connect 56 2 58 2;
+#X connect 57 0 56 1;
+#X connect 57 1 68 0;
+#X connect 58 0 34 0;
+#X connect 60 0 74 1;
+#X connect 61 0 38 0;
+#X connect 62 0 54 1;
+#X connect 62 1 63 0;
+#X connect 63 0 64 0;
+#X connect 64 0 65 1;
 #X connect 64 1 65 0;
-#X connect 65 0 66 0;
-#X connect 66 0 67 1;
-#X connect 66 1 67 0;
-#X connect 67 0 76 0;
-#X connect 68 0 75 0;
-#X connect 69 0 77 1;
-#X connect 70 0 71 0;
-#X connect 71 0 72 1;
-#X connect 71 1 72 0;
-#X connect 72 0 77 0;
-#X connect 73 0 74 0;
-#X connect 76 0 62 0;
-#X connect 76 0 68 0;
-#X connect 77 0 69 0;
-#X connect 77 0 73 0;
-#X connect 78 0 6 0;
-#X connect 79 0 10 0;
+#X connect 65 0 74 0;
+#X connect 66 0 73 0;
+#X connect 67 0 75 1;
+#X connect 68 0 69 0;
+#X connect 69 0 70 1;
+#X connect 69 1 70 0;
+#X connect 70 0 75 0;
+#X connect 71 0 72 0;
+#X connect 74 0 60 0;
+#X connect 74 0 66 0;
+#X connect 75 0 67 0;
+#X connect 75 0 71 0;
+#X connect 76 0 6 0;
+#X connect 77 0 10 0;
+#X connect 78 0 17 0;
 #X restore 346 158 pd make-chord-variations;
 #N canvas 0 156 259 433 spread 0;
 #X msg 67 178 dump;
@@ -3279,7 +3276,7 @@ f 17;
 #X connect 16 0 14 0;
 #X connect 17 0 3 1;
 #X restore 346 179 pd spread;
-#N canvas 0 50 450 300 lock-bass 0;
+#N canvas 0 89 450 300 lock-bass 0;
 #X obj 127 191 bng 24 250 50 0 \$0-load-folder \$0-set-load-folder
 folder -3 -10 1 12 -66577 -258113 -228856;
 #X obj 25 12 tgl 15 0 \$0-bass-lock \$0-set-bass-lock lock 18 11 1
@@ -3302,8 +3299,16 @@ empty 0 -8 0 10 -128992 -128992 -166441 0;
 18 11 1 11 -66577 -258113 -228856 0 1;
 #X obj 280 46 bng 8 250 50 0 \$0-learn-sync --- empty 17 7 0 10 -258113
 -1 -1;
+#X obj 234 182 bng 15 250 50 0 \$0-scroll-up \$0-set-scroll-up next
+18 11 1 11 -66577 -258113 -228856;
+#X obj 224 182 bng 8 250 50 0 \$0-learn-scrollup --- empty 17 7 0 10
+-258113 -1 -1;
+#X obj 234 207 bng 15 250 50 0 \$0-scroll-down \$0-set-scroll-down
+prev. 18 11 1 11 -66577 -258113 -228856;
+#X obj 224 207 bng 8 250 50 0 \$0-learn-scrolldown --- empty 17 7 0
+10 -258113 -1 -1;
 #X restore 346 359 pd lock-bass (unused);
-#N canvas 452 89 547 679 memories 0;
+#N canvas 443 128 547 679 memories 0;
 #X obj 186 19 r \$0-chord-pattern;
 #X obj 200 37 r \$0-file-index;
 #X obj 211 443 r \$0-recall;
@@ -3390,29 +3395,29 @@ add -set-bass-density \$12 \, add -set-bass-duration \$13 \, add -set-bass-veloc
 #X restore 574 4 pd patch;
 #X obj 6 4 cnv 15 620 510 empty \$0-title HOUSE 10 18 0 16 -128992
 -233017 0;
-#X obj 273 265 hsl 100 15 -2 2 0 0 \$0-raw-register \$0-set-register
+#X obj 273 255 hsl 100 15 -2 2 0 0 \$0-raw-register \$0-set-register
 register 106 11 1 11 -66577 -258113 -228856 4950 0;
-#X obj 273 240 hsl 100 15 0 3.9 0 0 \$0-spread \$0-set-spread spread
-106 11 1 11 -66577 -258113 -228856 0 0;
+#X obj 273 230 hsl 100 15 0 3.9 0 0 \$0-spread \$0-set-spread spread
+106 11 1 11 -66577 -258113 -228856 7615 0;
 #X obj 260 240 bng 8 250 50 0 \$0-learn-spread --- empty 17 7 0 10
 -258113 -1 -1;
 #X obj 260 265 bng 8 250 50 0 \$0-learn-register --- empty 17 7 0 10
 -258113 -1 -1;
-#X obj 500 290 bng 8 250 50 0 \$0-learn-bass-octave --- empty 17 7
+#X obj 500 280 bng 8 250 50 0 \$0-learn-bass-octave --- empty 17 7
 0 10 -258113 -1 -1;
-#X obj 546 411 tgl 15 0 \$0-clock-mode \$0-set-clock-mode ext-sync
+#X obj 546 401 tgl 15 0 \$0-clock-mode \$0-set-clock-mode ext-sync
 18 11 1 11 -66577 -258113 -228856 0 1;
-#X obj 440 137 cnv 15 100 20 empty empty RHYTHM 5 12 0 16 -128992 -228856
+#X obj 440 127 cnv 15 100 20 empty empty RHYTHM 5 12 0 16 -128992 -228856
 0;
-#X obj 456 386 nbx 3 15 20 999.9 0 0 \$0-tempo \$0-set-tempo bpm 38
+#X obj 456 376 nbx 3 15 20 999.9 0 0 \$0-tempo \$0-set-tempo bpm 38
 11 1 11 -66577 -258699 -233017 125 256;
-#X obj 446 386 bng 8 250 50 0 \$0-learn-tempo --- empty 17 7 0 10 -258113
+#X obj 446 376 bng 8 250 50 0 \$0-learn-tempo --- empty 17 7 0 10 -258113
 -1 -1;
-#X obj 536 411 bng 8 250 50 0 \$0-learn-sync --- empty 17 7 0 10 -258113
+#X obj 536 401 bng 8 250 50 0 \$0-learn-sync --- empty 17 7 0 10 -258113
 -1 -1;
-#N canvas 238 105 275 305 fifths 0;
-#X obj 33 29 flatgui/knob 65 65 0.5 12.5 0 0 \$0-key-fifths \$0-set-keyfifths
-key -20 -5 1 11 -258113 -258113 -228856 3800 1;
+#N canvas 725 163 370 393 fifths 0;
+#X obj 33 29 flatgui/knob 65 65 0 12 0 0 \$0-key-fifths \$0-set-keyfifths
+key -20 -5 1 11 -258113 -258113 -228856 3200 1;
 #X text 58 14 C;
 #X text 77 18 G;
 #X text 92 31 D;
@@ -3426,9 +3431,8 @@ key -20 -5 1 11 -258113 -258113 -228856 3800 1;
 #X text 100 49 A;
 #X text 98 67 E;
 #X text 89 83 B;
-#X obj 10 174 int;
-#X obj 10 194 change;
-#N canvas 0 89 450 218 fifhts2secs 0;
+#X obj 10 230 change;
+#N canvas 0 102 450 218 fifhts2secs 0;
 #X obj 30 15 inlet;
 #X obj 30 170 outlet;
 #X msg 30 77 -6;
@@ -3472,315 +3476,332 @@ key -20 -5 1 11 -258113 -258113 -228856 3800 1;
 #X connect 13 0 1 0;
 #X connect 14 0 1 0;
 #X connect 15 0 1 0;
-#X restore 10 215 pd fifhts2secs;
-#X obj 10 152 r \$0-key-fifths;
-#X obj 10 236 s \$0-key;
+#X restore 10 251 pd fifhts2secs;
+#X obj 10 158 r \$0-key-fifths;
+#X obj 10 272 s \$0-key;
 #X obj 13 104 bng 8 250 50 0 \$0-learn-key5 --- empty 17 7 0 10 -258113
 -1 -1;
+#X obj 10 200 int;
+#X obj 105 275 s \$0-set-keyfifths;
+#X msg 105 255 set \$1;
+#X obj 105 234 vabs/delgate 200;
+#X obj 10 179 + 0.5;
 #X connect 14 0 15 0;
-#X connect 15 0 16 0;
-#X connect 16 0 18 0;
-#X connect 17 0 14 0;
+#X connect 15 0 17 0;
+#X connect 16 0 23 0;
+#X connect 19 0 22 0;
+#X connect 19 0 14 0;
+#X connect 21 0 20 0;
+#X connect 22 0 21 0;
+#X connect 23 0 19 0;
 #X coords 0 -1 1 1 105 105 2 10 10;
 #X restore 19 155 pd fifths;
-#X obj 456 411 tgl 50 0 \$0-play \$0-set-play play 55 47 1 11 -66577
+#X obj 456 401 tgl 50 0 \$0-play \$0-set-play play 55 47 1 11 -66577
 -258699 -233017 0 1;
-#X obj 446 411 bng 8 250 50 0 \$0-learn-play --- empty 17 7 0 10 -258113
+#X obj 446 401 bng 8 250 50 0 \$0-learn-play --- empty 17 7 0 10 -258113
 -1 -1;
-#X obj 450 290 tgl 15 0 \$0-mute-bass \$0-set-mute-bass mute 18 11
-1 11 -66577 -258113 -228856 1 1;
-#X obj 440 290 bng 8 250 50 0 \$0-learn-mute-bass --- empty 17 7 0
+#X obj 450 280 tgl 15 0 \$0-mute-bass \$0-set-mute-bass mute 18 11
+1 11 -66577 -258113 -228856 0 1;
+#X obj 440 280 bng 8 250 50 0 \$0-learn-mute-bass --- empty 17 7 0
 10 -258113 -1 -1;
 #N canvas 0 50 959 334 \$0-data 0;
-#X scalar 1293-line 26 900 \;;
-#X scalar 1293-line 130 666 \;;
-#X scalar 1293-line 234 666 \;;
-#X scalar 1293-line 338 666 \;;
-#X scalar 1293-line 442 900 \;;
-#X scalar 1293-line 546 666 \;;
-#X scalar 1293-line 650 666 \;;
-#X scalar 1293-line 754 666 \;;
-#X scalar 1293-line 858 900 \;;
-#X scalar 1293-line 962 666 \;;
-#X scalar 1293-line 1066 666 \;;
-#X scalar 1293-line 1170 666 \;;
-#X scalar 1293-line 1274 900 \;;
-#X scalar 1293-line 1378 666 \;;
-#X scalar 1293-line 1482 666 \;;
-#X scalar 1293-line 1586 666 \;;
-#X scalar 1293-line 1690 900 \;;
-#X scalar 1293-chord0 1772 0 x \;;
-#X scalar 1293-chord1 1772 0 x \;;
-#X scalar 1293-chord2 1772 0 x \;;
-#X scalar 1293-chord3 1772 0 x \;;
-#X scalar 1293-chord4 30 0 Imin9 \;;
-#X scalar 1293-chord5 446 0 bIIImaj9 \;;
-#X scalar 1293-chord6 862 0 IImin9 \;;
-#X scalar 1293-chord7 1278 0 bII9 \;;
-#X scalar 1293-mchord0 33.2 174.2 \;;
-#X scalar 1293-mchord1 241.2 174.2 \;;
-#X scalar 1293-mchord2 449.2 379 \;;
-#X scalar 1293-mchord3 865.2 379 \;;
-#X scalar 1293-mchord4 1281.2 379 \;;
-#X scalar 1293-mchord5 -100 0 \;;
-#X scalar 1293-mchord6 -100 0 \;;
-#X scalar 1293-mchord7 -100 0 \;;
-#X scalar 1293-mchord8 -100 0 \;;
-#X scalar 1293-mchord9 -100 0 \;;
-#X scalar 1293-mchord10 -100 0 \;;
-#X scalar 1293-mchord11 -100 0 \;;
-#X scalar 1293-mchord12 -100 0 \;;
-#X scalar 1293-mchord13 -100 0 \;;
-#X scalar 1293-mchord14 -100 0 \;;
-#X scalar 1293-mchord15 -100 0 \;;
-#X scalar 1293-mchord16 -100 0 \;;
-#X scalar 1293-mchord17 -100 0 \;;
-#X scalar 1293-mchord18 -100 0 \;;
-#X scalar 1293-mchord19 -100 0 \;;
-#X scalar 1293-mchord20 -100 0 \;;
-#X scalar 1293-mchord21 -100 0 \;;
-#X scalar 1293-mchord22 -100 0 \;;
-#X scalar 1293-mchord23 -100 0 \;;
-#X scalar 1293-mchord24 -100 0 \;;
-#X scalar 1293-mchord25 -100 0 \;;
-#X scalar 1293-mchord26 -100 0 \;;
-#X scalar 1293-mchord27 -100 0 \;;
-#X scalar 1293-mchord28 -100 0 \;;
-#X scalar 1293-mchord29 -100 0 \;;
-#X scalar 1293-mchord30 -100 0 \;;
-#X scalar 1293-mchord31 -100 0 \;;
-#X scalar 1293-mchord32 -100 0 \;;
-#X scalar 1293-mchord33 -100 0 \;;
-#X scalar 1293-mchord34 -100 0 \;;
-#X scalar 1293-mchord35 -100 0 \;;
-#X scalar 1293-mchord36 -100 0 \;;
-#X scalar 1293-mchord37 -100 0 \;;
-#X scalar 1293-mchord38 -100 0 \;;
-#X scalar 1293-mchord39 -100 0 \;;
-#X scalar 1293-mchord40 -100 0 \;;
-#X scalar 1293-mchord41 -100 0 \;;
-#X scalar 1293-mchord42 -100 0 \;;
-#X scalar 1293-mchord43 -100 0 \;;
-#X scalar 1293-mchord44 -100 0 \;;
-#X scalar 1293-mchord45 -100 0 \;;
-#X scalar 1293-mchord46 -100 0 \;;
-#X scalar 1293-mchord47 -100 0 \;;
-#X scalar 1293-mchord48 -100 0 \;;
-#X scalar 1293-mchord49 -100 0 \;;
-#X scalar 1293-mchord50 -100 0 \;;
-#X scalar 1293-mchord51 -100 0 \;;
-#X scalar 1293-mchord52 -100 0 \;;
-#X scalar 1293-mchord53 -100 0 \;;
-#X scalar 1293-mchord54 -100 0 \;;
-#X scalar 1293-mchord55 -100 0 \;;
-#X scalar 1293-mchord56 -100 0 \;;
-#X scalar 1293-mchord57 -100 0 \;;
-#X scalar 1293-mchord58 -100 0 \;;
-#X scalar 1293-mchord59 -100 0 \;;
-#X scalar 1293-mchord60 -100 0 \;;
-#X scalar 1293-mchord61 -100 0 \;;
-#X scalar 1293-mchord62 -100 0 \;;
-#X scalar 1293-mchord63 -100 0 \;;
-#X scalar 1293-schord0 33.2 51.694 \;;
-#X scalar 1293-schord1 111.2 77.2019 \;;
-#X scalar 1293-schord2 241.2 51.694 \;;
-#X scalar 1293-schord3 319.2 37.2154 \;;
-#X scalar 1293-schord4 371.2 37.2154 \;;
-#X scalar 1293-schord5 423.2 20.5 \;;
-#X scalar 1293-schord6 449.2 51.694 \;;
-#X scalar 1293-schord7 527.2 88.8574 \;;
-#X scalar 1293-schord8 683.2 37.2154 \;;
-#X scalar 1293-schord9 735.2 64.8879 \;;
-#X scalar 1293-schord10 839.2 20.5 \;;
-#X scalar 1293-schord11 865.2 51.694 \;;
-#X scalar 1293-schord12 943.2 88.8574 \;;
-#X scalar 1293-schord13 1099.2 37.2155 \;;
-#X scalar 1293-schord14 1151.2 37.2155 \;;
-#X scalar 1293-schord15 1203.2 37.2155 \;;
-#X scalar 1293-schord16 1255.2 20.5 \;;
-#X scalar 1293-schord17 1281.2 51.6941 \;;
-#X scalar 1293-schord18 1359.2 88.8574 \;;
-#X scalar 1293-schord19 1515.2 37.2155 \;;
-#X scalar 1293-schord20 1567.2 77.2019 \;;
-#X scalar 1293-schord21 1567.2 37.2155 \;;
-#X scalar 1293-schord22 1619.2 37.2155 \;;
-#X scalar 1293-schord23 1671.2 15.8 \;;
-#X scalar 1293-schord24 100 0 \;;
-#X scalar 1293-schord25 100 0 \;;
-#X scalar 1293-schord26 100 0 \;;
-#X scalar 1293-schord27 100 0 \;;
-#X scalar 1293-schord28 100 0 \;;
-#X scalar 1293-schord29 100 0 \;;
-#X scalar 1293-schord30 100 0 \;;
-#X scalar 1293-schord31 100 0 \;;
-#X scalar 1293-schord32 100 0 \;;
-#X scalar 1293-schord33 100 0 \;;
-#X scalar 1293-schord34 100 0 \;;
-#X scalar 1293-schord35 100 0 \;;
-#X scalar 1293-schord36 100 0 \;;
-#X scalar 1293-schord37 100 0 \;;
-#X scalar 1293-schord38 100 0 \;;
-#X scalar 1293-schord39 100 0 \;;
-#X scalar 1293-schord40 100 0 \;;
-#X scalar 1293-schord41 100 0 \;;
-#X scalar 1293-schord42 100 0 \;;
-#X scalar 1293-schord43 100 0 \;;
-#X scalar 1293-schord44 100 0 \;;
-#X scalar 1293-schord45 100 0 \;;
-#X scalar 1293-schord46 100 0 \;;
-#X scalar 1293-schord47 100 0 \;;
-#X scalar 1293-schord48 100 0 \;;
-#X scalar 1293-schord49 100 0 \;;
-#X scalar 1293-schord50 100 0 \;;
-#X scalar 1293-schord51 100 0 \;;
-#X scalar 1293-schord52 100 0 \;;
-#X scalar 1293-schord53 100 0 \;;
-#X scalar 1293-schord54 100 0 \;;
-#X scalar 1293-schord55 100 0 \;;
-#X scalar 1293-schord56 100 0 \;;
-#X scalar 1293-schord57 100 0 \;;
-#X scalar 1293-schord58 100 0 \;;
-#X scalar 1293-schord59 100 0 \;;
-#X scalar 1293-schord60 100 0 \;;
-#X scalar 1293-schord61 100 0 \;;
-#X scalar 1293-schord62 100 0 \;;
-#X scalar 1293-schord63 100 0 \;;
-#X scalar 1293-beat 236 \;;
+#X scalar 2041-line 26 900 \;;
+#X scalar 2041-line 130 666 \;;
+#X scalar 2041-line 234 666 \;;
+#X scalar 2041-line 338 666 \;;
+#X scalar 2041-line 442 900 \;;
+#X scalar 2041-line 546 666 \;;
+#X scalar 2041-line 650 666 \;;
+#X scalar 2041-line 754 666 \;;
+#X scalar 2041-line 858 900 \;;
+#X scalar 2041-line 962 666 \;;
+#X scalar 2041-line 1066 666 \;;
+#X scalar 2041-line 1170 666 \;;
+#X scalar 2041-line 1274 900 \;;
+#X scalar 2041-line 1378 666 \;;
+#X scalar 2041-line 1482 666 \;;
+#X scalar 2041-line 1586 666 \;;
+#X scalar 2041-line 1690 900 \;;
+#X scalar 2041-chord0 30 0 Imaj \;;
+#X scalar 2041-chord1 446 0 VIImin7 \;;
+#X scalar 2041-chord2 862 0 Imaj \;;
+#X scalar 2041-chord3 1278 0 VIImin7 \;;
+#X scalar 2041-chord4 1772 0 x \;;
+#X scalar 2041-chord5 1772 0 x \;;
+#X scalar 2041-chord6 1772 0 x \;;
+#X scalar 2041-chord7 1772 0 x \;;
+#X scalar 2041-mchord0 33.2 404.6 \;;
+#X scalar 2041-mchord1 449.2 404.6 \;;
+#X scalar 2041-mchord2 865.2 404.6 \;;
+#X scalar 2041-mchord3 1281.2 404.6 \;;
+#X scalar 2041-mchord4 -100 0 \;;
+#X scalar 2041-mchord5 -100 0 \;;
+#X scalar 2041-mchord6 -100 0 \;;
+#X scalar 2041-mchord7 -100 0 \;;
+#X scalar 2041-mchord8 -100 0 \;;
+#X scalar 2041-mchord9 -100 0 \;;
+#X scalar 2041-mchord10 -100 0 \;;
+#X scalar 2041-mchord11 -100 0 \;;
+#X scalar 2041-mchord12 -100 0 \;;
+#X scalar 2041-mchord13 -100 0 \;;
+#X scalar 2041-mchord14 -100 0 \;;
+#X scalar 2041-mchord15 -100 0 \;;
+#X scalar 2041-mchord16 -100 0 \;;
+#X scalar 2041-mchord17 -100 0 \;;
+#X scalar 2041-mchord18 -100 0 \;;
+#X scalar 2041-mchord19 -100 0 \;;
+#X scalar 2041-mchord20 -100 0 \;;
+#X scalar 2041-mchord21 -100 0 \;;
+#X scalar 2041-mchord22 -100 0 \;;
+#X scalar 2041-mchord23 -100 0 \;;
+#X scalar 2041-mchord24 -100 0 \;;
+#X scalar 2041-mchord25 -100 0 \;;
+#X scalar 2041-mchord26 -100 0 \;;
+#X scalar 2041-mchord27 -100 0 \;;
+#X scalar 2041-mchord28 -100 0 \;;
+#X scalar 2041-mchord29 -100 0 \;;
+#X scalar 2041-mchord30 -100 0 \;;
+#X scalar 2041-mchord31 -100 0 \;;
+#X scalar 2041-mchord32 -100 0 \;;
+#X scalar 2041-mchord33 -100 0 \;;
+#X scalar 2041-mchord34 -100 0 \;;
+#X scalar 2041-mchord35 -100 0 \;;
+#X scalar 2041-mchord36 -100 0 \;;
+#X scalar 2041-mchord37 -100 0 \;;
+#X scalar 2041-mchord38 -100 0 \;;
+#X scalar 2041-mchord39 -100 0 \;;
+#X scalar 2041-mchord40 -100 0 \;;
+#X scalar 2041-mchord41 -100 0 \;;
+#X scalar 2041-mchord42 -100 0 \;;
+#X scalar 2041-mchord43 -100 0 \;;
+#X scalar 2041-mchord44 -100 0 \;;
+#X scalar 2041-mchord45 -100 0 \;;
+#X scalar 2041-mchord46 -100 0 \;;
+#X scalar 2041-mchord47 -100 0 \;;
+#X scalar 2041-mchord48 -100 0 \;;
+#X scalar 2041-mchord49 -100 0 \;;
+#X scalar 2041-mchord50 -100 0 \;;
+#X scalar 2041-mchord51 -100 0 \;;
+#X scalar 2041-mchord52 -100 0 \;;
+#X scalar 2041-mchord53 -100 0 \;;
+#X scalar 2041-mchord54 -100 0 \;;
+#X scalar 2041-mchord55 -100 0 \;;
+#X scalar 2041-mchord56 -100 0 \;;
+#X scalar 2041-mchord57 -100 0 \;;
+#X scalar 2041-mchord58 -100 0 \;;
+#X scalar 2041-mchord59 -100 0 \;;
+#X scalar 2041-mchord60 -100 0 \;;
+#X scalar 2041-mchord61 -100 0 \;;
+#X scalar 2041-mchord62 -100 0 \;;
+#X scalar 2041-mchord63 -100 0 \;;
+#X scalar 2041-schord0 33.2 403 \;;
+#X scalar 2041-schord1 449.2 403 \;;
+#X scalar 2041-schord2 865.2 403 \;;
+#X scalar 2041-schord3 1281.2 403 \;;
+#X scalar 2041-schord4 100 0 \;;
+#X scalar 2041-schord5 100 0 \;;
+#X scalar 2041-schord6 100 0 \;;
+#X scalar 2041-schord7 100 0 \;;
+#X scalar 2041-schord8 100 0 \;;
+#X scalar 2041-schord9 100 0 \;;
+#X scalar 2041-schord10 100 0 \;;
+#X scalar 2041-schord11 100 0 \;;
+#X scalar 2041-schord12 100 0 \;;
+#X scalar 2041-schord13 100 0 \;;
+#X scalar 2041-schord14 100 0 \;;
+#X scalar 2041-schord15 100 0 \;;
+#X scalar 2041-schord16 100 0 \;;
+#X scalar 2041-schord17 100 0 \;;
+#X scalar 2041-schord18 100 0 \;;
+#X scalar 2041-schord19 100 0 \;;
+#X scalar 2041-schord20 100 0 \;;
+#X scalar 2041-schord21 100 0 \;;
+#X scalar 2041-schord22 100 0 \;;
+#X scalar 2041-schord23 100 0 \;;
+#X scalar 2041-schord24 100 0 \;;
+#X scalar 2041-schord25 100 0 \;;
+#X scalar 2041-schord26 100 0 \;;
+#X scalar 2041-schord27 100 0 \;;
+#X scalar 2041-schord28 100 0 \;;
+#X scalar 2041-schord29 100 0 \;;
+#X scalar 2041-schord30 100 0 \;;
+#X scalar 2041-schord31 100 0 \;;
+#X scalar 2041-schord32 100 0 \;;
+#X scalar 2041-schord33 100 0 \;;
+#X scalar 2041-schord34 100 0 \;;
+#X scalar 2041-schord35 100 0 \;;
+#X scalar 2041-schord36 100 0 \;;
+#X scalar 2041-schord37 100 0 \;;
+#X scalar 2041-schord38 100 0 \;;
+#X scalar 2041-schord39 100 0 \;;
+#X scalar 2041-schord40 100 0 \;;
+#X scalar 2041-schord41 100 0 \;;
+#X scalar 2041-schord42 100 0 \;;
+#X scalar 2041-schord43 100 0 \;;
+#X scalar 2041-schord44 100 0 \;;
+#X scalar 2041-schord45 100 0 \;;
+#X scalar 2041-schord46 100 0 \;;
+#X scalar 2041-schord47 100 0 \;;
+#X scalar 2041-schord48 100 0 \;;
+#X scalar 2041-schord49 100 0 \;;
+#X scalar 2041-schord50 100 0 \;;
+#X scalar 2041-schord51 100 0 \;;
+#X scalar 2041-schord52 100 0 \;;
+#X scalar 2041-schord53 100 0 \;;
+#X scalar 2041-schord54 100 0 \;;
+#X scalar 2041-schord55 100 0 \;;
+#X scalar 2041-schord56 100 0 \;;
+#X scalar 2041-schord57 100 0 \;;
+#X scalar 2041-schord58 100 0 \;;
+#X scalar 2041-schord59 100 0 \;;
+#X scalar 2041-schord60 100 0 \;;
+#X scalar 2041-schord61 100 0 \;;
+#X scalar 2041-schord62 100 0 \;;
+#X scalar 2041-schord63 100 0 \;;
+#X scalar 2041-beat 26 \;;
 #X coords 0 0 1715 120 600 80 2 0 0;
 #X restore 15 41 pd \$0-data;
-#X obj 453 165 hsl 100 15 0 27 0 0 \$0-chord-pattern \$0-set-chord-pattern
-pattern 106 11 1 11 -66577 -258113 -228856 3800 0;
-#X obj 440 165 bng 8 250 50 0 \$0-learn-rhythm --- empty 17 7 0 10
+#X obj 453 155 hsl 100 15 0 27 0 0 \$0-chord-pattern \$0-set-chord-pattern
+pattern 106 11 1 11 -66577 -258113 -228856 733 0;
+#X obj 440 155 bng 8 250 50 0 \$0-learn-rhythm --- empty 17 7 0 10
 -258113 -1 -1;
 #N canvas 0 92 450 297 \$0-plot 0;
-#X scalar 1293-point 172.443 65.3846 222 5 \;;
-#X scalar 1293-point 103.834 99.2308 222 5 \;;
-#X scalar 1293-point 127.18 188.462 222 5 \;;
-#X scalar 1293-point 159.623 185.385 222 5 \;;
-#X scalar 1293-point 134.211 93.0769 222 5 \;;
-#X scalar 1293-point 139.474 126.923 222 5 \;;
-#X scalar 1293-point 90.1496 102.308 222 5 \;;
-#X scalar 1293-point 119.474 120.769 222 5 \;;
-#X scalar 1293-point 137.368 179.231 222 5 \;;
-#X scalar 1293-point 33.1579 86.9231 222 5 \;;
-#X scalar 1293-point 12.1053 160.769 222 5 \;;
-#X scalar 1293-point 45.7895 160.769 222 5 \;;
-#X scalar 1293-point 191.202 96.1538 222 5 \;;
-#X scalar 1293-point 134.211 120.769 222 5 \;;
-#X scalar 1293-point 64.0216 114.615 222 5 \;;
-#X scalar 1293-point 49.0969 90 222 5 \;;
-#X scalar 1293-point 79.4737 163.846 222 5 \;;
-#X scalar 1293-point 67.8947 176.154 222 5 \;;
-#X scalar 1293-point 76.3158 173.077 222 5 \;;
-#X scalar 1293-point 77.3684 160.769 222 5 \;;
-#X scalar 1293-point 31.2022 93.0769 222 5 \;;
-#X scalar 1293-point 40.5263 130 222 5 \;;
-#X scalar 1293-point 22.6316 130 222 5 \;;
-#X scalar 1293-point 90 93.0769 222 5 \;;
-#X scalar 1293-point 64.7368 34.6154 222 5 \;;
-#X scalar 1293-point 88.0443 96.1538 222 5 \;;
-#X scalar 1293-point 40.5263 123.846 222 5 \;;
-#X scalar 1293-point 81.9163 65.3846 222 5 \;;
-#X scalar 1293-point 62.6316 37.6923 222 5 \;;
-#X scalar 1293-point 41.5789 154.615 222 5 \;;
-#X scalar 1293-point 73.1579 157.692 222 5 \;;
-#X scalar 1293-point 94.3601 90 222 5 \;;
-#X scalar 1293-point 102.632 40.7692 900 5 \;;
-#X scalar 1293-point 55.2632 28.4615 222 5 \;;
-#X scalar 1293-point 42.6316 120.769 222 5 \;;
-#X scalar 1293-point 55.2632 31.5385 222 5 \;;
-#X scalar 1293-point 112.485 22.3077 222 5 \;;
-#X scalar 1293-point 22.6316 130 222 5 \;;
-#X scalar 1293-point 116.696 56.1538 222 5 \;;
-#X scalar 1293-point 193.158 37.6923 222 5 \;;
-#X scalar 1293-point 136.316 160.769 222 5 \;;
-#X scalar 1293-point 147.18 68.4615 222 5 \;;
-#X scalar 1293-point 164.205 90 222 5 \;;
-#X scalar 1293-point 197.368 130 222 5 \;;
-#X scalar 1293-point 173.158 126.923 222 5 \;;
-#X scalar 1293-point 28.2321 59.2308 222 5 \;;
-#X scalar 1293-point 163.684 37.6923 222 5 \;;
-#X scalar 1293-point 143.684 34.6154 222 5 \;;
-#X scalar 1293-ysis 110 10 200 0 \;;
-#X scalar 1293-xsis 10 110 200 \;;
-#X scalar 1293-area 10 10 200 \;;
+#X scalar 2041-point 172.443 65.3846 900 5 \;;
+#X scalar 2041-point 103.834 99.2308 222 5 \;;
+#X scalar 2041-point 127.18 188.462 222 5 \;;
+#X scalar 2041-point 159.623 185.385 222 5 \;;
+#X scalar 2041-point 134.211 93.0769 222 5 \;;
+#X scalar 2041-point 139.474 126.923 222 5 \;;
+#X scalar 2041-point 90.1496 102.308 222 5 \;;
+#X scalar 2041-point 119.474 120.769 222 5 \;;
+#X scalar 2041-point 137.368 179.231 222 5 \;;
+#X scalar 2041-point 33.1579 86.9231 222 5 \;;
+#X scalar 2041-point 12.1053 160.769 222 5 \;;
+#X scalar 2041-point 45.7895 160.769 222 5 \;;
+#X scalar 2041-point 191.202 96.1538 222 5 \;;
+#X scalar 2041-point 134.211 120.769 222 5 \;;
+#X scalar 2041-point 64.0216 114.615 222 5 \;;
+#X scalar 2041-point 49.0969 90 222 5 \;;
+#X scalar 2041-point 79.4737 163.846 222 5 \;;
+#X scalar 2041-point 67.8947 176.154 222 5 \;;
+#X scalar 2041-point 76.3158 173.077 222 5 \;;
+#X scalar 2041-point 77.3684 160.769 222 5 \;;
+#X scalar 2041-point 31.2022 93.0769 222 5 \;;
+#X scalar 2041-point 40.5263 130 222 5 \;;
+#X scalar 2041-point 22.6316 130 222 5 \;;
+#X scalar 2041-point 90 93.0769 222 5 \;;
+#X scalar 2041-point 64.7368 34.6154 222 5 \;;
+#X scalar 2041-point 88.0443 96.1538 222 5 \;;
+#X scalar 2041-point 40.5263 123.846 222 5 \;;
+#X scalar 2041-point 81.9163 65.3846 222 5 \;;
+#X scalar 2041-point 62.6316 37.6923 222 5 \;;
+#X scalar 2041-point 41.5789 154.615 222 5 \;;
+#X scalar 2041-point 73.1579 157.692 222 5 \;;
+#X scalar 2041-point 94.3601 90 222 5 \;;
+#X scalar 2041-point 102.632 40.7692 222 5 \;;
+#X scalar 2041-point 55.2632 28.4615 222 5 \;;
+#X scalar 2041-point 42.6316 120.769 222 5 \;;
+#X scalar 2041-point 55.2632 31.5385 222 5 \;;
+#X scalar 2041-point 112.485 22.3077 222 5 \;;
+#X scalar 2041-point 22.6316 130 222 5 \;;
+#X scalar 2041-point 116.696 56.1538 222 5 \;;
+#X scalar 2041-point 193.158 37.6923 222 5 \;;
+#X scalar 2041-point 136.316 160.769 222 5 \;;
+#X scalar 2041-point 147.18 68.4615 222 5 \;;
+#X scalar 2041-point 164.205 90 222 5 \;;
+#X scalar 2041-point 197.368 130 222 5 \;;
+#X scalar 2041-point 173.158 126.923 222 5 \;;
+#X scalar 2041-point 28.2321 59.2308 222 5 \;;
+#X scalar 2041-point 163.684 37.6923 222 5 \;;
+#X scalar 2041-point 143.684 34.6154 222 5 \;;
+#X scalar 2041-ysis 110 10 200 0 \;;
+#X scalar 2041-xsis 10 110 200 \;;
+#X scalar 2041-area 10 10 200 \;;
 #X coords 10 10 210 210 200 200 2 0 0;
 #X restore 23 286 pd \$0-plot;
-#X obj 264 137 cnv 15 100 5 empty empty KEYBOARD 5 12 0 16 -128992
--228856 0;
+#X obj 264 127 cnv 15 100 5 empty empty CHORDS 5 12 0 16 -128992 -228856
+0;
 #X text 11 352 minor, f 1;
 #X text 225 351 major, f 1;
 #X text 99 485 diatonic;
 #X text 92 271 chromatic;
-#X obj 178 230 bng 15 250 50 0 \$0-scroll-up \$0-set-scroll-up next
-18 11 1 11 -66577 -258113 -228856;
-#X obj 168 230 bng 8 250 50 0 \$0-learn-scrollup --- empty 17 7 0 10
--258113 -1 -1;
-#X obj 178 255 bng 15 250 50 0 \$0-scroll-down \$0-set-scroll-down
-prev. 18 11 1 11 -66577 -258113 -228856;
-#X obj 168 255 bng 8 250 50 0 \$0-learn-scrolldown --- empty 17 7 0
-10 -258113 -1 -1;
-#X obj 546 386 tgl 15 0 \$0-int-synth \$0-set-int-synth int-synth 18
-11 1 11 -66577 -258113 -228856 1 1;
-#X obj 536 386 bng 8 250 50 0 \$0-learn-synth --- empty 17 7 0 10 -258113
+#X obj 546 376 tgl 15 0 \$0-int-synth \$0-set-int-synth int-synth 18
+11 1 11 -66577 -258113 -228856 0 1;
+#X obj 536 376 bng 8 250 50 0 \$0-learn-synth --- empty 17 7 0 10 -258113
 -1 -1;
 #X obj 260 165 bng 8 250 50 0 \$0-learn-density --- empty 17 7 0 10
 -258113 -1 -1;
-#X obj 380 165 cnv 15 30 20 empty empty density 0 12 1 11 -128992 -228856
+#X obj 380 155 cnv 15 30 20 empty empty density 0 12 1 11 -128992 -228856
 0;
-#X obj 270 215 hradio 15 1 0 7 \$0-chords-octave \$0-set-chords-octave
+#X obj 270 205 hradio 15 1 0 7 \$0-chords-octave \$0-set-chords-octave
 octave 109 11 1 11 -66577 -258113 -228856 3;
 #X obj 260 215 bng 8 250 50 0 \$0-learn-chords-octave --- empty 17
 7 0 10 -258113 -1 -1;
 #X obj 260 190 bng 8 250 50 0 \$0-learn-legato --- empty 17 7 0 10
 -258113 -1 -1;
-#X obj 444 187 cnv 15 100 20 empty empty BASS 5 12 0 16 -128992 -228856
+#X obj 444 177 cnv 15 100 20 empty empty BASS 5 12 0 16 -128992 -228856
 0;
-#X obj 453 240 hsl 100 15 0.2 16 0 0 \$0-bass-duration \$0-set-bass-duration
-duration 106 11 1 11 -66577 -258113 -228856 9900 0;
-#X obj 453 265 hsl 100 15 0.125 1 0 0 \$0-bass-velocity \$0-set-bass-velocity
+#X obj 453 230 hsl 100 15 0.2 16 0 0 \$0-bass-duration \$0-set-bass-duration
+duration 106 11 1 11 -66577 -258113 -228856 7394 0;
+#X obj 453 255 hsl 100 15 0.125 1 0 0 \$0-bass-velocity \$0-set-bass-velocity
 accents 106 11 1 11 -66577 -258113 -228856 0 0;
-#X obj 440 215 bng 8 250 50 0 \$0-learn-bass-density --- empty 17 7
+#X obj 440 205 bng 8 250 50 0 \$0-learn-bass-density --- empty 17 7
 0 10 -258113 -1 -1;
-#X obj 440 240 bng 8 250 50 0 \$0-learn-bass-duration --- empty 17
+#X obj 440 230 bng 8 250 50 0 \$0-learn-bass-duration --- empty 17
 7 0 10 -258113 -1 -1;
-#X obj 440 265 bng 8 250 50 0 \$0-learn-bass-accents --- empty 17 7
+#X obj 440 255 bng 8 250 50 0 \$0-learn-bass-accents --- empty 17 7
 0 10 -258113 -1 -1;
-#X obj 270 290 tgl 15 0 \$0-mute-chords \$0-set-mute-chords mute 18
-11 1 11 -66577 -258113 -228856 1 1;
+#X obj 270 280 tgl 15 0 \$0-mute-chords \$0-set-mute-chords mute 18
+11 1 11 -66577 -258113 -228856 0 1;
 #X obj 260 290 bng 8 250 50 0 \$0-learn-mute-chords --- empty 17 7
 0 10 -258113 -1 -1;
-#X obj 510 290 hradio 15 1 0 3 \$0-bass-octave \$0-set-bass-octave
+#X obj 510 280 hradio 15 1 0 3 \$0-bass-octave \$0-set-bass-octave
 octave 49 11 1 11 -66577 -258113 -228856 1;
 #X obj 11 127 cnv 15 100 20 empty empty HARMONY 5 12 0 16 -128992 -228856
 0;
-#X obj 272 358 cnv 15 100 20 empty empty MEMORY 5 12 0 16 -128992 -228856
+#X obj 272 348 cnv 15 100 20 empty empty MEMORY 5 12 0 16 -128992 -228856
 0;
-#X obj 266 392 bng 8 250 50 0 \$0-learn-chords-octave --- empty 17
+#X obj 786 392 bng 8 250 50 0 \$0-learn-chords-octave --- empty 17
 7 0 10 -258113 -1 -1;
-#X obj 276 435 hradio 15 1 0 7 \$0-recall \$0-set-recall recall 109
+#X obj 796 435 hradio 15 1 0 7 \$0-recall \$0-set-recall recall 109
 11 1 11 -66577 -258113 -228856 2;
-#X obj 266 442 bng 8 250 50 0 \$0-learn-chords-octave --- empty 17
+#X obj 786 442 bng 8 250 50 0 \$0-learn-chords-octave --- empty 17
 7 0 10 -258113 -1 -1;
-#X obj 276 385 hradio 15 1 0 7 \$0-store \$0-set-store store 109 11
-1 11 -66577 -258113 -228856 0;
-#X obj 276 460 nbx 1 15 0 8 0 0 \$0-asdfasdfasdfasdfadfa \$0-recall
+#X obj 796 385 hradio 15 1 0 7 \$0-store \$0-set-store store 109 11
+1 11 -66577 -258113 -228856 1;
+#X obj 796 460 nbx 1 15 0 8 0 0 \$0-asdfasdfasdfasdfadfa \$0-recall
 last-call 23 11 1 11 -66577 -258699 -233017 0 256;
-#X obj 276 410 nbx 1 15 0 8 0 0 \$0-........ \$0-store empty 38 11
+#X obj 796 410 nbx 1 15 0 8 0 0 \$0-........ \$0-store empty 38 11
 1 11 -66577 -258699 -233017 0 256;
-#X obj 560 215 cnv 15 30 20 empty empty density 0 12 1 11 -128992 -228856
+#X obj 560 205 cnv 15 30 20 empty empty density 0 12 1 11 -128992 -228856
 0;
-#X obj 453 315 hsl 100 15 0 127 0 0 \$0-bass-volume \$0-set-bass-volume
-volume 106 11 1 11 -66577 -258113 -228856 9900 0;
-#X obj 440 315 bng 8 250 50 0 \$0-learn-bass-volume --- empty 17 7
+#X obj 453 305 hsl 100 15 0 127 0 0 \$0-bass-volume \$0-set-bass-volume
+volume 106 11 1 11 -66577 -258113 -228856 6236 0;
+#X obj 440 305 bng 8 250 50 0 \$0-learn-bass-volume --- empty 17 7
 0 10 -258113 -1 -1;
-#X obj 273 315 hsl 100 15 0 127 0 0 \$0-chords-volume \$0-set-chords-volume
+#X obj 273 305 hsl 100 15 0 127 0 0 \$0-chords-volume \$0-set-chords-volume
 volume 106 11 1 11 -66577 -258113 -228856 6236 0;
 #X obj 260 315 bng 8 250 50 0 \$0-learn-register --- empty 17 7 0 10
 -258113 -1 -1;
-#X obj 446 358 cnv 15 100 20 empty empty TRANSPORT 5 12 0 16 -128992
+#X obj 446 348 cnv 15 100 20 empty empty TRANSPORT 5 12 0 16 -128992
 -228856 0;
-#X obj 270 165 vabs/hslm \$0-density 4 1 64;
-#X obj 450 215 vabs/hslm \$0-bass-density 4 1 64;
-#X obj 273 190 hsl 100 15 0 100 0 0 \$0-legato \$0-set-legato legato
-106 11 1 11 -66577 -258113 -228856 7200 0;
+#X obj 270 155 vabs/hslm \$0-density 4 1 64;
+#X obj 450 205 vabs/hslm \$0-bass-density 4 1 64;
+#X obj 273 180 hsl 100 15 0 100 0 0 \$0-legato \$0-set-legato legato
+106 11 1 11 -66577 -258113 -228856 9900 0;
+#X obj 345 380 abs/mem 3 \$0;
+#X obj 372 443 cnv 15 30 20 empty empty store/recall 0 12 1 11 -128992
+-228856 0;
+#X obj 372 467 cnv 15 30 20 empty empty clear 0 12 1 11 -128992 -228856
+0;
+#X obj 372 383 cnv 15 30 20 empty empty store/recall 0 12 1 11 -128992
+-228856 0;
+#X obj 372 407 cnv 15 30 20 empty empty clear 0 12 1 11 -128992 -228856
+0;
+#X obj 270 380 abs/mem 0 \$0;
+#X obj 345 440 abs/mem 7 \$0;
+#X obj 320 380 abs/mem 2 \$0;
+#X obj 295 380 abs/mem 1 \$0;
+#X obj 270 440 abs/mem 4 \$0;
+#X obj 295 440 abs/mem 5 \$0;
+#X obj 320 440 abs/mem 6 \$0;
