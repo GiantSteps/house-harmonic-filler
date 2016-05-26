@@ -1,7 +1,7 @@
-#N canvas 1059 334 563 612 10;
+#N canvas 591 71 563 612 10;
 #X msg 62 253 color 3;
 #X msg 123 252 color 13;
-#X obj 100 125 bng 20 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 100 125 bng 20 250 50 0 empty \$0-init-mem empty 17 7 0 10 -262144
 -1 -1;
 #X obj 100 100 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
@@ -22,6 +22,11 @@
 #X obj 222 81 spigot 1;
 #X obj 263 273 pack \$1 0;
 #X msg 160 205 color 2;
+#X obj 58 327 \$1;
+#X obj 425 200 \$1;
+#X obj 58 346 s \$2-store;
+#X obj 425 219 s \$2-recall;
+#X obj 18 31 r \$2-init-mem;
 #X connect 0 0 14 0;
 #X connect 0 0 15 0;
 #X connect 1 0 14 0;
@@ -33,8 +38,10 @@
 #X connect 4 1 16 0;
 #X connect 5 0 3 0;
 #X connect 6 0 0 0;
+#X connect 6 0 19 0;
 #X connect 6 1 1 0;
 #X connect 6 1 17 0;
+#X connect 6 1 20 0;
 #X connect 7 0 16 1;
 #X connect 8 0 16 1;
 #X connect 10 0 13 0;
@@ -43,4 +50,7 @@
 #X connect 17 0 9 0;
 #X connect 18 0 14 0;
 #X connect 18 0 15 0;
+#X connect 19 0 21 0;
+#X connect 20 0 22 0;
+#X connect 23 0 2 0;
 #X coords 0 -1 1 1 20 45 2 100 100;
