@@ -1,7 +1,7 @@
 -set-chord-pattern 2;
 -file-index 0;
--set-keyfifths 3.43688;
--preset-density 4.9685;
+-set-keyfifths 0;
+-preset-density 4.47244;
 -preset-legato 0;
 -set-octave 0;
 -set-spread 0;
