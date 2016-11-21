@@ -1,0 +1,17 @@
+#N canvas 367 267 543 328 10;
+#X obj 169 16 inlet;
+#X obj 21 126 sel 0;
+#X obj 209 221 change -12;
+#X obj 209 244 outlet;
+#X obj 21 80 r \$2-current-step;
+#X obj 21 106 mod \$1;
+#X obj 154 182 f;
+#X obj 209 110 vabs/oncev;
+#X connect 0 0 6 1;
+#X connect 0 0 7 0;
+#X connect 1 0 6 0;
+#X connect 2 0 3 0;
+#X connect 4 0 5 0;
+#X connect 5 0 1 0;
+#X connect 6 0 2 0;
+#X connect 7 0 2 0;

@@ -1,24 +1,16 @@
 
-<<<<<<< HEAD
-*cyclone ggee hcs iemlib jasch_lib list-abs maxlib mrpeach flatgui zexy*
-=======
 ##House-Harmonic-Filler
 The *House Harmonic Filler* is a temptative model for chord variation that could be used in contexts of live electronic music performance. Based on corpus analysis of MIDI files, it provides a framework for variation and extension of chord progressions, generating MIDI data that is sent out to your preferred device or DAW.
->>>>>>> mtf
 
 <p align="center">
   <img src="/doc/img-hhf.png"/>
 </p>
 
-<<<<<<< HEAD
-!["The graphic interface"](/gui.png?raw=true)
-=======
 ####Installation
 To run the **House-Harmonic-Filler** you need the latests stable Pd-vanilla distribution (0.46.7). You can download it from Miller Puckette's website (http://msp.ucsd.edu/software.html), of from the Pd main site (http://puredata.info). Beware that Pd-extended is now obsolete. For ease of use, we have included with this download all the externals needed, so downloading this repository is all you need to do to start using the program, once you have Pd installed.
 
 ####Description
 The program offers simple manipulation of MIDI harmonic loops. You can use it in standalone mode (in which case, the program uses an internal synthesiser to produce sounds) and perhaps more interestingly, as a *slave* MIDI instrument sending data to your preferred device or Digital Audio Workstation. 
->>>>>>> mtf
 
 It comes with *MIDI learn* fuctionality, in case you want to control its parameter with a hardware controller or an external interface. The MIDI learn function is represented by the **red dots** next to each parameter. To assign a MIDI CC to a parameter, simply move the controller you want to assign and then hit on the red dot. The last-used CC should be automatically assigned and remembered for future sessions.
 

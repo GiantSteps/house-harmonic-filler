@@ -1,0 +1,36 @@
+#N canvas 103 259 450 385 10;
+#X obj 102 103 bng 15 250 50 0 empty \$0-butt empty 17 7 0 10 -33289
+-33289 -33289;
+#X obj 100 100 cnv 15 18 18 empty \$0-butt empty 20 12 0 14 -33289
+-33289 0;
+#X obj 139 163 tgl 15 1 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 100 120 f \$0;
+#X obj 100 144 t f f b;
+#X obj 139 180 sel 0 1;
+#X obj 119 229 pack f f;
+#X floatatom 163 137 5 0 0 0 - - -, f 5;
+#X msg 119 250 \; \$1-butt color \$2 \$2 \$2;
+#X msg 168 200 12;
+#X obj 224 178 s \$1;
+#X msg 139 202 31;
+#X obj 33 146 t b f;
+#X obj 33 165 f \$0;
+#X obj 33 127 r set-\$1;
+#X connect 0 0 3 0;
+#X connect 2 0 5 0;
+#X connect 2 0 10 0;
+#X connect 3 0 4 0;
+#X connect 3 0 7 0;
+#X connect 4 1 6 0;
+#X connect 4 2 2 0;
+#X connect 5 0 11 0;
+#X connect 5 1 9 0;
+#X connect 6 0 8 0;
+#X connect 9 0 6 1;
+#X connect 11 0 6 1;
+#X connect 12 0 13 0;
+#X connect 12 1 2 0;
+#X connect 13 0 6 0;
+#X connect 14 0 12 0;
+#X coords 0 -1 1 1 18 18 2 100 100;
