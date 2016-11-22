@@ -144,12 +144,12 @@
 #N canvas 564 23 638 365 8;
 #X declare -path pd-abs -path pd-third-party;
 #X obj 271 268 hsl 100 15 -2 2 0 0 \$0-raw-register \$0-set-register
-register 106 11 1 11 -66577 -258113 -228856 4950 0;
+register 106 11 1 11 -66577 -258113 -228856 0 0;
 #X obj 271 243 hsl 100 15 0 3.9 0 0 \$0-spread \$0-set-spread spread
 106 11 1 11 -66577 -258113 -228856 0 0;
 #N canvas 725 200 368 422 fifths 0;
 #X obj 33 29 flatgui/knob 65 65 0 12 0 0 \$0-key-fifths \$0-set-keyfifths
-key -20 -5 1 11 5.62596e+07 1 5.62596e+07 3200 1;
+key -20 -5 1 11 5.69279e+07 1 5.6928e+07 0 1;
 #X text 58 14 C;
 #X text 77 18 G;
 #X text 92 31 D;
@@ -388,7 +388,7 @@ key -20 -5 1 11 5.62596e+07 1 5.62596e+07 3200 1;
 #X coords 0 0 1715 120 600 80 2 0 0;
 #X restore 13 31 pd \$0-data;
 #X obj 271 138 hsl 100 15 0 27 0 0 \$0-chord-pattern \$0-set-chord-pattern
-pattern 106 11 1 11 -66577 -258113 -228856 733 0;
+pattern 106 11 1 11 -66577 -258113 -228856 0 0;
 #N canvas 0 92 585 454 \$0-plot 0;
 #X scalar 1003-point 172.443 65.3846 900 5 \;;
 #X scalar 1003-point 103.834 99.2308 222 5 \;;
@@ -452,10 +452,10 @@ octave 109 11 1 11 -66577 -258113 -228856 3;
 #X obj 268 293 tgl 15 0 \$0-mute-chords \$0-set-mute-chords mute 18
 11 1 11 -66577 -258113 -228856 0 1;
 #X obj 271 318 hsl 100 15 0 127 0 0 \$0-chords-volume \$0-set-chords-volume
-volume 106 11 1 11 -66577 -258113 -228856 6236 0;
+volume 106 11 1 11 -66577 -258113 -228856 0 0;
 #X obj 268 168 vabs/hslm \$0-density 4 1 64;
 #X obj 271 193 hsl 100 15 0 100 0 0 \$0-legato \$0-set-legato legato
-106 11 1 11 -66577 -258113 -228856 9900 0;
+106 11 1 11 -66577 -258113 -228856 0 0;
 #X obj 323 293 nbx 2 15 1 16 0 0 \$0-ch-chords \$0-set-ch-chords midi-channel
 31 11 1 11 -66577 -258699 -233017 1 256;
 #X obj 378 166 cnv 15 1 1 empty empty density 0 12 1 11 -128992 -228856
@@ -2932,7 +2932,7 @@ adding weights to repetition or duration., f 26;
 #X obj 5 6 inlet;
 #X obj 5 28 unpack 0 0 0 0;
 #X obj 5 71 /;
-#X obj 65 72 != 0;
+#X obj 47 70 != 0;
 #X obj 5 92 * 4;
 #X obj 16 177 route;
 #X obj 16 155 t l f, f 8;
@@ -2950,25 +2950,25 @@ adding weights to repetition or duration., f 26;
 #X text 293 323 bang when file analysis ends;
 #X obj 5 134 vabs/change-any;
 #X obj 5 376 vabs/add2list prepend;
-#X msg 151 376 const -1;
-#X obj 292 532 cyclone/coll ./user/rhythm.txt;
-#C restore;
+#X msg 120 376 const -1;
 #X obj 299 509 r \$0-r-manage-file;
-#X obj 151 398 s \$0-r-master-pattern;
-#X obj 138 351 r \$0-r-reset-analysis;
+#X obj 120 398 s \$0-r-master-pattern;
+#X obj 107 351 r \$0-r-reset-analysis;
 #X obj 16 220 table \$0-r-master-pattern 65;
 #X obj 16 200 tabwrite \$0-r-master-pattern;
-#X obj 20 49 r \$0-r-ticks/4;
+#X obj 17 48 r \$0-r-ticks/4;
+#X obj 292 532 cyclone/coll ./pd-user/rhythm.txt;
+#C restore;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 2 3 0;
 #X connect 2 0 4 0;
 #X connect 3 0 7 1;
 #X connect 4 0 7 0;
-#X connect 5 0 27 0;
+#X connect 5 0 26 0;
 #X connect 6 0 5 0;
 #X connect 6 1 5 1;
-#X connect 6 1 27 1;
+#X connect 6 1 26 1;
 #X connect 7 0 19 0;
 #X connect 8 0 14 0;
 #X connect 9 0 15 0;
@@ -2982,15 +2982,15 @@ adding weights to repetition or duration., f 26;
 #X connect 15 0 16 0;
 #X connect 15 0 17 0;
 #X connect 16 0 15 1;
-#X connect 17 0 22 0;
+#X connect 17 0 28 0;
 #X connect 19 0 8 0;
 #X connect 19 0 6 0;
 #X connect 20 0 17 1;
-#X connect 21 0 24 0;
-#X connect 23 0 22 0;
-#X connect 25 0 21 0;
-#X connect 25 0 20 1;
-#X connect 28 0 2 1;
+#X connect 21 0 23 0;
+#X connect 22 0 28 0;
+#X connect 24 0 21 0;
+#X connect 24 0 20 1;
+#X connect 27 0 2 1;
 #X restore 13 207 pd analyse-rhythm;
 #X text 12 20 HARMONY;
 #X text 13 143 RHYTHM;
