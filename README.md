@@ -3,7 +3,7 @@
 The *House Harmonic Filler* is a temptative model for chord variation that could be used in contexts of live electronic music performance. Based on corpus analysis of MIDI files, it provides a framework for variation and extension of chord progressions, generating MIDI data that is sent out to your preferred device or DAW.
 
 <p align="center">
-  <img src="/doc/img-hhf.png"/>
+  <img src="/documentation/img-hhf.png"/>
 </p>
 
 ####Installation
@@ -20,7 +20,7 @@ The HARMONY section is the core of the application. It operates on a previously 
 House harmonic loops normally consist of sequences of 2 or 4 bars, with a tendency to have a single chord per bar. 8-bar loops are less frequent, and in most cases, they result from a repetition of a 4-bar pattern with some small variation toward the end of the second half, so we have limited the performance of the *House Harmonic Filler* to 4-bar loops.
 
 <p align="center">
-  <img src="/doc/img-harmony.png"/>
+  <img src="/documentation/img-harmony.png"/>
 </p>
 
 Each dot in the two-dimensional plot represents one of such 4-bar MIDI loop in the analysed corpus, which serves as the reference musical material on which variations are performed in real-time. They are organized following a double classification of diatonic-chromatic (measured as the number of semitones present on each file) and minor-major (calculated as the distance with theoretical scales and modes). You could select a different progression by clicking on each dot, or alternatively by clicking on the *next* and *previous* buttons above. The loops are analyised relatively, so you could transpose each midi loop to any of the twelve pitch classes with the *key* wheel.
@@ -29,7 +29,7 @@ Each dot in the two-dimensional plot represents one of such 4-bar MIDI loop in t
 Selected loops are represented on a simple 4-bar display, showing the chord progression, the master rhythmic pattern (light-gray) and the slave pattern with the variations on top of it (dark-gray).
 
 <p align="center">
-  <img src="/doc/img-loop.png"/>
+  <img src="/documentation/img-loop.png"/>
 </p>
 
 Harmony progresses in time displaying a certain harmonic rhythm, which is the pace at which chord-changes structure time. This tends to be regular, especially in the styles we are studying, with chords changing at every bar. Since the analysis on pitch and rhythm are carried independently, you can use any master rhythmic pattern with any chord progression. To change the master pattern you can use the *pattern* control, in the RHYTHM section.
@@ -44,7 +44,7 @@ To perform chord variations over the rhythmic master pattern you can use the con
 - *mute* and *volume* controls mute and set the volume of the keyboard layer.
 
 <p align="center">
-  <img src="/doc/img-chords.png"/>
+  <img src="/documentation/img-chords.png"/>
 </p>
 
 #####Bass
@@ -58,7 +58,7 @@ The program also generates a simple bass-line based on the chord progressions an
 - *mute* and *volume* controls mute and set the volume of this layer.
 
 <p align="center">
-  <img src="/doc/img-bass.png"/>
+  <img src="/documentation/img-bass.png"/>
 </p>
 
 #####Transport and Storage
@@ -68,13 +68,13 @@ The TRANSPORT section offers basic transport options. Besides *playing* and sett
 - *ext-sync* sets the program to operate as a slave of an external MIDI device. When activated, the playback and tempo options are disabled, and the program expect MIDI clock information on a MIDI-IN port. This is useful to integrate the *House Harmonic Filler* program within any DAW.
 
 <p align="center">
-  <img src="/doc/img-transport.png"/>
+  <img src="/documentation/img-transport.png"/>
 </p>
 
 Last, a MEMORY section lets you store and recall up to 7 presets. Transport instructions (tempo, play) are not stored with the memories.
 
 <p align="center">
-  <img src="/doc/img-memory.png"/>
+  <img src="/documentation/img-memory.png"/>
 </p>
 
 *(Tested on on Ubuntu 15.10 and OSX El Capitan)*
