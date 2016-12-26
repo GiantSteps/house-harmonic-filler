@@ -4,7 +4,7 @@
 #X obj 209 221 change -12;
 #X obj 209 244 outlet;
 #X obj 21 80 r \$2-current-step;
-#X obj 21 106 mod \$1;
+#X obj 21 104 mod \$1;
 #X obj 154 182 f;
 #X obj 209 110 vabs/oncev;
 #X connect 0 0 6 1;

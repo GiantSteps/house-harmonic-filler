@@ -20,14 +20,14 @@
 #X obj 14 31 drawpolygon 955 3 pos -5 pos 5;
 #X restore 9 311 pd line;
 #X obj 83 150 hsl 101 15 0 100 0 0 \$0-out \$0-in empty -2 -8 0 10
--66577 -258113 -258113 6300 0;
+-66577 -258113 -258113 551 0;
 #X obj 296 178 + 3;
 #X obj 10 267 + 3;
 #X obj 296 242 append \$0-line pos;
 #X obj 10 288 set \$0-line pos;
 #X obj 10 93 route mark;
 #X obj 80 93 route float;
-#X obj 279 34 loadbang;
+#X obj 259 51 loadbang;
 #X obj 10 247 vabs/vscale \$3 \$4 0 100;
 #X obj 80 128 vabs/vscale 0 127 0 100;
 #X obj 80 171 vabs/vscale 0 100 \$3 \$4;
