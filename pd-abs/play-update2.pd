@@ -1,4 +1,4 @@
-#N canvas 552 190 543 328 10;
+#N canvas 768 171 543 328 10;
 #X obj 169 65 swap;
 #X obj 169 16 inlet;
 #X obj 169 90 pack 0 2;
@@ -6,7 +6,7 @@
 #X obj 194 221 change -12;
 #X obj 194 244 outlet;
 #X obj 190 40 r \$2-play;
-#X obj 20 110 r \$2-current-step;
+#X obj 20 100 r \$2-current-step;
 #X obj 154 182 f;
 #X obj 20 151 sel \$1;
 #X connect 0 0 2 0;
