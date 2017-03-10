@@ -1,0 +1,172 @@
+#N canvas 2 23 554 543 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header pcs-transpose 3
+12 0 18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 99 310 list;
+#X text 169 310 - list that is interpreted as a pitch-class set \,
+that is \, a list containing non-duplicate integers in range 0-11.
+;
+#X obj 37 211 tgl 15 0 pc0 empty empty 17 7 0 10 -262144 -1 -1 0 12
+;
+#X text 41 192 0;
+#N canvas 69 257 590 446 make-set 1;
+#X obj 57 26 r pc0;
+#X obj 95 26 r pc1;
+#X obj 95 50 t b f;
+#X obj 57 168 pack 0 0 0 0 0 0 0 0 0 0 0 0;
+#X obj 135 50 t b f;
+#X obj 135 26 r pc2;
+#X obj 175 50 t b f;
+#X obj 215 50 t b f;
+#X obj 175 26 r pc3;
+#X obj 215 26 r pc4;
+#X obj 255 50 t b f;
+#X obj 295 50 t b f;
+#X obj 335 50 t b f;
+#X obj 375 50 t b f;
+#X obj 255 26 r pc5;
+#X obj 295 26 r pc6;
+#X obj 335 26 r pc7;
+#X obj 375 26 r pc8;
+#X obj 415 50 t b f;
+#X obj 455 50 t b f;
+#X obj 505 50 t b f;
+#X obj 415 26 r pc9;
+#X obj 455 26 r pc10;
+#X obj 505 26 r pc11;
+#X obj 120 363 list;
+#X obj 18 303 f 0;
+#X obj 48 303 + 1;
+#X obj 18 326 sel 11;
+#X msg 33 239 0;
+#X obj 57 189 t l b;
+#X obj 120 384 outlet;
+#X obj 75 249 t b f;
+#X obj 141 294 mod 12;
+#X obj 102 272 moses 1;
+#X obj 75 228 vdrip;
+#X obj 141 316 add2list prepend;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 1 3 1;
+#X connect 3 0 29 0;
+#X connect 4 0 3 0;
+#X connect 4 1 3 2;
+#X connect 5 0 4 0;
+#X connect 6 0 3 0;
+#X connect 6 1 3 3;
+#X connect 7 0 3 0;
+#X connect 7 1 3 4;
+#X connect 8 0 6 0;
+#X connect 9 0 7 0;
+#X connect 10 0 3 0;
+#X connect 10 1 3 5;
+#X connect 11 0 3 0;
+#X connect 11 1 3 6;
+#X connect 12 0 3 0;
+#X connect 12 1 3 7;
+#X connect 13 0 3 0;
+#X connect 13 1 3 8;
+#X connect 14 0 10 0;
+#X connect 15 0 11 0;
+#X connect 16 0 12 0;
+#X connect 17 0 13 0;
+#X connect 18 0 3 0;
+#X connect 18 1 3 9;
+#X connect 19 0 3 0;
+#X connect 19 1 3 10;
+#X connect 20 0 3 0;
+#X connect 20 1 3 11;
+#X connect 21 0 18 0;
+#X connect 22 0 19 0;
+#X connect 23 0 20 0;
+#X connect 24 0 30 0;
+#X connect 25 0 27 0;
+#X connect 25 0 26 0;
+#X connect 26 0 25 1;
+#X connect 27 0 24 0;
+#X connect 28 0 25 1;
+#X connect 29 0 34 0;
+#X connect 29 1 28 0;
+#X connect 29 1 35 1;
+#X connect 31 0 25 0;
+#X connect 31 1 33 0;
+#X connect 32 0 35 0;
+#X connect 33 1 32 0;
+#X connect 34 0 31 0;
+#X connect 35 0 24 1;
+#X restore 330 146 pd make-set;
+#X obj 57 211 tgl 15 0 pc1 empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X text 60 192 1;
+#X obj 77 211 tgl 15 0 pc2 empty empty 17 7 0 10 -262144 -1 -1 0 2
+;
+#X obj 97 211 tgl 15 0 pc3 empty empty 17 7 0 10 -262144 -1 -1 0 3
+;
+#X text 81 192 2;
+#X text 100 192 3;
+#X obj 117 211 tgl 15 0 pc4 empty empty 17 7 0 10 -262144 -1 -1 0 4
+;
+#X obj 137 211 tgl 15 0 pc5 empty empty 17 7 0 10 -262144 -1 -1 0 5
+;
+#X obj 157 211 tgl 15 0 pc6 empty empty 17 7 0 10 -262144 -1 -1 0 6
+;
+#X obj 177 211 tgl 15 0 pc7 empty empty 17 7 0 10 -262144 -1 -1 0 7
+;
+#X text 121 192 4;
+#X text 140 192 5;
+#X text 161 192 6;
+#X text 180 192 7;
+#X obj 197 211 tgl 15 0 pc8 empty empty 17 7 0 10 -262144 -1 -1 0 8
+;
+#X obj 217 211 tgl 15 0 pc9 empty empty 17 7 0 10 -262144 -1 -1 0 9
+;
+#X obj 237 211 tgl 15 0 pc10 empty empty 17 7 0 10 -262144 -1 -1 0
+10;
+#X obj 257 211 tgl 15 0 pc11 empty empty 17 7 0 10 -262144 -1 -1 0
+11;
+#X text 201 192 8;
+#X text 220 192 9;
+#X text 237 192 10;
+#X text 258 192 11;
+#X text 99 388 list;
+#X text 104 82 You might want to have a look to Forte's "The Structure
+of Atonal Music" (Yale University Press \, 1973).;
+#X text 34 168 TYPE IN A PITCH-CLASS SET:;
+#X floatatom 340 171 5 0 0 0 - - -, f 5;
+#X text 102 50 Transposes a pitch-class set by a number of semitones
+maintaining the octave equivalence.;
+#X text 2 23 transposes a pitch-class set;
+#X obj 330 219 list;
+#X obj 340 193 t b f;
+#X text 378 169 transposition interval;
+#X text 82 476 1) float;
+#X text 169 476 - initial transposition interval.;
+#X text 169 388 - transposed version of the incoming pitch-class set.
+;
+#X obj 330 265 print;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 79 351 cnv 17 3 1 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 99 350 list;
+#X text 169 350 - transposition factor in semitones.;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/gspd;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2017;
+#X obj 330 240 pcs-transpose 5;
+#X connect 8 0 37 0;
+#X connect 34 0 38 0;
+#X connect 37 0 52 0;
+#X connect 38 0 37 0;
+#X connect 38 1 52 1;
+#X connect 52 0 43 0;

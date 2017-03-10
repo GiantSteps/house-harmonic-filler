@@ -1,0 +1,40 @@
+#N canvas 0 23 555 544 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header list-mode 3 12 0
+18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X floatatom 156 207 5 0 0 0 - - -, f 5;
+#X msg 105 140 1 2 3 4 5 5 5 5 5 5 5 3 2 1;
+#X text 106 80 returns the statistical mode of a list \, i.e. the value
+or values that appear most frequently. The right inlet outputs the
+number of times the mode is repeated.;
+#X obj 105 183 list-mode;
+#X text 99 310 list;
+#X text 169 310 - list of integers.;
+#X text 2 23 returns the mode of a list;
+#X obj 79 419 cnv 17 3 1 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 99 418 float;
+#X msg 115 160 1 1 1 2 2 3 3 3;
+#X obj 105 249 print mode;
+#X text 99 388 float/list;
+#X text 179 250 (most frequent item(s));
+#X text 193 207 number of iterations;
+#X text 169 388 - mode of a list (list if more than one).;
+#X text 169 418 - number of repetitions of a list.;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/gspd;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2017;
+#X connect 8 0 10 0;
+#X connect 10 0 17 0;
+#X connect 10 1 7 0;
+#X connect 16 0 10 0;

@@ -1,0 +1,58 @@
+#N canvas 0 23 554 544 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header timegate 3 12 0
+18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 2 23 lets messages at periodic times;
+#X floatatom 174 237 5 0 0 0 - - -, f 5;
+#X floatatom 249 184 5 0 0 0 - - -, f 5;
+#X obj 174 135 metro 200;
+#X obj 174 159 random 100;
+#X floatatom 187 181 5 0 0 0 - - -, f 5;
+#X obj 174 114 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 225 113 5 0 0 0 - - -, f 5;
+#X obj 228 253 timer;
+#X obj 228 230 t b b;
+#X floatatom 228 275 5 0 0 0 - - -, f 5;
+#X text 266 276 elapsed time;
+#X obj 174 207 timegate 1000;
+#X text 72 47 timegate stops outputing its incoming data after an initial
+input for the specified time \, after which the gate opens again. This
+object does not have any memory and will ignore any event that comes
+in while the gate is closed.;
+#X text 99 310 any;
+#X text 169 310 - any type of data.;
+#X text 99 388 any;
+#X text 169 388 - any type of data \, at regular intervals.;
+#X obj 79 339 cnv 17 3 12 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 99 338 float;
+#X text 169 338 - time interval for refreshing output.;
+#X text 90 475 1) float;
+#X text 180 475 initial time interval.;
+#X text 356 178 see also:;
+#X obj 356 194 pddp/helplink cyclone/speedlim;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/gspd;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2017;
+#X connect 9 0 19 1;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 11 0 19 0;
+#X connect 13 0 10 0;
+#X connect 14 0 10 1;
+#X connect 15 0 17 0;
+#X connect 16 0 15 0;
+#X connect 16 1 15 1;
+#X connect 19 0 8 0;
+#X connect 19 0 16 0;

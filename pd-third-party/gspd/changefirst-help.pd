@@ -1,0 +1,40 @@
+#N canvas 0 23 555 543 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header changefirst 3 12
+0 18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 311 187 see also:;
+#X text 99 388 list;
+#X obj 183 272 print;
+#X msg 203 179 10 11;
+#X msg 213 222 10 12;
+#X msg 183 135 9 11;
+#X text 99 310 list;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 372 187 pddp/helplink change;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2017;
+#X obj 183 245 changefirst;
+#X obj 372 202 pddp/helplink changeany;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/gspd;
+#X msg 193 155 9 11 12 32 12;
+#X msg 213 199 10 11 23 41;
+#X text 2 23 outputs incoming list only if first element differ;
+#X text 70 66 [changefirst] works like pd's native object [change]
+on numeric lists. It will output the incoming list only if the first
+element is different from the previous incoming package's first element.
+;
+#X connect 7 0 16 0;
+#X connect 8 0 16 0;
+#X connect 9 0 16 0;
+#X connect 16 0 6 0;
+#X connect 19 0 16 0;
+#X connect 20 0 16 0;

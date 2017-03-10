@@ -1,0 +1,47 @@
+#N canvas 676 331 651 600 10;
+#X text -12 24 Random number generator in range 0-1.;
+#X text -12 44 <argument/2nd inlet>: random step-size. Default = 0.001
+;
+#X text -12 4 TRIANGULAR DISTRIBUTION;
+#X obj 54 354 +;
+#X obj 54 376 * 0.5;
+#X obj 154 189 \$1;
+#X obj 69 332 random 1000;
+#X obj 164 165 loadbang;
+#X obj 154 210 sel 0;
+#X obj 132 301 + 1;
+#X obj 142 434 outlet;
+#X msg 132 258 1 \$1;
+#X obj 132 279 /;
+#X obj 142 411 * 0.001;
+#X obj 154 143 inlet;
+#X obj 181 231 moses 1;
+#X obj 220 275 print ERROR;
+#X obj -11 322 random 1000;
+#X obj 42 143 inlet;
+#X obj 42 293 t b b;
+#X msg 220 253 a.randt step-size must be in range (0 < value <= 0.5)
+;
+#X text -12 64 Taken from Dodge and Jerse: "Computer Music \, Synthesis
+\, Composition and Performance.";
+#X text -12 104 angelfaraldo@gmail.com \, 2014;
+#X connect 3 0 4 0;
+#X connect 4 0 13 0;
+#X connect 5 0 8 0;
+#X connect 6 0 3 1;
+#X connect 7 0 5 0;
+#X connect 8 1 15 0;
+#X connect 9 0 6 1;
+#X connect 9 0 17 1;
+#X connect 11 0 12 0;
+#X connect 12 0 9 0;
+#X connect 13 0 10 0;
+#X connect 14 0 5 0;
+#X connect 15 0 11 0;
+#X connect 15 0 13 1;
+#X connect 15 1 20 0;
+#X connect 17 0 3 0;
+#X connect 18 0 19 0;
+#X connect 19 0 17 0;
+#X connect 19 1 6 0;
+#X connect 20 0 16 0;

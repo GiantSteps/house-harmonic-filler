@@ -1,0 +1,77 @@
+#N canvas 1 23 555 553 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header sigmoid 3 12 0 18
+-204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 515 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 4 23 keeps numbers within range by folding them backwards;
+#X text 99 310 float;
+#X text 89 478 1) float;
+#X text 173 49 This object gives a sigmoid weight to a list of numbers.
+The input is the list and the output is the weighted list. It can be
+used to transform in real time the response of a system based on Markov
+chains by emphasizing (or not) some regions of the probabilities.;
+#X obj 7 86 vsl 15 129 -1 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X msg 64 174 bang;
+#X text 124 264 outputs the n nubers weighted by the sigmoid curve
+;
+#X msg 7 62 0;
+#X obj 7 221 sigmoid 12;
+#X text 169 478 - number of elements in the list (if no size is selected
+the sigmoid adjusts to the size of the list.);
+#X obj 64 242 tabwrite curve;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array curve 12 float 1;
+#A 0 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5;
+#X coords 0 1 11 0 100 70 1 0 0;
+#X restore 312 157 graph;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array ps 12 float 1;
+#A 0 0.489812 0.46124 0.425526 0.311239 0.304097 0.232668 0.161239
+0.254096 0.325525 0.225525 0.246953 0.246953;
+#X coords 0 1 11 0 100 70 2 0 0;
+#X restore 202 158 graph;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array result 12 float 1;
+#A 0 0.489812 0.46124 0.425526 0.311239 0.304097 0.232668 0.161239
+0.254096 0.325525 0.225525 0.246953 0.246953;
+#X coords 0 1 11 0 100 70 1 0 0;
+#X restore 422 157 graph;
+#X text 414 279 daniel.gomez@upf.edu;
+#X obj 67 64 loadbang;
+#X obj 67 87 t b b;
+#X text 169 310 - sigmoid factor;
+#X obj 79 341 cnv 17 3 12 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 169 340 - list;
+#X text 99 340 list;
+#X text 99 388 list;
+#X text 169 388 - weigthed curve.;
+#X obj 79 419 cnv 17 3 12 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 99 418 list;
+#X text 169 418 sigmoid shape (list of duples to fill in a table).
+;
+#X obj 7 267 zexy/tabset result;
+#X obj 64 197 zexy/tabdump ps;
+#X obj 7 516 pddp/pddplink https://github.com/angelfaraldo/gspd;
+#X text 335 516 angelfaraldo@gmail.com \, 2015-2017;
+#X connect 11 0 15 0;
+#X connect 12 0 34 0;
+#X connect 14 0 11 0;
+#X connect 15 0 33 0;
+#X connect 15 1 17 0;
+#X connect 22 0 23 0;
+#X connect 23 0 14 0;
+#X connect 23 1 12 0;
+#X connect 34 0 15 1;

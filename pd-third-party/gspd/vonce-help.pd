@@ -1,0 +1,45 @@
+#N canvas 14 49 554 543 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header vonce 3 12 0 18
+-204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X floatatom 161 132 5 0 0 0 - - -, f 5;
+#X obj 189 206 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X symbolatom 178 178 10 0 0 0 - - -, f 10;
+#X obj 161 250 print;
+#X obj 170 154 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 210 204 reset/init;
+#X text 98 57 uanz outputs only its first incoming data \, be it bang
+\, a symbol \, a number or a list. Must be reset on its right inlet.
+;
+#X text 2 23 gates input after first piece of data.;
+#X text 99 310 any;
+#X text 324 182 see also:;
+#X text 169 310 - any piece of data;
+#X text 99 388 any;
+#X text 169 388 - only first piece of data;
+#X obj 79 341 cnv 17 3 65 empty \$0-pddp.cnv.let.0 1 5 9 0 16 -228856
+-162280 0;
+#X text 99 340 bang;
+#X text 169 340 - bang to reset and reopen the gate.;
+#X obj 385 182 pddp/helplink once;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/gspd;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2017;
+#X obj 161 227 vonce;
+#X connect 7 0 26 0;
+#X connect 8 0 26 1;
+#X connect 9 0 26 0;
+#X connect 11 0 26 0;
+#X connect 26 0 10 0;

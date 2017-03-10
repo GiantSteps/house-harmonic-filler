@@ -1,0 +1,49 @@
+#N canvas 2 23 555 544 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header list-normalize 3
+12 0 18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 99 310 list;
+#X text 169 310 - list.;
+#X text 99 55 This object takes a list and normalizes its values so
+that the sum of its elements is always 1 This object is useful when
+normalizing a table of probabilities.;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array histogram 12 float 1;
+#A 0 47.8578 5.00108 72.1433 78.5718 87.1432 87.8574 86.4289 73.5719
+53.572 35.0008 31.4294 41.4293;
+#X coords 0 100 11 0 100 70 1 0 0;
+#X restore 385 119 graph;
+#X msg 153 139 bang;
+#N canvas 0 22 450 300 (subpatch) 0;
+#X array normalized 12 float 1;
+#A 0 0.0683676 0.00714433 0.103061 0.112244 0.124489 0.125509 0.123469
+0.105102 0.0765307 0.0500007 0.0448987 0.0591841;
+#X coords 0 1 11 0 100 70 1 0 0;
+#X restore 386 214 graph;
+#X floatatom 90 230 5 0 0 0 - - -, f 5;
+#X obj 153 191 list-normalize;
+#X text 2 23 normalizes a list so that the sum of its elements is 1
+;
+#X text 99 388 list;
+#X text 169 388 - normalized list;
+#X obj 153 221 zexy/tabset normalized;
+#X obj 153 158 zexy/tabdump histogram;
+#X obj 90 208 zexy/sum;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/gspd;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2017;
+#X connect 11 0 19 0;
+#X connect 14 0 18 0;
+#X connect 14 0 20 0;
+#X connect 19 0 14 0;
+#X connect 20 0 13 0;

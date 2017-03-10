@@ -1,0 +1,65 @@
+#N canvas 0 23 555 546 10;
+#X obj 1 0 cnv 15 552 40 empty \$0-pddp.cnv.header chord-vocabulary
+3 12 0 18 -204280 -1 0;
+#X obj 1 302 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 380 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 311 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 1 505 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 458 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X obj 79 389 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X symbolatom 16 232 14 0 0 0 - - -, f 14;
+#X symbolatom 16 278 15 0 0 0 - - -, f 15;
+#X text 114 278 chord name;
+#X text 61 68 major;
+#X text 61 88 minor;
+#X text 61 108 aug;
+#X text 62 128 dim;
+#X msg 16 129 0 3 6;
+#X msg 16 89 0 3 7;
+#X msg 16 109 0 4 8;
+#X text 86 148 7th;
+#X msg 16 69 0 4 7;
+#X text 96 168 min9;
+#X text 72 188 add11;
+#X msg 16 169 0 3 7 10 14;
+#X msg 16 189 0 4 5 7;
+#X obj 16 253 chord-vocabulary majmin;
+#X text 173 166 - "majmin" - ouptuts only major and minor chords without
+inversions. augmented chords are mapped to major and diminished to
+minor. All other chords follow normal music theoretical reductions.
+;
+#X text 173 236 - "majmininv" - same but with inversions.;
+#X text 172 90 simplifies the output of a chord dictionary to fit different
+algorithms and purposes. The creation argument refers to the type of
+vocabulary reduction applied (temporarily only majmin is available):
+;
+#X obj 16 210 chord-estimate;
+#X msg 16 149 4 7 10 12;
+#X text 130 49 NOT WORKING PROPERLY DUE TO CHANGES IN THE CHORD FORMAT
+OF CHORD-ESTIMATE. TO BE FIXED SOON;
+#X text 2 23 applies different vocabulary reductions;
+#X text 99 310 symbol;
+#X text 169 310 - a chord symbol;
+#X text 99 388 symbol;
+#X text 169 388 - a simplified chord symbol;
+#X text 89 478 1) symbol;
+#X text 169 478 type of vocabulary reduction (majmin \, majmininv)
+;
+#X obj 7 506 pddp/pddplink https://github.com/angelfaraldo/gspd;
+#X text 335 506 angelfaraldo@gmail.com \, 2015-2017;
+#X connect 7 0 23 0;
+#X connect 14 0 27 0;
+#X connect 15 0 27 0;
+#X connect 16 0 27 0;
+#X connect 18 0 27 0;
+#X connect 21 0 27 0;
+#X connect 22 0 27 0;
+#X connect 23 0 8 0;
+#X connect 27 0 7 0;
+#X connect 28 0 27 0;

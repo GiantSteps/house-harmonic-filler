@@ -1,0 +1,41 @@
+#N canvas 657 57 554 543 10;
+#X obj 1 1 cnv 15 552 40 empty \$0-pddp.cnv.header changeany 3 12 0
+18 -204280 -1 0;
+#X obj 1 303 cnv 3 550 3 empty \$0-pddp.cnv.inlets inlets 8 12 0 13
+-228856 -1 0;
+#X obj 1 381 cnv 3 550 3 empty \$0-pddp.cnv.outlets outlets 8 12 0
+13 -228856 -1 0;
+#X obj 79 312 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X text 311 188 see also:;
+#X text 99 389 list;
+#X msg 193 156 10 11;
+#X msg 183 136 9 11;
+#X text 99 311 list;
+#X obj 1 506 cnv 15 552 21 empty \$0-pddp.cnv.footer empty 20 12 0
+14 -228856 -66577 0;
+#X obj 1 459 cnv 3 550 3 empty \$0-pddp.cnv.argument arguments 8 12
+0 13 -228856 -1 0;
+#X obj 79 390 cnv 17 3 65 empty \$0-pddp.cnv.let.0 0 5 9 0 16 -228856
+-162280 0;
+#X obj 372 188 pddp/helplink change;
+#X msg 213 196 10 12 1;
+#X msg 203 176 10 11 2;
+#X text 335 507 angelfaraldo@gmail.com \, 2015-2017;
+#X obj 7 507 pddp/pddplink https://github.com/angelfaraldo/gspd;
+#X text 169 311 - a list;
+#X text 169 389 - a list.;
+#X msg 223 216 10 12 2;
+#X text 2 24 outputs incoming list if any element differs;
+#X text 70 67 changeany works like pd's native object [change] on lists.
+It will output the list if any of its elements is different from the
+previous incoming package.;
+#X obj 372 203 pddp/helplink changefirst;
+#X obj 183 270 print;
+#X obj 183 246 changeany;
+#X connect 6 0 24 0;
+#X connect 7 0 24 0;
+#X connect 13 0 24 0;
+#X connect 14 0 24 0;
+#X connect 19 0 24 0;
+#X connect 24 0 23 0;
