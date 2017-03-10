@@ -6,7 +6,7 @@
 #X obj 11 15 r \$2-current-step;
 #X obj 11 39 mod \$1;
 #X obj 110 131 f;
-#X obj 145 59 vabs/oncev;
+#X obj 145 59 gspd/vonce;
 #X connect 0 0 6 1;
 #X connect 0 0 7 0;
 #X connect 1 0 6 0;
