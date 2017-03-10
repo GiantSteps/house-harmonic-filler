@@ -142,14 +142,14 @@
 #N struct 1003-area float x float y float size;
 #N struct 1005-line float pos;
 #N canvas 641 23 633 357 8;
-#X declare -path pd-abs -path pd-third-party;
+#X declare -path pd-abs;
 #X obj 271 268 hsl 100 15 -2 2 0 0 \$0-raw-register \$0-set-register
 register 106 11 1 11 -66577 -258113 -228856 4950 0;
 #X obj 271 243 hsl 100 15 0 3.9 0 0 \$0-spread \$0-set-spread spread
 106 11 1 11 -66577 -258113 -228856 0 0;
 #N canvas 725 200 368 422 fifths 0;
 #X obj 33 29 flatgui/knob 65 65 0 12 0 0 \$0-key-fifths \$0-set-keyfifths
-key -20 -5 1 11 8.00022e+06 1 8.00026e+06 3200 1;
+key -20 -5 1 11 3.9143e+06 1 3.91434e+06 3200 1;
 #X text 58 14 C;
 #X text 77 18 G;
 #X text 92 31 D;
@@ -437,7 +437,7 @@ volume 106 11 1 11 -66577 -258113 -228856 6236 0;
 f 16;
 #X floatatom 347 14 5 0 0 0 in #0-set-oscin #0-oscin, f 5;
 #X floatatom 302 14 5 0 0 0 out #0-set-oscout #0-oscout, f 5;
-#N canvas 312 318 341 378 p 0;
+#N canvas 312 318 341 378 p 1;
 #N canvas 11 22 742 751 adt 0;
 #X obj 127 3 r \$0-load-rhythm;
 #X obj 127 151 gspd/list-sum;
@@ -3016,7 +3016,8 @@ adding weights to repetition or duration., f 26;
 #X text 4 288 TODO's;
 #X text 3 308 - make that if it is not playing the GUI updates automatically.
 , f 64;
-#X obj 4 127 declare -path pd-abs -path pd-third-party;
+#X obj 4 127 declare -path pd-abs;
+#X text 125 126 -path pd-third-party;
 #X connect 1 0 4 0;
 #X connect 4 0 11 0;
 #X connect 4 1 11 1;
